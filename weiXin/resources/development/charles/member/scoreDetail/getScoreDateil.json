@@ -1,0 +1,15 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "current_score":"500",
+    "score_detail":[
+      {
+        "change_desc":"积分兑换",
+        "change_type": "1",
+        "change_score": "1100",
+        "create_time":"2017-01-01 14:00:00"
+      }]
+
+  }
+}

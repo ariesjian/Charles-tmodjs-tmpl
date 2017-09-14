@@ -1,0 +1,32 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "incubatorApplylistDate": [
+      {
+        "id": "1",
+        "projectname": "园区项目技术孵化",
+        "fuzheren":"张三",
+        "companyname":"xx信息科技",
+        "statues":"1",
+        "num":0
+      },
+      {
+        "id": "3",
+        "projectname": "园区项目技术孵化",
+        "fuzheren":"张三",
+        "companyname":"xx信息科技",
+        "statues":"2",
+        "num":10
+      },
+      {
+        "id": "3",
+        "projectname": "园区项目技术孵化",
+        "fuzheren":"张三",
+        "companyname":"xx信息科技",
+        "statues":"3",
+        "num":0
+      }
+    ]
+  }
+}

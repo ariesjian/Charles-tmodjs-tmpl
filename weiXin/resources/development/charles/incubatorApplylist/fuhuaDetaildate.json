@@ -1,0 +1,28 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "fuhuadetails": [
+      {
+        "incubation_id": "1",
+        "project_name": "园区项目技术孵化",
+        "company_register_date":"2017-06-21",
+        "company_name":"xx信息科技",
+        "statues":"1",
+        "company_register_address":"企业注册地址",
+        "office_address":"办公地址",
+        "company_nature_name": "企业性质名称",
+        "technique_field_name":"技术领域名称",
+        "register_capital":"注册资本，整数，单位万",
+        "employee_count":"人数",
+        "business_licence":"营业执照编号，可空",
+        "contact_name":"联系人姓名",
+        "contact_mobile":"联系人手机",
+        "contact_email": "联系人邮箱",
+        "company_business_scope":"企业经营范围",
+        "company_desc":"公司介绍"
+
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+        "order_list": [
+          {
+            "id": 1,
+            "start_date": "2017-02-08",
+            "end_date":"2017-07-08",
+            "office_list_img_url": "/static/resources/images/station_list_img2.png",
+            "office_id":1,
+            "office_price": "15000",
+            "office_name":"办公室1",
+            "status":2
+          },
+          {
+            "id": 2,
+            "start_date": "2017-07-08",
+            "end_date":"2017-09-08",
+            "office_list_img_url": "/static/resources/images/station_list_img2.png",
+            "office_id":2,
+            "office_price": "45100",
+            "office_name":"办公室2",
+            "status":1
+          },
+          {
+            "id": 3,
+            "start_date": "2017-02-08",
+            "end_date":"2017-07-08",
+            "office_list_img_url": "/static/resources/images/station_list_img2.png",
+            "office_id":3,
+            "office_price": "45020",
+            "office_name":"办公室3",
+            "status":0
+          },
+          {
+            "id":4,
+            "start_date": "2017-02-08",
+            "end_date":"2017-07-08",
+            "office_list_img_url": "/static/resources/images/station_list_img2.png",
+            "office_id":4,
+            "office_price": "45040",
+            "office_name":"办公室4",
+            "status":3
+          },{
+            "id":5,
+            "start_date": "2017-02-08",
+            "end_date":"2017-07-08",
+            "office_list_img_url": "/static/resources/images/station_list_img2.png",
+            "office_id":5,
+            "office_price": "45900",
+            "office_name":"办公室5",
+            "status":9
+          }
+        ]
+
+  }
+}

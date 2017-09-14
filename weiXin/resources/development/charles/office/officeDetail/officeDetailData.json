@@ -1,0 +1,65 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+        "office_list": [
+          {
+            "id": 1,
+            "space_id":1,
+            "name": "办公室1",
+            "banner_url":"/static/resources/images/station_list_img2.png",
+            "list_img_url": "/static/resources/images/station_list_img2.png",
+            "person_limit": 31,
+            "price": "50500",
+            "area":"250",
+            "decoration":"精装",
+            "orientation":"朝北",
+            "room_height":"16",
+            "floor":"121"
+          },
+          {
+            "id": 2,
+            "space_id":2,
+            "name": "办公室2",
+            "banner_url":"/static/resources/images/station_list_img2.png",
+            "list_img_url": "/static/resources/images/station_list_img2.png",
+            "person_limit": 310,
+            "price": "45000",
+            "area":"300",
+            "decoration":"豪装",
+            "orientation":"朝南",
+            "room_height":"8",
+            "floor":"112"
+          },
+          {
+            "id": 3,
+            "space_id":3,
+            "name": "办公室3",
+            "banner_url":"/static/resources/images/station_list_img2.png",
+            "list_img_url": "/static/resources/images/station_list_img2.png",
+            "person_limit": 310,
+            "price": "45000",
+            "area":"321",
+            "decoration":"豪装",
+            "orientation":"朝东",
+            "room_height":"10",
+            "floor":"12"
+          },
+          {
+            "id": 4,
+            "space_id":2,
+            "name": "办公室4",
+            "banner_url":"/static/resources/images/station_list_img2.png",
+            "list_img_url": "/static/resources/images/station_list_img2.png",
+            "person_limit": 310,
+            "price": "45900",
+            "area":"150",
+            "decoration":"豪装",
+            "orientation":"朝南",
+            "room_height":"10",
+            "floor":"12"
+          }
+        ]
+
+  }
+}

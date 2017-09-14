@@ -1,0 +1,26 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "parking_lot_list": [
+      {
+        "banner_url":"/static/resources/images/park_img1.png",
+        "id": "1",
+        "name": "创意大厦停车",
+        "link":""
+      },
+      {
+        "banner_url":"/static/resources/images/park_img2.png",
+        "id": "2",
+        "name": "郭守敬园停车",
+        "link":""
+      }
+    ,{
+        "banner_url":"/static/resources/images/park_img3.png",
+        "id": "3",
+        "name": "国创一期停车",
+        "link":""
+      }
+    ]
+  }
+}

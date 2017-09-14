@@ -1,0 +1,39 @@
+<%if(data.cont.merchant_list && data.cont.merchant_list.length){%>
+<%for(var i=0;i< data.cont.merchant_list.length;i++){
+    var info = data.cont.merchant_list[i];
+    %>
+    <%if(info.detail_type==1){%>
+    <a href="<%=info.link%>" style="cursor: pointer;" class="c_service_listdetail_inner" >
+        <div class="c_service_listdetail_inner_left">
+            <span class="c_service_listdetail_inner_left_inner"><img
+                    src="<%=info.logo_url||getImgPath('logo1.png')%>"/></span>
+        </div>
+        <div class="c_service_listdetail_inner_right">
+            <div class="c_service_listdetail_inner_right_name">
+                <label class="c_service_listdetail_inner_right_name_inner"><%=info.name%></label>
+            </div>
+            <div class="c_service_listdetail_inner_right_des"><%=info.summary%></div>
+        </div>
+    </a>
+    <%}%>
+    <%if(info.detail_type==2){%>
+    <a style="cursor: pointer;" href="/index.php/index/service_system/pageServiceMerchantDetail?merchant_id=<%=info.id%>" class="c_service_listdetail_inner" >
+        <div class="c_service_listdetail_inner_left">
+            <span class="c_service_listdetail_inner_left_inner"><img src="<%=info.logo_url||getImgPath('logo1.png')%>"/></span>
+        </div>
+        <div class="c_service_listdetail_inner_right">
+            <div class="c_service_listdetail_inner_right_name">
+                <label class="c_service_listdetail_inner_right_name_inner"><%=info.name%></label>
+            </div>
+            <div class="c_service_listdetail_inner_right_des"><%=info.summary%></div>
+        </div>
+    </a>
+    <%}%>
+    <%}%>
+<%}else{%>
+<div class="mobile_outcontainer" style="background: #eaeaea;">
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div></div>
+<%}%>

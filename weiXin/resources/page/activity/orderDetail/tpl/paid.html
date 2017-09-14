@@ -1,0 +1,175 @@
+<%
+var d = order;
+var status = +d.status;
+var status_text = {1:'已支付',2:'已签到',9:'已超时取消',10:'已结束'}
+var status_explain = {1:'您的订单已支付成功，请准时前往参加活动',2:'签到已成功，谢谢您的参与',9:'您的订单已超时，请重新支付',10:'活动已结束，完成问卷与评价可获得相应积分'}
+
+var is_need_invoice = d.is_need_invoice;
+var invoice_type = d.invoice_type;
+var invoice_title = d.invoice_title;
+var invoice_mail_address = d.invoice_mail_address;
+var invoice_tax_no = d.invoice_tax_no;
+
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_activity_confirmtop">
+            <div class="c_activity_confirmtop_inner1">
+                <span><%=status_text[status]%></span>
+            </div>
+            <div class="c_activity_confirmtop_inner2">
+                <span><%=status_explain[status]%></span>
+            </div>
+        </div>
+
+
+        <!--<div class="c_activity_enrolltop">
+            <div class="c_activity_enrolltop1"><%=d.activity_name||''%></div>
+            <div class="c_activity_enrolltop2"><%=d.activity_start_time.replace(/-/g,'/')%>-<%=d.activity_end_time.replace(/-/g,'/')%></div>
+            <div class="c_activity_enrolltop3"><%=d.activity_address||''%></div>
+        </div>-->
+        
+        <div class="c_activity_bindtop">
+			<a href="/index.php/index/activity/pageActivityDetail?activity_id=<%=d.activity_id%>" class="c_activity_bindtop_inner">
+				<div class="c_activity_bindtop_inner_left"><img src="<%=d.banner_url||''%>" /></div>
+				<div class="c_activity_bindtop_inner_right">
+					<span class="c_activity_bindtop_inner_right1"><%=d.activity_name||''%></span>
+					<span class="c_activity_bindtop_inner_right2"><%=d.activity_start_time.replace(/-/g,'/')%>-<%=d.activity_end_time.replace(/-/g,'/')%></span>
+					<span class="c_activity_bindtop_inner_right3"><%=d.activity_address||''%></span>
+				</div>
+			</a>
+		</div>
+
+        <%if(1===status){%>
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+
+                    <div class="weui-cell__bd" style="font-size: 15px;cursor:pointer;" id="ShowQRCode" data-order_id="<%=d.id%>" data-activity_name="<%=d.activity_name%>" data-enroll_qrcode_url="<%=d.enroll_qrcode_url%>">
+                        <p>我的二维码</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <%}%>
+
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>姓名</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.contact_name||''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系方式</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.contact_mobile||''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>电子邮箱</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.contact_email||''%></div>
+                </div>
+                <%if(d.contact_company){%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>公司名称</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.contact_company%></div>
+                </div>
+                <%}%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>性别</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=(1===+d.contact_sex)?'男士':'女士'%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>支付金额</p>
+                    </div>
+                    <div class="weui-cell__ft">&yen;<%=d.price%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>支付方式</p>
+                    </div>
+                    <div class="weui-cell__ft">微信支付</div>
+                </div>
+            </div>
+
+            <div class="c_activity_confirmlist_inner c_room_detail_listcolor" style="margin-top: 10px;">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">发票信息</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>发票类型</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=(1==is_need_invoice)?(1==invoice_type?"个人":"企业"):"无"%></div>
+                </div>
+                <%if(1==is_need_invoice){%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>开票抬头</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=invoice_title||""%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>邮寄地址</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=invoice_mail_address||""%></div>
+                </div>
+                <%if(2==invoice_type){%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>企业税号</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=invoice_tax_no||""%></div>
+                </div>
+                <%}%>
+                <%}%>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%if(9==status){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_right" style="float: right;">
+        <a id="deleteOrder" href="javascript:;" style="cursor:pointer;" class="footer_fixed_box_join_right_inner">删除订单</a>
+    </div>
+</div>
+<%}%>
+
+<%if(10==status){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_left footer_fixed_box_join_left">
+        <%if(0==d.is_answered){%>
+        <a target="_self" href="/index.php/index/activity/pageAnswerActivityOrderQuestions?order_id=<%=d.id%>" class="footer_fixed_box_join_left_inner">调查问卷</a>
+        <%}else if(1==d.is_answered){%>
+        <a href="javascript:;" class="footer_fixed_box_join_left_inner">已答卷</a>
+        <%}%>
+    </div>
+    <div class="footer_fixed_box_right">
+        <%if(0==d.is_commented){%>
+        <a target="_self" href="/index.php/index/activity/pageMemberCommentActivityOrder?order_id=<%=d.id%>" class="footer_fixed_box_join_right_inner">评价活动</a>
+        <%}else if(1==d.is_commented){%>
+        <a href="javascript:;" class="footer_fixed_box_join_right_inner">已评价</a>
+        <%}%>
+    </div>
+</div>
+<%}%>

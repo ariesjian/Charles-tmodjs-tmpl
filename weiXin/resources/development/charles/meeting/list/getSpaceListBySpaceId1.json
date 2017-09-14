@@ -1,0 +1,98 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "meeting_room_list": [
+      {
+        "id": "1",
+        "name": "1",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "30",
+        "area": "20",
+        "address": "真光路1258号15楼501",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "2",
+        "name": "11",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "40",
+        "area": "30",
+        "address": "真光路1258号15楼502",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "1",
+        "name": "1",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "30",
+        "area": "20",
+        "address": "真光路1258号15楼501",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "2",
+        "name": "11",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "40",
+        "area": "30",
+        "address": "真光路1258号15楼502",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "1",
+        "name": "1",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "30",
+        "area": "20",
+        "address": "真光路1258号15楼501",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "2",
+        "name": "11",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "40",
+        "area": "30",
+        "address": "真光路1258号15楼502",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "1",
+        "name": "1",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "30",
+        "area": "20",
+        "address": "真光路1258号15楼501",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "2",
+        "name": "11",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "40",
+        "area": "30",
+        "address": "真光路1258号15楼502",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "1",
+        "name": "1",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "30",
+        "area": "20",
+        "address": "真光路1258号15楼501",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      },
+      {
+        "id": "2",
+        "name": "11",
+        "list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+        "person_limit": "40",
+        "area": "30",
+        "address": "真光路1258号15楼502",
+        "basic_services": "投影设备一套、话筒2只、音响设备"
+      }
+    ]
+  }
+}

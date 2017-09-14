@@ -1,0 +1,64 @@
+<%if(errMsg){%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt"><%=errMsg%></span>
+</div>
+<%}else{
+var d = meeting_room;
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_zone_introtop"><img src="<%=d.banner_url%>" /></div>
+        <div class="c_zone_introdetail">
+            <div class="c_zone_company_box1 c_room_detail_box1">
+                <div class="c_zone_company_box1_inner c_room_detail_box1_inner">
+                    <div class="c_room_showdetail_topleft">
+                        <span><%=d.name%></span><label><%=d.address%></label>
+                    </div>
+                    <div class="c_room_showdetail_topright">&yen;<%=0==is_company_manager?d.price:d.vip_price%>/半小时</div>
+                </div>
+                <div class="c_room_detail_box1_inner_bottom"></div>
+            </div>
+            <div class="c_zone_introdetail_box2 c_roomdetail_box2">
+                <div class="c_zone_introdetail_box2_title c_roomdetail_box2_title"><b></b><span>会议室配置</span></div>
+                <div class="c_zone_introdetail_box2_des">
+                    <div class="c_roomdetail_box2_des_inner">
+                        <label class="c_roomdetail_box2_des_inner_left">容纳</label><b class="c_roomdetail_box2_des_inner_right"><%=d.person_limit||0%>人</b>
+                    </div>
+                    <div class="c_roomdetail_box2_des_inner">
+                        <label class="c_roomdetail_box2_des_inner_left">面积</label><b class="c_roomdetail_box2_des_inner_right"><%=d.area||0%>㎡</b>
+                    </div>
+                    <div class="c_roomdetail_box2_des_inner">
+                        <label class="c_roomdetail_box2_des_inner_left">基本服务</label><b class="c_roomdetail_box2_des_inner_right"><%=d.basic_services||''%></b>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="c_zone_introdetail_incrementbox">
+                <div class="c_zone_introdetail_incrementbox_title"><b></b><span>增值服务</span></div>
+                <div class="c_zone_introdetail_incrementbox_des">
+                	<%
+                        var sers=d.special_services;
+                        for(var k=0;k<sers.length;k++){
+                        var r = sers[k];
+                        %>
+                    <div class="c_zone_introdetail_incrementbox_des_inner">
+                        <label class="c_zone_introdetail_incrementbox_des_inner_top">提前<%=r.hours%>小时</label>
+                        <b class="c_zone_introdetail_incrementbox_des_inner_bottom"><%=r.services%></b>
+                    </div>
+                    <%}%>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer_fixed_box" style="padding: 0 15px;border-top: none;height: auto;box-shadow: 0 0 10px #ddd;">
+        <a href="/index.php/index/meeting/pageMeetingRoomTimeSelection?meeting_room_id=<%=d.id%>" class="footer_fixed_room_box" style="margin: 12px 0;cursor:pointer;">预定</a>
+    </div>
+
+</div>
+<%}%>

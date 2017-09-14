@@ -1,0 +1,21 @@
+<%if(data && data.tutor_list && data.tutor_list.length){%>
+<%
+var tutor_list = data.tutor_list;
+for(var i=0;i< tutor_list.length ;i++){
+      var d = tutor_list[i];
+    %>
+<a href="/index.php/index/zone/pageProjectTutorDetail?tutor_id=<%=d.id%>" style="cursor:pointer;" ><div class="c_zone_teacherlist_inner">
+    <div class="c_zone_teacherlist_inner_left"><img src="<%=d.head_photo||getImgPath('logo1.png')%>" /></div>
+    <div class="c_zone_teacherlist_inner_right">
+        <span class="c_zone_teacherlist_inner_right1_name"><%=d.name||''%></span>
+        <span class="c_zone_teacherlist_inner_right1_position"><%=d.company||''%>&nbsp;&nbsp;<%=d.job_title||''%></span>
+    </div>
+</div></a>
+<%}%>
+<%}else{%>
+<div class="mobile_outcontainer" style="background-color: #eaeaea;">
+<div class="c_nodata_box6">
+    <b class="c_nodata_box6_img"><img src="<%=getImgPath('list_teacher.png')%>" /></b>
+    <span class="c_nodata_box6_txt">暂时没有导师信息</span>
+</div></div>
+<%}%>

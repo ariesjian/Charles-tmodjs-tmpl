@@ -1,0 +1,283 @@
+<%if(errMsg){%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt"><%=errMsg%></span>
+</div>
+<%}else{%>
+<%
+var status = +status;
+var is;
+try{
+    is = 'string'===typeof increment_services?JSON.parse(increment_services):increment_services;
+}catch(e){
+    is = null;
+}
+var increment_service_names = null;
+if(is){
+    increment_service_names = [];
+    for(var i=0;i<is.length;i++){
+        increment_service_names.push(is[i].name);
+        }
+}
+var desc_time_status= ['','未开始','进行中','已结束'];
+var desc_status ={0:'待支付',1:'已支付',2:'退款申请中',3:'退款审核通过',4:'退款审核拒绝',9:'已超时取消'};
+var isBottomVisible = (0==status)||(1==status&&1==time_status)||9==status;
+var desc_text = {
+0:'请于'+parseInt(expire_minutes,10)+'分钟内完成缴费，否则订单将自动取消',
+1:'您的订单已支付成功，正在审核请耐心等待',
+2:'您的退款申请正在处理中，请耐心等待',
+3:'您的退款申请已通过',
+4:'您的退款申请已被拒绝',
+9:'您的订单因超时已自动取消，如有需要请重新支付'
+};
+
+var reserve_date,start_time,end_time;
+try{
+reserve_date = reserve_start_time.trim().split(' ')[0].replace(/-/g,'/');
+start_time = reserve_start_time.trim().split(' ')[1];
+end_time = reserve_end_time.trim().split(' ')[1];
+}catch(e){
+reserve_date='';
+start_time='';
+end_time='';
+}
+
+%>
+<div class="mobile_outcontainer">
+    <%if(isBottomVisible){%>
+    <div class="mobile_nopadding_container1">
+    <%}else{%>
+    <div class="mobile_nopadding_container1" style="padding-bottom: 10px">
+    <%}%>
+
+        <div class="c_activity_confirmtop c_station_confirmtop">
+            <div class="c_activity_confirmtop_inner1">
+                <%if(0==status){%>
+                <b><img src="<%=getImgPath('icon_time.png')%>"></b>
+                <%}%>
+                <span><%=desc_status[status]%></span>
+            </div>
+            <div class="c_activity_confirmtop_inner2">
+                <span><%=desc_text[status]%></span>
+            </div>
+        </div>
+
+
+        <div class="c_room_paytop">
+            <div class="c_room_paytop_inner cc">
+                <div class="c_room_paytop_inner_left"><a href="javascript:void(0);"><img src="<%=meeting_room_list_img_url%>" /></a></div>
+                <div class="c_room_paytop_inner_right">
+                    <span class="c_room_paytop_inner_right1"><%=meeting_room_name%></span>
+                    <span class="c_room_paytop_inner_right2"><%=meeting_room_address%></span>
+                    <span class="c_room_paytop_inner_right3">容纳：<%=meeting_room_person_limit%>人</span>
+                </div>
+            </div>
+            <%if(2==status){%>
+            <div class="c_refuse_box">
+                <div class="c_refuse_box_inner">
+                    <div class="c_refuse_box_left">退款理由:</div>
+                    <div class="c_refuse_box_right"><%=refund_reason || ''%></div>
+                </div>
+            </div>
+
+            <%}%>
+            <%if(4==status){%>
+            <div class="c_refuse_box">
+            	<div class="c_refuse_box_inner">
+	                <div class="c_refuse_box_left">拒绝理由:</div>
+	                <div class="c_refuse_box_right"><%=refuse_reason || ''%></div>
+                </div>
+            </div>
+            
+            <%}%>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">费用合计</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>会议室费用</p>
+                    </div>
+                    <div class="weui-cell__ft">&yen;<%=basic_price||0%></div>
+                </div>
+                <%if(is&&is.length){
+                for(var j=0;j<is.length;j++){
+                var v = is[j];
+                %>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p><%=v.name%></p>
+                    </div>
+                    <div class="weui-cell__ft">&yen;<%=v.price||0%></div>
+                </div>
+                <%}%>
+                <%}%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p></p>
+                    </div>
+                    <div class="weui-cell__ft">合计：<label style="font-size: 16px;color: #ff0234;">&yen;<%=total_price%></label></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">订单信息</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>支付方式</p>
+                    </div>
+                    <div class="weui-cell__ft">微信支付</div>
+                </div>
+                <%if(bake){%>
+                <div class="c_room_confirm_inputbox1">
+                    <div class="c_room_confirm_inputbox1_left">备注</div>
+                    <div class="c_room_confirm_inputbox1_right"><%=bake%></div>
+                </div>
+                <%}%>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">预定信息</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>会议主题</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=theme%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>参会人数</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=persons||0%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>会议时间</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=(reserve_date+' '+start_time)%>-<%=end_time%></div>
+                </div>
+                <%if(increment_service_names&&increment_service_names.length){%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>增值服务</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=increment_service_names.join(',')%></div>
+                </div>
+                <%}%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系人</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_name||''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系方式</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_mobile||''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>电子邮箱</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_email||''%></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner c_room_detail_listcolor" style="margin-top: 10px;">
+
+            <div class="c_room_confirm_costtitle">
+                <div class="c_room_confirm_costtitle_inner1"></div>
+                <div class="c_room_confirm_costtitle_inner2">发票信息</div>
+                <div class="c_room_confirm_costtitle_inner1"></div>
+            </div>
+
+            <div class="weui-cell c_room_confirm_nobefore">
+                <div class="weui-cell__bd">
+                    <p>发票类型</p>
+                </div>
+                <div class="weui-cell__ft"><%=(1==is_need_invoice)?(1==invoice_type?"个人":"企业"):"无"%></div>
+            </div>
+            <%if(1==is_need_invoice){%>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>开票抬头</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_title||""%></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>邮寄地址</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_mail_address||""%></div>
+            </div>
+            <%if(2==invoice_type){%>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>企业税号</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_tax_no||""%></div>
+            </div>
+            <%}%>
+            <%}%>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<%if(0==status){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_left c_activity_confirm_footer_left">支付：&yen;<%=total_price||0%></div>
+    <div class="footer_fixed_box_right"><a href="javascript:;" style="cursor:pointer;" data-id="<%=id%>" class="j-pay footer_fixed_box_right_inner room_pay">确认支付</a></div>
+</div>
+<%}else if(1==status&&1==time_status){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_right" style="float: right;"><a href="javascript:;" style="cursor:pointer;" class="j-refund footer_fixed_box_right_inner room_pay">退款</a></div>
+</div>
+<%}else if(9==status){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_right" style="float: right;"><a href="javascript:;" style="cursor:pointer;" class="j-delete footer_fixed_box_right_inner room_pay">删除订单</a></div>
+</div>
+<%}%>
+
+    <div class="c_activity_getscorepopup none j-reson">
+        <div class="c_activity_getscorepopup_inner">
+            <div class="c_activity_getscorepopup_inner_title">退款原因</div>
+            <textarea class="c_activity_getscorepopup_inner_remind j-c"  type="text" maxlength="500" placeholder="请填写退款原因" ></textarea>
+            <div class="c_activity_getscorepopup_inner_btns">
+                <a href="javascript:;" class="c_activity_getscorepopup_inner_btns_close j-close">取消</a>
+                <a href="javascript:;" class="c_activity_signcon_inner_btns_tosee j-con">确定</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<%}%>

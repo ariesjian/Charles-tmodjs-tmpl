@@ -1,0 +1,21 @@
+{
+    "name": "qrcode.template.js",
+    "version": "1.0.0",
+    "dependencies": {
+        "tmodjs": "1.0.4"
+    },
+    "tmodjs-config": {
+        "output": "./build",
+        "charset": "utf-8",
+        "syntax": "native",
+        "helpers": "../../../../util/template-helper.js",
+        "escape": false,
+        "compress": false,
+        "type": "default",
+        "runtime": "qrcode.template.js",
+        "combo": true,
+        "minify": false,
+        "cache": true,
+        "verbose": true
+    }
+}

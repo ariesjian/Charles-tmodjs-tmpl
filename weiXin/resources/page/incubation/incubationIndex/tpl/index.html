@@ -1,0 +1,111 @@
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_incubator_applylist">
+            <div class="c_incubator_applylist_inner">
+                <div class="c_incubator_applylist_inner_box c_incubator_applylist_inner_box_noborder">
+                    <label class="c_applylist_inner_left">企业名称</label>
+                    <input class="j-company_name c_applylist_inner_right"  value="" placeholder="请输入企业名称" type="text"/>
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">项目名称</label>
+                    <input class="j-project_name c_applylist_inner_right" value="" placeholder="请输入项目名称" type="text"/>
+                </div>
+            </div>
+            <div class="c_incubator_applylist_inner">
+                <div class="c_incubator_applylist_inner_box c_incubator_applylist_inner_box_noborder">
+                    <label class="c_applylist_inner_left">企业注册时间</label>
+                   <!--
+                    <input class="j-company_register_date  c_applylist_inner_right" value="" placeholder="注册时间(yyyy-mm-dd)"  onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+              -->
+
+                    <input class="j-company_register_date  c_applylist_inner_right" value="" id ="showDatePicker" placeholder="请选择注册时间" readonly />
+
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">企业注册地址</label>
+                    <input class="j-company_register_address  c_applylist_inner_right" value=""placeholder="请输入注册地址" type="text"/>
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">办公地址</label>
+                    <input class="j-office_address c_applylist_inner_right"value="" placeholder="请输入办公地址" type="text"/>
+                </div>
+
+               <div class="weui-cell weui-cell_select weui-cell_select-after">
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label">企业性质</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <select class="weui-select" name="select2" id="nature"  >
+
+                            <%for(var i=0;i< nature_configs.length;i++){
+                            var info = nature_configs[i];
+                            %>
+                            <option value="<%=info.name%>"  class="optionclass"><%=info.name%></option>
+                            <%}%>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_select weui-cell_select-after">
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label">技术领域</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <select class="weui-select" name="select2" id="technique" >
+                            <%for(var i=0;i< technique_configs.length;i++){
+                            var info = technique_configs[i];
+                            %>
+                            <option value="<%=info.name%>" class="optionclass"><%=info.name%></option>
+                            <%}%>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">注册资本</label>
+                    <input class="j-register_capital c_applylist_inner_right" value="" placeholder="请输入注册资本 单位(万)"  onkeyup= "value=value.replace(/[^\d]/g,'')" type="number"/>
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">员工总数</label>
+                    <input class="j-employee_count c_applylist_inner_right" value="" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入员工人数 单位(人)" type="number"/>
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">营业执照编号</label>
+                    <input class="j-business_licence c_applylist_inner_right" placeholder="选填" value="" type="text" />
+                </div>
+            </div>
+
+            <div class="c_incubator_applylist_inner">
+                <div class="c_incubator_applylist_inner_box c_incubator_applylist_inner_box_noborder">
+                    <label class="c_applylist_inner_left">联系人</label>
+                    <input class="j-contact_name c_applylist_inner_right" value="" placeholder="请输入联系人" type="text"/>
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">联系方式</label>
+                    <input class="j-contact_mobile c_applylist_inner_right" value="" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入联系方式" type="tel"/>
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">联系邮箱</label>
+                    <input class="j-contact_email c_applylist_inner_right" value="" placeholder="请输入邮箱" type="email"/>
+                </div>
+            </div>
+            <div class="c_incubator_applylist_inner">
+                <div class="c_incubator_roadshowlist_inner_box">
+                    <label class="c_roadshowlist_inner_title">企业经营范围</label>
+                    <textarea placeholder="请输入企业经营范围" class="j-company_business_scope" maxlength="120" ></textarea>
+                    <span class="limit_num">0/120</span>
+                </div>
+            </div>
+
+            <div class="c_incubator_applylist_inner">
+                <div class="c_incubator_roadshowlist_inner_box">
+                    <label class="c_roadshowlist_inner_title">公司介绍</label>
+                    <textarea placeholder="请输入公司介绍" class="j-company_desc" maxlength="120"></textarea>
+                    <span class="limit_num">0/120</span>
+                </div>
+            </div>
+
+            <div class="c_incubator_applylist_btn"><label class="c_incubator_applylist_btn_inner" id="Confirm" style="cursor:pointer;" >提交申请</label></div>
+        </div>
+    </div>
+</div>

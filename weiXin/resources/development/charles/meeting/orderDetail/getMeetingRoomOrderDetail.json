@@ -1,0 +1,41 @@
+{
+  "errcode": 0,
+  "data": {
+    "order": {
+      "id": 1,
+      "meeting_room_name": "代理数据",
+      "meeting_room_address": "上海路",
+      "meeting_room_banner_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+      "meeting_room_person_limit": 12,
+      "order_number": "dad12",
+      "persons": 2,
+      "reserve_start_time": "2017-07-06 10:00",
+      "reserve_end_time": "2017-07-06 11:00",
+      "theme": "都安达",
+      "basic_price": 10,
+      "total_price": 100,
+      "contact_name": "jack",
+      "contact_mobile": "16152311234",
+      "contact_email": "2222@qq.com",
+      "company_name": "xilu",
+      "invoice": "invoice doan",
+      "bake": "bake da3",
+      "create_time": "2017-07-05 10:00",
+      "increment_services": [
+        {
+          "id": 1,
+          "name": "鲜花",
+          "price": 50
+        },
+        {
+          "id": 2,
+          "name": "茶水",
+          "price": 40
+        }
+      ],
+      "expire_minutes": 12,
+      "status": 1,
+      "time_status": 1
+    }
+  }
+}

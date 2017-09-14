@@ -1,0 +1,31 @@
+<%if(category_list && category_list.length){%>
+
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_service_select2_con">
+
+            <%for(var i=0;i< category_list.length;i++){
+            var info = category_list[i];
+            %>
+            <div class="c_service_select2_con_inner">
+                <a class="weui-cell weui-cell_access" style="cursor:pointer;"  href="/index.php/index/service_system/pageServiceMerchantList?second_category_id=<%=info.id%>">
+                    <div class="weui-cell__bd">
+                        <p><%=info.name%></p>
+                    </div>
+                    <div class="weui-cell__ft">
+                    </div>
+                </a>
+            </div>
+            <%}%>
+        </div>
+    </div>
+
+</div>
+
+<%}else{%>
+<div style="font-size: 30px;text-align: center;">
+    <div class="c_nodata_box4">
+        <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+        <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+    </div></div>
+<%}%>

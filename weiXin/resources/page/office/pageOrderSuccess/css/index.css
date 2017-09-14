@@ -1,0 +1,25 @@
+/*5.2工位预定成功*/
+.c_station_reserve{float: left;width: 100%;box-sizing: border-box;padding: 0 9px;margin-top: 10px;}
+.c_station_reserve_inner{float: left;width: 100%;border-radius: 2px;background: #fff;}
+.c_station_reserve_inner_img{float: left;width: 100%;text-align: center;margin-top: 25px;}
+.c_station_reserve_inner_img img{height: 60px;}
+.c_station_reserve_inner_txt1{float: left;width: 100%;height: 30px;line-height: 30px;font-size: 17px;color: #000;text-align: center;margin-top: 22px;}
+.c_station_reserve_inner_txt2{float: left;width: 100%;min-height: 30px;line-height: 24px;font-size: 15px;color: #000;text-align: center;margin-top: 2px;margin-bottom: 15px;box-sizing: border-box;padding: 3px 10px;}
+.c_station_reservelist{float: left;width: 100%;margin-top: 10px;box-sizing: border-box;}
+.c_station_reserve_btn{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;margin-top: 20px;}
+.c_station_reserve_btn_inner{float: left;width: 100%;height: 44px;line-height: 44px;text-align: center;font-size: 16px;color: #fff;background: #6ea2e4;border-radius: 2px;}
+
+/*3.2确认订单*/
+.c_activity_confirmtop{float: left;width: 100%;height: 70px;background:-webkit-gradient(linear, 0% 100%, 100% 100%,from(#f2ad14), to(#e75a21));}
+.c_activity_confirmtop_inner{height: 20px;line-height: 20px;display: table;margin: 0 auto;font-size: 13px;margin-top: 25px;}
+.c_activity_confirmtop_inner b{margin-right: 10px;float: left;}
+.c_activity_confirmtop_inner b img{height: 20px;}
+.c_activity_confirmtop_inner span{float:left;font-weight: bold;font-family: "微软雅黑 light";color: #fff;}
+
+.c_activity_confirmlist{float: left;width: 100%;margin-top: 10px;box-sizing: border-box;padding: 0 9px;}
+.c_activity_confirmlist_inner{float: left;width: 100%;background: #fff;border-radius: 4px;box-sizing: border-box;padding: 0 20px;}
+.c_activity_confirmlist_inner .weui-cell{padding: 10px 0;}
+.c_activity_confirmlist_inner .weui-cell .weui-cell__bd{font-size: 13px;}
+.c_activity_confirmlist_inner .weui-cell .weui-cell__ft{letter-spacing: 1px;}
+
+.c_activity_confirm_footer_left{font-size: 17px;color: #333;}

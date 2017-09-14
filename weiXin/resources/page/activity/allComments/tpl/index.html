@@ -1,0 +1,58 @@
+<%if(comments && comments.length){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_morecomment_con">
+            <div class="c_morecomment_con_inner">
+                <div class="c_activity_detailall_content_comment">
+                    <ul class="c_activity_detailall_content_comment_ul" id="Comments">
+                        <%for(var i=0;i<comments.length;i++){
+                        var cmt = comments[i];
+                        var score = cmt.score;
+                        %>
+                        <li class="j-comment c_activity_detailall_content_comment_ul_li" data-comment_id="<%=cmt.id%>">
+                            <div class="c_activity_detailcomment_left"><img src="<%=cmt.headimgurl%>" /></div>
+                            <div class="j-right c_activity_detailcomment_right">
+                                <div class="c_activity_detailcomment_right1">
+                                    <label><%=cmt.true_name||''%></label>
+                                    <b>
+                                        <img src="<%=getImgPath((score>=1)?'star1.png':'star2.png')%>" />
+                                        <img src="<%=getImgPath((score>=2)?'star1.png':'star2.png')%>" />
+                                        <img src="<%=getImgPath((score>=3)?'star1.png':'star2.png')%>" />
+                                        <img src="<%=getImgPath((score>=4)?'star1.png':'star2.png')%>" />
+                                        <img src="<%=getImgPath((score>=5)?'star1.png':'star2.png')%>" />
+                                    </b>
+                                </div>
+                                <div class="c_activity_detailcomment_right2"><%=cmt.content||''%></div>
+                                <div class="c_activity_detailcomment_right3">
+                                    <span class="c_activity_detailcomment_right3_left"><%=cmt.create_time.replace(/-/g,'/')||''%></span>
+                                    <%if(null == cmt.reply_manager_id && 1===+is_manager){%>
+                                    <a href="javascript:;" style="cursor:pointer;" class="j-reply c_activity_detailcomment_right3_right"><img src="<%=getImgPath('activity_detail_icon3.png')%>" />回复</a>
+                                    <%}%>
+                                </div>
+                                <%if(cmt.reply_manager_id != null){%>
+                                <div class="c_activity_detailcomment_right4">
+                                    <div class="c_activity_detailcomment_right4_point"><img src="<%=getImgPath('activity_detail_icon4.png')%>" /></div>
+                                    <div class="c_activity_detailcomment_right4_inner">
+                                        <label class="c_activity_comment_title"><%=cmt.reply_manager_name||''%></label>
+                                        <span class="c_activity_comment_des"><%=cmt.reply_content||''%></span>
+                                        <b class="c_activity_comment_time"><%=cmt.reply_time.replace(/-/g,'/')||''%></b>
+                                    </div>
+                                </div>
+                                <%}%>
+                            </div>
+                        </li>
+                        <%}%>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<%}else{%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt">还没有评论</span>
+</div>
+<%}%>

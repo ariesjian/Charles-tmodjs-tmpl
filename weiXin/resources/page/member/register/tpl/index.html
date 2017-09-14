@@ -1,0 +1,36 @@
+<div class="mobile_outcontainer" id="Register">
+    <div class="mobile_nopadding_container2">
+        <div class="c_user_bindpho">
+            <div class="c_user_bindpho_inner1">
+                <label class="c_user_bindpho_inner1_left">姓名</label>
+                <input class="j-true_name c_user_bindpho_inner1_right" maxlength="30" value="" placeholder="请输入姓名" type="text"/>
+            </div>
+
+            <div class="c_user_bindpho_inner2">
+                <div class="c_user_bindpho_inner2_left">性别</div>
+                <div class="c_user_bindpho_inner2_right">
+                    <div style="cursor:pointer;" class="c_user_bindpho_inner2_option j-sex" data-sex="1" data-checked="<%=2!=contact_sex?1:0%>" style="margin-left: 0;"><b class="c_user_bindpho_inner2_option_btn"><img class="j-img" src="<%=getImgPath(2!=contact_sex?'select2.png':'select1.png')%>" style="cursor:pointer;"/></b><label class=" c_user_bindpho_inner2_option_txt">男 </label></div>
+                    <div style="cursor:pointer;" class="c_user_bindpho_inner2_option j-sex" data-sex="2" data-checked="<%=2==contact_sex?1:0%>"> <b class="c_user_bindpho_inner2_option_btn"><img class="j-img" src="<%=getImgPath(2==contact_sex?'select2.png':'select1.png')%>"  style="cursor:pointer;" /></b><label class="c_user_bindpho_inner2_option_txt">女 </label> </div>
+                </div>
+            </div>
+
+            <div class="c_user_bindpho_inner1">
+                <label class="c_user_bindpho_inner1_left">手机号</label>
+                <input type="text" maxlength="11" class="j-mobile c_user_bindpho_inner1_right"  onkeyup="value=value.replace(/[^\d]/g,'')"  value="" placeholder="请输入手机号"/>
+            </div>
+
+            <div class="c_user_bindpho_inner3">
+                <input maxlength="8" class="j-code c_user_bindpho_inner3_left" placeholder="输入验证码" type="number"/>
+                <span class="j-send_code c_user_bindpho_inner3_right" style="cursor:pointer;">发送验证码</span>
+            </div>
+            <div class="c_user_bindpho_inner1">
+                <label class="c_user_bindpho_inner1_left">邀请码</label>
+                <input class="j-invite_code c_user_bindpho_inner1_right" maxlength="30" value="" placeholder="请输入邀请码（选填）"/>
+            </div>
+        </div>
+
+        <div class="c_user_bindpho_btn"><label style="cursor:pointer;" class="j-confirm  c_user_bindpho_btn_inner">确认</label></div>
+
+    </div>
+
+</div>

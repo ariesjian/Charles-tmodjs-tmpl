@@ -1,0 +1,121 @@
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_station_paytop">
+            <div class="c_station_paytop_inner">
+                <div class="c_station_paytop_inner_left"><a href="#"><img src="<%=workplace_list_img_url%>" /></a></div>
+                <div class="c_station_paytop_inner_right">
+                    <span class="c_station_paytop_inner_right1"><%=workplace_name%></span>
+                    <span class="c_station_paytop_inner_right2">&yen;<%=workplace_price%>/位/月</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>起始时间</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=start_date.replace(/-/g,'/')%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>结束时间</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=end_date.replace(/-/g,'/')%></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>工位数量</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=workplace_count%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系人</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_name%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系方式</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_mobile%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>支付方式</p>
+                    </div>
+                    <div class="weui-cell__ft">微信支付</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner c_room_detail_listcolor" style="margin-top: 10px;">
+
+            <div class="c_room_confirm_costtitle">
+                <div class="c_room_confirm_costtitle_inner1"></div>
+                <div class="c_room_confirm_costtitle_inner2">发票信息</div>
+                <div class="c_room_confirm_costtitle_inner1"></div>
+            </div>
+
+            <div class="weui-cell c_room_confirm_nobefore">
+                <div class="weui-cell__bd">
+                    <p>发票类型</p>
+                </div>
+                <div class="weui-cell__ft"><%=(1==is_need_invoice)?(1==invoice_type?"个人":"企业"):"无"%></div>
+            </div>
+            <%if(1==is_need_invoice){%>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>开票抬头</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_title||""%></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>邮寄地址</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_mail_address||""%></div>
+            </div>
+            <%if(2==invoice_type){%>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>企业税号</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_tax_no||""%></div>
+            </div>
+            <%}%>
+            <%}%>
+        </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>合计支付</p>
+                    </div>
+                    <div class="weui-cell__ft" style="color: #ff0234;font-size: 14px;height: 20px;line-height: 20px;">&yen;<%=total_price%></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_left c_activity_confirm_footer_left c_station_confirm_footer_left">
+        <b style="cursor:pointer;" data-agree="1" class="j-whether_agree station_pay_footer_left_img none"><img src="<%=getImgPath('station_pay_icon1.png')%>" /></b>
+        <b style="cursor:pointer;" data-agree="0" class="j-whether_agree station_pay_footer_left_img"><img src="<%=getImgPath('station_pay_icon2.png')%>" /></b>
+        <label class="station_pay_footer_left_txt">同意<a href="#">《预定合同》</a></label>
+    </div>
+    <div class="footer_fixed_box_right"><a href="javascript:;" style="cursor:pointer;" id="submit" class="footer_fixed_box_right_inner station_pay">确认支付</a></div>
+</div>

@@ -1,0 +1,108 @@
+<%if(incubation){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_incubator_detail">
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title">
+                    <span class="c_incubator_detail_inner_title_left"><img src="/static/resources/images/incubator_detail1.png" />企业信息</span>
+                    <%if(0==incubation.status){%>
+                    <label class="c_incubator_detail_inner_title_right check_status1">审核中</label> <%}%>
+                    <%if(1==incubation.status){%>
+                    <label class="c_incubator_detail_inner_title_right check_status2">
+                        已通过
+                    </label>  <%}%>
+                    <%if(2==incubation.status){%>
+                    <label class="c_incubator_detail_inner_title_right check_status3">
+                        未通过
+                    </label>  <%}%>
+
+
+                </div>
+                <div class="c_incubator_detail_inner_list">
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">企业名称</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.company_name || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">项目名称</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.project_name || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">注册时间</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.company_register_date || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">注册地址</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.company_register_address || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">办公地址</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.office_address || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">企业性质</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.company_nature_name || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">技术领域</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.technique_field_name || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">注册资本</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.register_capital || "" %></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">员工总数</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.employee_count%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner cc">
+                        <label class="c_incubator_detail_inner_list_inner_left">营业执照编号</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.business_licence || ""%></span>
+                    </div>
+                    <%if(2==incubation.status){%>
+                    <div class="c_refuse_box">
+		            	<div class="c_refuse_box_inner">
+			                <div class="c_refuse_box_left">拒绝理由</div>
+			                <div class="c_refuse_box_right"><%=incubation.refuse_reason%></div>
+		                </div>
+		            </div>
+                    <%}%>
+                </div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title">
+                    <span class="c_incubator_detail_inner_title_left"><img src="/static/resources/images/incubator_detail3.png" />联系信息</span>
+                </div>
+                <div class="c_incubator_detail_inner_list">
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">联系人</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.contact_name || ""%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">联系方式</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=incubation.contact_mobile || ""%></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title2">项目简介</div>
+                <div class="c_incubator_detail_inner_des"><%=incubation.company_business_scope%></div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title2">公司介绍</div>
+                <div class="c_incubator_detail_inner_des"><%=incubation.company_desc%></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<%}else{%>
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('mine_apply.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

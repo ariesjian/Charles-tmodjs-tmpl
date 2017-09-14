@@ -1,0 +1,31 @@
+<%if(tutor){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_zone_teacherdetailtop">
+            <b class="c_zone_teacherdetailtop_img"><img
+                    src="/static/resources/images/zone_teacherdetail_img1.png"/></b>
+            <div class="c_zone_teacherdetailtop_info">
+                <div class="c_zone_teacherdetailtop_info_inner">
+                    <b class="c_zone_teacherdetailtop_info_inner_img"><img
+                            src="<%=tutor.head_photo||getImgPath('logo1.jpg')%>"/></b>
+                    <span class="c_zone_teacherdetailtop_info_inner_txt1"><%= tutor.name || ''%></span>
+                    <b class="c_zone_teacherdetailtop_info_inner_txt2"><%= tutor.company || '' %> &nbsp;
+                        <%= tutor.job_title || ''%></b>
+                </div>
+            </div>
+        </div>
+        <div class="c_zone_teacherdetailtab" id="Title">
+            <a href="javascript:;" class="j-title c_zone_teacherdetailtab_inner c_zone_teachertab_selected" style="cursor:pointer;" >个人介绍</a>
+            <a href="javascript:;" class="j-title c_zone_teacherdetailtab_inner" style="cursor:pointer;" >导师服务</a>
+        </div>
+        <div class="c_zone_teacherdetaildes" id="details"><%=tutor.self_intro || ''  %></div>
+        <div class="c_zone_teacherdetaildes" id="services" style="display: none;"><%=tutor.tutor_service || ''  %></div>
+    </div>
+</div>
+<%}else{%>
+<div class="mobile_outcontainer" style="background-color: #eaeaea;">
+    <div class="c_nodata_box6">
+        <b class="c_nodata_box6_img"><img src="<%=getImgPath('list_teacher.png')%>" /></b>
+        <span class="c_nodata_box6_txt">暂时没有导师信息</span>
+    </div></div>
+<%}%>

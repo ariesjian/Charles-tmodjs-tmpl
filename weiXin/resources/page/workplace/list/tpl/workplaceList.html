@@ -1,0 +1,21 @@
+<%if(workplace_list&&workplace_list.length){%>
+<%for(var i=0;i<workplace_list.length;i++){
+var d = workplace_list[i];
+%>
+<div style="cursor:pointer;" class="j-item c_station_listdetail_box2_inner2_box" data-info=<%=JSON.stringify(d)%> >
+    <div class="c_station_listdetail_box2_inner2_box_left"><a href="javascript:void(0);"><img src="<%=d.list_img_url%>" /></a></div>
+    <div class="c_station_listdetail_box2_inner2_box_right">
+        <span class="c_station_listdetail_box2_inner2_box_right1"><%=d.name%></span>
+        <span class="c_station_listdetail_box2_inner2_box_right2">
+									<div class="c_station_listdetail_box2_inner2_box_right2_left">剩余：<label><%=d.available_count||0%></label></div>
+									<div class="c_station_listdetail_box2_inner2_box_right2_right">&yen;<%=d.price%>/位/月</div>
+								</span>
+    </div>
+</div>
+<%}%>
+<%}else{%>
+<div class="c_nodata_box3" style="height: 350px;">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt" style="margin-bottom: 54px;">暂无数据</span>
+</div>
+<%}%>

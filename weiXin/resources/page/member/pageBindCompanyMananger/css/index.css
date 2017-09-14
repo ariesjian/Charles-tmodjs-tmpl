@@ -1,0 +1,45 @@
+/*2.5门店负责人绑定*/
+.c_user_bindleadertop{float: left;width: 100%;background: #fff;box-sizing: border-box;padding: 3px 15px 10px 15px;margin-bottom: 20px;}
+.c_user_bindleadertop_inner{float: left;width: 100%;color: #000;font-size: 15px;margin-top: 8px;}
+.c_user_bindleadertop_inner_left{float: left;width: 25%;height: 30px;line-height: 30px;}
+.c_user_bindleadertop_inner_right{float: left;width:75%;min-height: 24px;padding: 3px 0;}
+
+.c_user_bindleader{float: left;width: 100%;background: #fff;box-sizing: border-box;padding: 0 15px;}
+.c_user_bindleader_inner1{float: left;width: 100%;position: relative;box-sizing:border-box;padding:11px 0;display: flex;}
+.c_user_bindleader_inner1:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    width: 100%;
+    left: 0;
+}
+.c_user_bindleader_inner1_noborder:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    width: 0;
+    left: 0;
+}
+.c_user_bindleader_inner1_left{height: 20px;line-height: 20px;font-size: 16px;color: #000;-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;}
+.c_user_bindleader_inner1_right{height: 20px;line-height: 20px;border: none;font-size: 14px;color: #000;text-align:right;-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;}
+
+.c_user_bindleader_btn{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;margin-top: 15px;}
+.c_user_bindleader_btn_inner{float: left;width: 100%;height: 44px;line-height: 44px;color: #fff;font-size: 16px;text-align: center;background: #eb771e;border-radius: 2px;}
+
+
+/*负责人绑定成功*/
+.c_activity_enroll_btn{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;margin-top: 20px;}
+.c_activity_enroll_btn_inner{float: left;width: 100%;height: 44px;line-height: 44px;text-align: center;font-size: 16px;color: #fff;background: #ea771e;border-radius: 2px;}
+

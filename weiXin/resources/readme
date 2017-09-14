@@ -1,0 +1,13 @@
+resources目录：所有前端资源
+activity目录：活动
+index目录：首页
+lib：第三方插件
+util：自己写的工具插件
+jack.css 上线前合并到index.css中
+开发时，模板的minify、compress设为false；上线时，设为true;
+template的escape设为false，为了图文展示。跨站脚本攻击。后台过滤。
+zepto不支持end
+css中的图片路径/static/resources/images/opacity_background.png
+手机网络配置代理，指向charles 端口号在proxy->proxy settings
+util->page->qrcode 生成二维码，在多个页面中出现
+page下的模板供复用

@@ -1,0 +1,20 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "teachercontent": [
+      {
+        "backgroundurl": "",
+        "id": "1",
+        "ziwei": "博士",
+        "name": "小e君",
+        "school": "剑桥大学",
+        "headerPicc":"images/logo1.jpg",
+        "content": "个人简介内容",
+        "service": "服务内容介绍"
+      }
+
+
+    ]
+  }
+}

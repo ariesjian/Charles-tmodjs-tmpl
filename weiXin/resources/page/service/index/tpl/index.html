@@ -1,0 +1,55 @@
+<%if(category_list && category_list.length){%>
+
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_service_select1_con">
+            <%for(var i=0;i< category_list.length;i++){
+            var info = category_list[i];
+            %>
+            <a style="cursor:pointer;"  href="/index.php/index/service_system/pageServiceMerchantList?first_category_id=<%=info.id%>&second_category_id=0" class="c_service_select1_con_inner">
+                <b class="c_service_select1_con_inner_img"><img src="<%=info.img_url||getImgPath('service_select_img1.png')%>" /></b>
+                <label class="c_service_select1_con_inner_txt"><%=info.name%></label>
+            </a>
+        <!--  <input type="hidden" value="<%=info.id%>">-->
+            <%}%>
+        </div>
+    </div>
+
+    <div class="mobile_footermenu">
+        <ul>
+            <li>
+                <a href="/index.php/index/index/pageIndex" style="cursor:pointer;" >
+                    <b class="mobile_footermenu_img"><img src="/static/resources/images/footmenu_img1.png" /></b>
+                    <span class="mobile_footermenu_txt">园区</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.php/index/service_system/pageServiceFirstCategory" style="cursor:pointer;" >
+                    <b class="mobile_footermenu_img"><img src="/static/resources/images/footmenu_img2_selected.png" /></b>
+                    <span class="mobile_footermenu_txt footer_txtcolor">服务</span>
+                </a>
+            </li>
+            <!--<li>
+                <a href="#" style="cursor:pointer;" >
+                    <b class="mobile_footermenu_img"><img src="/static/resources/images/footmenu_img3.png" /></b>
+                    <span class="mobile_footermenu_txt">商城</span>
+                </a>
+            </li>-->
+            <li>
+                <a href="/index.php/index/member/pageMemberIndex" style="cursor:pointer;" >
+                    <b class="mobile_footermenu_img"><img src="/static/resources/images/footmenu_img4.png" /></b>
+                    <span class="mobile_footermenu_txt">我的</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<%}else{%>
+<div style="font-size: 30px;text-align: center;"><div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div></div>
+<%}%>

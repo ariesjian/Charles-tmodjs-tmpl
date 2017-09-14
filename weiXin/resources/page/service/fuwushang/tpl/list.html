@@ -1,0 +1,27 @@
+<%if(data.lists.first_category_list && data.lists.first_category_list.length){%>
+<div class="c_service_selectlist_inner_left" >
+    <%for(var i=0;i< data.lists.first_category_list.length;i++){
+    var info = data.lists.first_category_list[i];
+    %>
+
+            <span class="c_service_selectlist_left_option" data-id_first="<%=info.id%>" data-server_name="<%=info.name%>" style="cursor: pointer;"><img src="<%=info.img_url%>" /><%=info.name%></span>
+            <%}%>
+        </div>
+
+<div class="c_service_selectlist_inner_right">
+    <%for(var i=0;i< data.lists.first_category_list.length;i++){
+    var info = data.lists.first_category_list[i];
+    %>
+    <div class="j-levelTwo">
+        <%
+        var item=info.second_category_list
+        for(var k=0;k< item.length;k++){
+        var d = item[k];
+        %>
+            <span class="c_service_selectlist_right_option" style="cursor: pointer;" data-id="<%=d.id%>"><%=d.name%></span>
+    <%}%>
+    </div>
+        <%}%>
+</div>
+
+<%}%>

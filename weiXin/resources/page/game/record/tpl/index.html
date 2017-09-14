@@ -1,0 +1,30 @@
+<%if(errMsg){%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt"><%=errMsg%></span>
+</div>
+<%}else{%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_user_draw">
+            <%for(var i=0;i<records.length;i++){
+                var d = records[i];
+            %>
+            <%if(0==i){%>
+            <div class="c_user_draw_inner c_user_draw_inner_noborder">
+            <%}else{%>
+            <div class="c_user_draw_inner">
+            <%}%>
+                <div class="c_user_draw_inner_left"><img src="<%=d.product_img_url%>" /></div>
+                <div class="c_user_draw_inner_right">
+                    <div class="c_user_draw_inner_right1"><%=d.product_name||''%></div>
+                    <div class="c_user_draw_inner_right2">参与活动：<%=d.award_activity_name||''%></div>
+                    <div class="c_user_draw_inner_right3">中奖说明：<%=d.exchange_desc||''%></div>
+                </div>
+            </div>
+            <%}%>
+        </div>
+    </div>
+
+</div>
+<%}%>

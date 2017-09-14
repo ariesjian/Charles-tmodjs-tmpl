@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*二维码*/
+.c_activity_codepopup{position:fixed;left: 0;right: 0;height:100%;top: 0;min-width:320px;max-width:640px;overflow:hidden;margin-left:auto;margin-right:auto; z-index:11;background: url(/static/resources/images/opacity_background.png);}
+.c_activity_codepopup_inner{position:relative;width: 80%;background: #fff;margin-left: 10%;top: 68px;border-radius: 3px;overflow: hidden;padding: 10px 0;}
+.c_activity_codepopup_inner_title{float: left;width: 100%;box-sizing: border-box;padding: 0 18px;margin-top: 10px;}
+.c_activity_codepopup_inner_title_txt{float: left;width: 80%;margin-left: 10%;min-height: 20px;line-height: 20px;font-size: 15px;color: #333;text-align: center;font-weight: bold;font-family: "微软雅黑 light";overflow:hidden;-webkit-line-clamp:2;display: -webkit-box;-webkit-box-orient:vertical;text-overflow: ellipsis;word-break: break-all;}
+.c_activity_codepopup_close{float: right;width: 10%;height: 20px;text-align: right;margin-top: 2px;}
+.c_activity_codepopup_close img{height: 20px;}
+.c_activity_codepopup_inner_img{float: left;width: 100%;box-sizing: border-box;padding: 0 35px;margin-top: 17px;}
+.c_activity_codepopup_inner_img_txt{float: left;width: 100%;font-size: 16px;color: #ea771e;text-align: center;line-height: 19px;}
+.c_activity_codepopup_inner_img_img{float: left;width: 100%;margin-top: 20px;margin-bottom: 14px;}
+.c_activity_codepopup_inner_img_img img{width: 100%;}

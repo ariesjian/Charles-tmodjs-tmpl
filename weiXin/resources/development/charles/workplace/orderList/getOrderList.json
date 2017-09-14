@@ -1,0 +1,73 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "order_list": [
+      {
+        "id": "6",
+        "workplace_id": "1",
+        "status": "0",
+        "workplace_count": "1",
+        "start_date": "2017-08-19",
+        "end_date": "2017-10-19",
+        "contact_name": "张毅辉",
+        "contact_mobile": "15618555431",
+        "workplace_name": "工位1",
+        "workplace_price": "1000",
+        "workplace_list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png"
+      },
+      {
+        "id": "4",
+        "workplace_id": "1",
+        "status": "1",
+        "workplace_count": "5",
+        "start_date": "2017-07-18",
+        "end_date": "2017-09-18",
+        "contact_name": "张毅辉",
+        "contact_mobile": "15618555431",
+        "workplace_name": "工位1",
+        "workplace_price": "1000",
+        "workplace_list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png"
+      },
+      {
+        "id": "3",
+        "workplace_id": "1",
+        "status": "2",
+        "workplace_count": "10",
+        "start_date": "2017-07-18",
+        "end_date": "2017-09-18",
+        "contact_name": "张毅辉",
+        "contact_mobile": "15618555431",
+        "workplace_name": "工位1",
+        "workplace_price": "1000",
+        "workplace_list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png"
+      },
+      {
+        "id": "2",
+        "workplace_id": "1",
+        "status": "3",
+        "workplace_count": "5",
+        "start_date": "2017-07-18",
+        "end_date": "2017-08-18",
+        "contact_name": "张毅辉",
+        "contact_mobile": "15618555431",
+        "workplace_name": "工位1",
+        "workplace_price": "1000",
+        "workplace_list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png"
+      },
+      {
+        "id": "1",
+        "workplace_id": "1",
+        "status": "9",
+        "workplace_count": "19",
+        "start_date": "2016-01-30",
+        "end_date": "2016-07-17",
+        "contact_name": "张毅辉",
+        "contact_mobile": "15618555431",
+        "workplace_name": "工位1",
+        "workplace_price": "1000",
+        "workplace_list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png"
+      }
+    ]
+  }
+}

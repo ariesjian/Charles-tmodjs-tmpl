@@ -1,0 +1,60 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "merchant_list":[
+      {
+        "id":"1",
+        "name":"abc",
+        "logo_url": "/static/resources/images/service_select_img1.png",
+        "summary":"是否gas的法国队是孤独死过渡语V",
+        "detail_type":"2",
+        "link":"www.baidu.com"
+      },
+      {
+        "id":"2",
+        "name":"国创园区优惠券",
+        "logo_url": "/static/resources/images/service_select_img2.png",
+        "summary":"是否gas的法国队是孤独死过渡语V",
+        "detail_type":"1",
+        "link":"www.baidu.com"
+      },
+      {
+        "id":"3",
+        "name":"国创园区优惠券",
+        "logo_url": "/static/resources/images/service_select_img3.png",
+        "summary":"是否gas的法国队是孤独死过渡语V",
+        "detail_type":"2",
+        "link":"www.baidu.com"
+      },
+      {
+        "id":"4",
+        "name":"国创园区优惠券",
+        "logo_url": "/static/resources/images/service_select_img4.png",
+        "summary":"是否gas的法国队是孤独死过渡语V",
+        "detail_type":"1",
+        "link":"www.baidu.com"
+      },
+      {
+        "id":"5",
+        "name":"国创园区优惠券",
+        "logo_url": "/static/resources/images/service_select_img5.png",
+        "summary":"是否gas的法国队是孤独死过渡语V",
+        "detail_type":"2",
+        "link":"www.baidu.com"
+      },
+      {
+        "id":"6",
+        "name":"国创园区优惠券",
+        "logo_url": "/static/resources/images/service_select_img6.png",
+        "summary":"是否gas的法国队是孤独死过渡语V",
+        "detail_type":"2",
+        "link":"www.baidu.com"
+      }
+
+
+
+    ]
+
+  }
+}

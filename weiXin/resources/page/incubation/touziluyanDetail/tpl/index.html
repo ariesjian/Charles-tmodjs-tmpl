@@ -1,0 +1,98 @@
+<%if(roadshow){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_incubator_detail">
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title">
+                    <span class="c_incubator_detail_inner_title_left"><img src="/static/resources/images/incubator_detail1.png" />企业信息</span>
+                    <%if(0==roadshow.status){%>
+                    <label class="c_incubator_detail_inner_title_right check_status1">审核中</label>
+                    </label>  <%}%>
+                    <%if(1==roadshow.status){%>
+                    <label class="c_incubator_detail_inner_title_right check_status2">
+                        已通过
+                    </label>  <%}%>
+                    <%if(2==roadshow.status){%>
+                    <label class="c_incubator_detail_inner_title_right check_status3">
+                        未通过
+                    </label>  <%}%>
+
+                </div>
+                <div class="c_incubator_detail_inner_list">
+                    <div class="c_incubator_detail_inner_list_inner cc">
+                        <label class="c_incubator_detail_inner_list_inner_left">项目名称</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=roadshow.project_name%></span>
+                    </div>
+                    <%if(2==roadshow.status){%>
+                    <div class="c_refuse_box">
+		            	<div class="c_refuse_box_inner">
+			                <div class="c_refuse_box_left">拒绝理由</div>
+			                <div class="c_refuse_box_right"><%=roadshow.refuse_reason%></div>
+		                </div>
+		            </div>
+                    <%}%>
+                </div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title">
+                    <span class="c_incubator_detail_inner_title_left"><img src="/static/resources/images/incubator_detail2.png" />融资信息</span>
+                </div>
+                <div class="c_incubator_detail_inner_list">
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">融资额度</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=roadshow.financing_amount%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">融资方式</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=roadshow.financing_type_name%></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title">
+                    <span class="c_incubator_detail_inner_title_left"><img src="/static/resources/images/incubator_detail3.png" />联系信息</span>
+                </div>
+                <div class="c_incubator_detail_inner_list">
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">联系人</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=roadshow.project_manager%></span>
+                    </div>
+                    <div class="c_incubator_detail_inner_list_inner">
+                        <label class="c_incubator_detail_inner_list_inner_left">联系方式</label>
+                        <span class="c_incubator_detail_inner_list_inner_right"><%=roadshow.contact_mobile%></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title2">项目概述</div>
+                <div class="c_incubator_detail_inner_des"><%=roadshow.project_desc%></div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title2">预期目标</div>
+                <div class="c_incubator_detail_inner_des"><%=roadshow.expective_goal%></div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title2">用途/期限</div>
+                <div class="c_incubator_detail_inner_des"><%=roadshow.usage_deadline%></div>
+            </div>
+
+            <div class="c_incubator_detail_inner">
+                <div class="c_incubator_detail_inner_title2">股权比例分配</div>
+                <div class="c_incubator_detail_inner_des"><%=roadshow.shareholdings%></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<%}else{%>
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('mine_apply.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

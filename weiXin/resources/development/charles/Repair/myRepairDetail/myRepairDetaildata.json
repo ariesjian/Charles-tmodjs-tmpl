@@ -1,0 +1,21 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "repair":
+      {
+        "id":"1",
+        "property_company_name":"国创一期",
+        "create_time":"2017-01-01",
+        "address":"上海外滩",
+        "status":"2",
+        "contact_name":"张三",
+        "contact_mobile":"18317777633",
+        "repair_detail":"严重漏水",
+        "score":"0",
+        "apply_time":"2017-09-09",
+        "finish_time":"2017-09-10",
+        "imgs":["/static/resources/images/service_select_img1.png","/static/resources/images/service_select_img2.png"]
+      }
+  }
+}

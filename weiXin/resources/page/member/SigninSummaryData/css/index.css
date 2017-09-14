@@ -1,0 +1,32 @@
+/*3.1签到*/
+.c_user_signtop{float: left;width: 100%;background: #fff;}
+.c_user_sign_successbox2{float: left;width: 100%;text-align: center;margin-top: 15px;margin-bottom: 10px;}
+.c_user_sign_successbox2 img{height: 130px;}
+.c_user_sign_successbox1{float: left;width: 100%;height: 30px;line-height: 30px;text-align:center;font-size: 15px;font-weight: bold;font-family: "微软雅黑 light";margin-top: 12px;}
+.c_user_sign_successbox3{float: left;width: 100%;height: 30px;line-height: 30px;text-align:center;font-size: 16px;font-weight: bold;font-family: "微软雅黑 light";margin-bottom: 7px;}
+
+.c_user_signcon{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;margin-top: 15px;}
+.c_user_signcon_inner{float: left;width: 100%;background: #fff;border-radius: 3px;}
+.c_user_signcon_inner_title{float: left;width: 100%;margin-top: 10px;box-sizing: border-box;padding: 0 15px;}
+.c_user_signcon_inner_title_left{float: left;height: 28px;line-height: 28px;font-size: 14px;color: #333;}
+.c_user_signcon_inner_title_left img{height: 25px;margin-right: 10px;margin-top: -2px;}
+.c_user_signcon_inner_title_right{float: right;height: 28px;line-height: 28px;font-size: 13px;color: #999;}
+.c_user_signcon_inner_exp{float: left;width: 100%;height: 14px;margin-top: 16px;box-sizing: border-box;padding: 0 15px;}
+.c_user_signcon_inner_exp1{float: left;}
+.c_user_signcon_inner_exp1_bg{float:left;height: 12px;width: 12px;background: #f2aa14;}
+.c_user_signcon_inner_exp1_txt{float: left;margin-left: 6px;height: 14px;line-height: 14px;font-size: 12px;color: #4C4C4C;}
+.c_user_signcon_inner_exp2{float: left;margin-left: 16px;}
+.c_user_signcon_inner_exp2_bg{float:left;height: 13px;width: 13px;background: #eaeaea;}
+.c_user_signcon_inner_exp2_txt{float: left;margin-left: 6px;height: 14px;line-height: 14px;font-size: 12px;color: #4C4C4C;}
+
+.c_user_signcon_inner_date{float: left;width: 100%;box-sizing: border-box;}
+.c_user_signcon_inner_date_title{float:left;width:100%;margin-top: 15px;}
+.c_user_signcon_inner_date_title_inner{float:left;width:14.28%;text-align: center;font-size: 13px;color: #4C4C4C;}
+.c_user_signcon_inner_date_con{float:left;width:100%;margin-top: 21px;}
+.c_user_signcon_inner_date_con_inner{float:left;width:14.28%;margin-bottom: 13px;}
+.c_sign_nosigned{float:left;width: 18px;height: 18px;border-radius: 18px;background: #eaeaea;color: #fff;font-size: 12px;text-align: center;position: relative;left: 50%;margin-left: -9px;}
+.c_sign_signed{float:left;width: 18px;height: 18px;border-radius: 18px;background: #f2aa14;color: #fff;font-size: 12px;text-align: center;position: relative;left: 50%;margin-left: -9px;}
+.c_sign_signed_today{float:left;width: 18px;height: 18px;border-radius: 18px;background: #f2aa14;text-align: center;position: relative;left: 50%;margin-left: -9px;}
+.c_sign_signed_today img{height: 18px;}
+.c_sign_waitsign{float:left;width: 18px;height: 18px;border-radius: 18px;color: #4C4C4C;font-size: 12px;text-align: center;position: relative;left: 50%;margin-left: -9px;}
+

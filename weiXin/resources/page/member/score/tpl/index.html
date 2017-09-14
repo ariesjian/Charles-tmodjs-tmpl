@@ -1,0 +1,67 @@
+<%if(coupons && coupons.length >0){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_user_scoretop">
+            <div class="c_user_scoretop_inner">
+                <div class="c_user_scoretop_inner_box1"><a style="cursor:pointer;"  href="/index.php/index/member/pageMemberScoreDetail" class="c_user_scoretop_inner_todetail">积分明细</a></div>
+                <div class="c_user_scoretop_inner_box2 tallcore">   </div>
+                <div class="c_user_scoretop_inner_box3">我的积分</div>
+            </div>
+        </div>
+        <div class="c_user_scorelist">
+            <div class="c_user_scorelist_title">
+                <b class="c_user_scorelist_title_line"></b>
+                <span class="c_user_scorelist_title_txt">优惠券兑换</span>
+                <b class="c_user_scorelist_title_line"></b>
+            </div>
+            <%
+            for(var i=0;i< coupons.length ;i++){
+            var d = coupons[i];
+            %>
+
+            <div class="c_user_scorelist_list">
+                <input type="hidden" value="<%=d.id%>" class="ids">
+                <div class="c_user_scorelist_list_inner">
+                    <div class="c_user_scorelist_list_innerbox">
+                        <div class="c_user_scorelist_list_innerbox_left">
+                            <div class="c_user_scorelist_listleft_img"><img src="<%=d.cover_img%>" /></div>
+                            <div class="c_user_scorelist_listleft_txt">
+                                <%if(2==d.benefit_type){%>
+                                <label class="c_user_scorelist_listleft_txt1">减 </label>
+                                <label class="c_user_scorelist_listleft_txt2"><b class="c_user_scorelist_listleft_txt3">&yen;</b><%=d.reduction%></label>
+                                <%}%>
+                                <%if(1==d.benefit_type){%>
+                                <label class="c_user_scorelist_listleft_txt1">折扣</label>
+                                <label class="c_user_scorelist_listleft_txt2"><%=d.discount%><b class="c_user_scorelist_listleft_txt3">%</b></label>
+                                <%}%>
+                            </div>
+                        </div>
+                        <div class="c_user_scorelist_list_innerbox_right">
+                            <div class="c_user_scorelist_list_innerbox_right1"><%=d.name%></div>
+                            <div class="c_user_scorelist_list_innerbox_right2">
+                                <div class="c_user_scorelist_list_innerbox_right2_box1">
+                                    <div class="c_user_scorelist_list_innerbox_right2_inner">满<%=d.min_charge%>元可用</div>
+                                    <div class="c_user_scorelist_list_innerbox_right2_inner"><%=d.store_name%></div>
+                                    <div class="c_user_scorelist_list_innerbox_right2_inner">有效时长：<%=d.valid_days%>天</div>
+                                </div>
+                                <div class="c_user_scorelist_list_innerbox_right2_box2">
+                                    <span class="c_score_innerscores"><%=d.score_cost%><label>积分</label></span>
+                                    <em class="c_score_innerexchange_outer"><a  class="c_score_innerexchange exchange" style="cursor:pointer;" >兑换</a></em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+        </div>
+    </div>
+
+</div>
+<%}else{%>
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

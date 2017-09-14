@@ -1,0 +1,57 @@
+<%if(errMsg){%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt"><%=errMsg%></span>
+</div>
+<%}else{%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_station_reserve">
+            <div class="c_station_reserve_inner">
+                <b class="c_station_reserve_inner_img"><img src="<%=getImgPath('reserve_success.png')%>" /></b>
+                <label class="c_station_reserve_inner_txt1">预定成功</label>
+                <label class="c_station_reserve_inner_txt2">欢迎使用 <%=workplace_name%></label>
+            </div>
+        </div>
+
+        <div class="c_station_reservelist">
+            <div class="c_activity_confirmlist_inner" style="border-radius: 0;">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>订单编号</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=order_number%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>工位数量</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=workplace_count%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>地址</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=workplace_address%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>租赁时间</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=start_date.replace(/-/g,'/')%>-<%=end_date.replace(/-/g,'/')%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>总金额</p>
+                    </div>
+                    <div class="weui-cell__ft">&yen;<%=total_price%></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_station_reserve_btn"><a href="/index.php/index/workplace/pageOrderDetail?order_id=<%=id%>" style="cursor:pointer;" class="c_station_reserve_btn_inner">查看订单详情</a></div>
+
+    </div>
+</div>
+<%}%>

@@ -1,0 +1,18 @@
+{
+  "errcode": 0,
+  "errmsg": "vv",
+  "data": {
+    "companyDetails": [
+      {
+        "backgroundur": "/static/resources/images/zone_introduce_img1.png",
+        "id": 1,
+        "name": "先锋软件公司",
+        "address": "张江园区1号楼1号",
+        "content": "中兴通讯是全球领先的综合解决。",
+        "title": "园区介绍"
+      }
+
+
+    ]
+  }
+}

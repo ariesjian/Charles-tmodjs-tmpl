@@ -1,0 +1,45 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "records":[
+      {
+        "id":"1",
+        "repair_detail":"漏水了",
+        "create_time":"2017-01-01",
+        "address":"上海外滩",
+        "status":"2"
+      },
+      {
+        "id":"5",
+        "repair_detail":"漏水了",
+        "create_time":"2017-01-01",
+        "address":"上海外滩",
+        "status":"0"
+      },
+      {
+        "id":"4",
+        "repair_detail":"漏水了",
+        "create_time":"2017-01-01",
+        "address":"上海外滩",
+        "status":"1"
+      },  {
+        "id":"3",
+        "repair_detail":"漏水了",
+        "create_time":"2017-01-01",
+        "address":"上海外滩",
+        "status":"1"
+      },
+      {
+        "id":"2",
+        "repair_detail":"漏水了",
+        "create_time":"2017-01-01",
+        "address":"上海外滩",
+        "status":"2"
+      }
+
+
+    ]
+
+  }
+}

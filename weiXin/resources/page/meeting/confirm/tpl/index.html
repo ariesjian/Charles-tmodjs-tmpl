@@ -1,0 +1,204 @@
+<%var totalPrice = +basic_price||0;
+var is;
+try{
+    is = 'string'===typeof increment_services?JSON.parse(increment_services):increment_services;
+}catch(e){
+    is = null;
+}
+var increment_service_names = null;
+if(is){
+    increment_service_names = [];
+    for(var i=0;i<is.length;i++){
+        totalPrice+=+(is[i].price)||0;
+        increment_service_names.push(is[i].name);
+    }
+}
+
+var reserve_date,start_time,end_time;
+try{
+reserve_date = reserve_start_time.trim().split(' ')[0].replace(/-/g,'/');
+start_time = reserve_start_time.trim().split(' ')[1];
+end_time = reserve_end_time.trim().split(' ')[1];
+}catch(e){
+reserve_date='';
+start_time='';
+end_time='';
+}
+
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_room_paytop">
+            <div class="c_room_paytop_inner">
+                <div class="c_room_paytop_inner_left"><a href="#"><img src="<%=meeting_room_list_img_url%>" /></a></div>
+                <div class="c_room_paytop_inner_right">
+                    <span class="c_room_paytop_inner_right1"><%=meeting_room_name%></span>
+                    <span class="c_room_paytop_inner_right2"><%=meeting_room_address%></span>
+                    <span class="c_room_paytop_inner_right3">容纳：<%=meeting_room_person_limit%>人</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">费用合计</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>会议室费用</p>
+                    </div>
+                    <div class="weui-cell__ft">&yen;<%=basic_price||0%></div>
+                </div>
+                <%if(is&&is.length){
+                for(var i=0;i<is.length;i++){
+                %>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p><%=is[i].name%></p>
+                    </div>
+                    <div class="weui-cell__ft">&yen;<%=is[i].price||0%></div>
+                </div>
+                <%}%>
+                <%}%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p></p>
+                    </div>
+                    <div class="weui-cell__ft">待支付：<label style="font-size: 16px;color: #ff0234;">&yen;<%=totalPrice%></label></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">订单信息</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>支付方式</p>
+                    </div>
+                    <div class="weui-cell__ft">微信支付</div>
+                </div>
+                <%if(bake){%>
+                <div class="c_room_confirm_inputbox1">
+                    <div class="c_room_confirm_inputbox1_left">备注</div>
+                    <div class="c_room_confirm_inputbox1_right"><%=bake%></div>
+                </div>
+                <%}%>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">预定信息</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>会议主题</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=theme%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>参会人数</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=persons||0%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>会议时间</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=(reserve_date+' '+start_time)%>-<%=end_time%></div>
+                </div>
+                <%if(increment_service_names&&increment_service_names.length){%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>增值服务</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=increment_service_names.join(',')%></div>
+                </div>
+                <%}%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系人</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_name||''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系方式</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_mobile||''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>电子邮箱</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=contact_email||''%></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner c_room_detail_listcolor" style="margin-top: 10px;">
+
+            <div class="c_room_confirm_costtitle">
+                <div class="c_room_confirm_costtitle_inner1"></div>
+                <div class="c_room_confirm_costtitle_inner2">发票信息</div>
+                <div class="c_room_confirm_costtitle_inner1"></div>
+            </div>
+
+            <div class="weui-cell c_room_confirm_nobefore">
+                <div class="weui-cell__bd">
+                    <p>发票类型</p>
+                </div>
+                <div class="weui-cell__ft"><%=(1==is_need_invoice)?(1==invoice_type?"个人":"企业"):"无"%></div>
+            </div>
+            <%if(1==is_need_invoice){%>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>开票抬头</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_title||""%></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>邮寄地址</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_mail_address||""%></div>
+            </div>
+            <%if(2==invoice_type){%>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>企业税号</p>
+                </div>
+                <div class="weui-cell__ft"><%=invoice_tax_no||""%></div>
+            </div>
+            <%}%>
+            <%}%>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_left c_activity_confirm_footer_left">支付：&yen;<%=totalPrice||0%></div>
+    <div class="footer_fixed_box_right"><a href="javascript:;" style="cursor:pointer;" class="j-submit footer_fixed_box_right_inner room_pay">确认支付</a></div>
+</div>

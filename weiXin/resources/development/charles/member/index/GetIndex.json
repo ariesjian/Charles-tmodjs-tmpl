@@ -1,0 +1,19 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "user":
+      {
+        "headimgurl":"/static/resources/images/ezone_img1.png",
+        "id": "1",
+        "score": "1100",
+        "continuation_sign_days":"111",
+        "card_number":"11004308439",
+        "sex":"1",
+        "mobile":"12392873487",
+        "birthday":"2017-01-01",
+        "true_name":"简单"
+      }
+
+  }
+}

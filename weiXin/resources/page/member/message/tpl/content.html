@@ -1,0 +1,61 @@
+<%if(data && data.messages && data.messages.length){%>
+<%
+var messages = data.messages;
+for(var i=0;i< messages.length ;i++){
+var d = messages[i];
+
+%>
+<div class="c_user_messagelist_inner" >
+
+    <div class="c_user_messagelist_inner_left"><img src="/static/resources/images/message2.png" /></div>
+    <div class="c_user_messagelist_inner_right">
+        <div class="c_user_messagelist_inner_right1">
+            <span class="c_user_messagelist_inner_right1_left" >通知</span>
+            <span class="c_user_messagelist_inner_right1_right"><%=d.create_time || ""%></span>
+        </div>
+        <div class="c_user_messagelist_inner_right2">
+            <%if(0==d.message_type){%>
+            <em class="c_user_messagelist_inner_right2_top"><img src="/static/resources/images/c_message_dec.png" /></em>
+            <div class="c_user_messagelist_inner_right2_des"><%=d.message%></div>
+            <%}%>
+            <%if(1==d.message_type){%>
+            <em class="c_user_messagelist_inner_right2_top"><img src="/static/resources/images/c_message_dec.png" /></em>
+            <a href="/index.php/index/incubation/pageIncubationDetail?incubation_id=<%=d.relate_id%>" style="cursor:pointer;" >
+                <div class="c_user_messagelist_inner_right2_des"><%=d.message%></div>
+            </a>
+            <%}%>
+            <%if(2==d.message_type){%>
+            <em class="c_user_messagelist_inner_right2_top"><img src="/static/resources/images/c_message_dec.png" /></em>
+            <a href="/index.php/index/roadshow/pageRoadshowDetail?roadshow_id=<%=d.relate_id%>" style="cursor:pointer;" >
+                <div class="c_user_messagelist_inner_right2_des"><%=d.message%></div>
+            </a>
+            <%}%>
+            <%if(3==d.message_type){%>
+            <em class="c_user_messagelist_inner_right2_top"><img src="/static/resources/images/c_message_dec.png" /></em>
+            <a href="/index.php/index/activity/pageMemberActivityOrderDetail?order_id=<%=d.relate_id%>" style="cursor:pointer;" >
+                <div class="c_user_messagelist_inner_right2_des"><%=d.message%></div>
+            </a>
+            <%}%>
+            <%if(4==d.message_type){%>
+            <em class="c_user_messagelist_inner_right2_top"><img src="/static/resources/images/c_message_dec.png" /></em>
+            <a href="/index.php/index/office/pageOrderDetail?order_id=<%=d.relate_id%>" style="cursor:pointer;" >
+                <div class="c_user_messagelist_inner_right2_des"><%=d.message%></div>
+            </a>
+            <%}%>
+            <%if(5==d.message_type){%>
+            <em class="c_user_messagelist_inner_right2_top"><img src="/static/resources/images/c_message_dec.png" /></em>
+            <a href="/index.php/index/workplace/pageOrderDetail?order_id=<%=d.relate_id%>" style="cursor:pointer;" >
+                <div class="c_user_messagelist_inner_right2_des"><%=d.message%></div>
+            </a>
+            <%}%>
+        </div>
+    </div>
+
+</div>
+<%}%>
+<%}else{%>
+<div class="c_nodata_box4" style="background-color: #eaeaea;">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_info.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

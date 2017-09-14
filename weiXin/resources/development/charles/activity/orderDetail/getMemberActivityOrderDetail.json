@@ -1,0 +1,27 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "order":{
+      "id":1,
+      "activity_name":"数据本地代理",
+      "activity_address":"11",
+      "activity_start_time":"2018-01-11 11:11",
+      "activity_end_time":"2017-01-22 22:11",
+      "activity_questions":"you",
+      "banner_url":"http://zhangjiang.sidlu.com/static/cms_upload/zj_activity/149855639380760.png",
+      "enroll_qrcode_url":"http:\/\/zhangjiang.sidlu.com\/static\/activity_enroll_qrcode\/activity_1\/7.png",
+      "status":1,
+      "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0",
+      "expire_minutes":2,
+      "contact_name":"jack",
+      "contact_mobile":"15150577662",
+      "contact_email":"3333@qq.com",
+      "contact_sex":"1",
+      "contact_company":"喜鹿",
+      "price":1,
+      "is_commented":0,
+      "is_answered":0
+    }
+  }
+}

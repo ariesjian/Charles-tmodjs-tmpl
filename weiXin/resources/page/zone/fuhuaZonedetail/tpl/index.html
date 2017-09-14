@@ -1,0 +1,29 @@
+    <%if(space){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_zone_introtop"><img src="<%=space.banner_url||getImgPath('zone_introduce_img1.png')%>" /></div>
+        <div class="c_zone_introdetail">
+            <div class="c_zone_ezonedetail_box1">
+                <div class="c_zone_ezonedetail_box1_inner">
+                    <span><%=space.name || ""%></span><label><%=space.address || ""%></label>
+                </div>
+            </div>
+            <div class="c_zone_introdetail_box2">
+                <div class="c_zone_introdetail_box2_export">
+                    <a style="cursor:pointer;"  href="/index.php/index/meeting/pageMeetingList?space_id=<%=space.id||1%>" class="c_zone_introdetail_box2_export_inner"><b><img src="/static/resources/images/icon5.png" /></b><span>会议室预定</span></a>
+                    <a style="cursor:pointer;"  href="/index.php/index/workplace/pageWorkplaceList?space_id=<%=space.id||1%>" class="c_zone_introdetail_box2_export_inner"><b><img src="/static/resources/images/icon6.png" /></b><span>工位租赁</span></a>
+                    <a style="cursor:pointer;" href="/index.php/index/office/pageOfficeList?space_id=<%=space.id%>" class="c_zone_introdetail_box2_export_inner"><b><img src="/static/resources/images/icon7.png" /></b><span>办公室租赁</span></a>
+                </div>
+                <div class="c_zone_introdetail_box2_title"><b></b><span>空间介绍</span></div>
+                <div class="c_zone_introdetail_box2_des"><%=space.description || ""%></div>
+            </div>
+        </div>
+    </div>
+</div>
+<%}else{%>
+<div style="font-size: 30px;text-align: center;">
+    <div class="c_nodata_box4">
+        <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+        <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+    </div></div>
+<%}%>

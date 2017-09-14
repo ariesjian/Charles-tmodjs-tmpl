@@ -1,0 +1,33 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "current_score":"500",
+    "coupons":[
+      {
+        "id":"1",
+        "name":"国创园区优惠券",
+        "score_cost": "100",
+        "valid_days": "10",
+        "min_charge":"100",
+        "benefit_type":"1",
+        "discount":"88",
+        "reduction":"",
+        "store_name":"国创园区可以使用"
+      },
+      {
+        "id":"2",
+        "name":"国创园区优惠券1",
+        "score_cost": "100",
+        "valid_days": "10",
+        "min_charge":"100",
+        "benefit_type":"2",
+        "discount":"",
+        "reduction":"890",
+        "store_name":"国创园区可以使用"
+      }
+
+    ]
+
+  }
+}

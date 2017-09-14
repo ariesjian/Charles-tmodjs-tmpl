@@ -1,0 +1,16 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "current_date":"07-09",
+    "is_today_signed":"0",
+    "start_day_of_week":"3",
+    "continuation_sign_days":"12",
+    "this_month_days":[
+      {
+        "day_of_month":"25",
+        "is_signed": "0"
+      }]
+
+  }
+}

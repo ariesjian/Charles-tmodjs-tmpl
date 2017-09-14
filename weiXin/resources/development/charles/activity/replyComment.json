@@ -1,0 +1,9 @@
+{
+  "errcode":0,
+  "errmsg":"",
+  "data":{
+    "reply_manager_name":"姚银",
+    "reply_content":"你好，欢迎。这段内容来自replyComment.json",
+    "reply_time":"2017-06-28 10:58"
+  }
+}

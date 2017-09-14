@@ -1,0 +1,25 @@
+/*3.1项目导师*/
+.c_zone_teachertab{float: left;width: 100%;height: 40px;background: #fff;}
+.c_zone_teachertab_inner{float: left;width: 33.3%;text-align:center;height: 40px;line-height: 40px;font-size: 13px;color: #c6c6c6;font-weight: bold;font-family: "微软雅黑 light";position: relative;}
+.c_zone_teachertab_selected:after{content: "";position: absolute;bottom: 0;height: 2px;background: #eb5921;width: 20px;left: 50%;margin-left: -10px;}
+.c_zone_teachertab_selected{color: #333 !important;}
+
+.c_zone_teacherlist{float: left;width: 100%;background: #fff;margin-top: 15px;}
+.c_zone_teacherlist_inner{float: left;width: 100%;display: flex;border-bottom: 1px solid #f0f0f0;box-sizing: border-box;padding: 26px 15px 25px 15px;}
+.c_zone_teacherlist_inner_left{-webkit-box-flex: 1.12;-webkit-flex: 1.12;flex: 1.12;box-sizing: border-box;}
+.c_zone_teacherlist_inner_left img{width: 100%;border-radius: 100%;}
+.c_zone_teacherlist_inner_right{-webkit-box-flex: 5.5;-webkit-flex: 5.5;flex: 5.5;padding-left: 45px;display: inline-flex;flex-direction:column;justify-content: center;}
+.c_zone_teacherlist_inner_right1_name{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 16px;font-weight: bold;font-family:"微软雅黑 light";color: #000;display: inline-flex;flex-direction:column;justify-content: flex-start;}
+.c_zone_teacherlist_inner_right1_position{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 14px;color: #999;display: inline-flex;flex-direction:column;justify-content: flex-end;}
+
+/*项目导师空页面*/
+.c_zone_teachertab_outer{position: fixed;left: 0;right: 0;height:40px;top: 0;min-width:320px;max-width:640px;overflow:hidden;margin-left:auto;margin-right:auto; z-index:10;background: #fff;}
+.c_zone_teachertab{float: left;width: 100%;height: 40px;background: #fff;}
+.c_zone_teachertab_inner{float: left;width: 33.3%;text-align:center;height: 40px;line-height: 40px;font-size: 13px;color: #c6c6c6;font-weight: bold;font-family: "微软雅黑 light";position: relative;}
+.c_zone_teachertab_selected:after{content: "";position: absolute;bottom: 0;height: 2px;background: #eb5921;width: 20px;left: 50%;margin-left: -10px;}
+.c_zone_teachertab_selected{color: #333 !important;}
+.c_nodata_box6{float: left;width: 100%;margin-top: 40px;}
+.c_nodata_box6_img{float: left;width: 100%;text-align: center;margin-top: 54px;}
+.c_nodata_box6_img img{height: 124px;}
+.c_nodata_box6_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;margin-top: 2px;letter-spacing: 1px;}
+

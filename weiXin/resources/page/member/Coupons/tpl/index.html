@@ -1,0 +1,99 @@
+<%if(coupons && coupons.length){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_user_scorelist">
+            <div class="c_user_scorelist_list" style="margin-top: 12px;">
+                <%
+                for(var i=0;i< coupons.length ;i++){
+                var d = coupons[i];
+
+                %>
+<div class="j-item" style="cursor:pointer;" >
+                <!--   优惠券部分-->
+                <div class="c_user_scorelist_list_inner j-first" style="cursor:pointer;" >
+                    <input type="hidden" class="ids" value="<%=d.id%>">
+                    <div class="c_user_scorelist_list_innerbox j-second">
+                        <div class="c_user_scorelist_list_innerbox_left j-check">
+                            <div class="c_user_scorelist_listleft_img">
+                                <%if(d.status==0){%>
+                                <img src="<%=d.cover_img%>"/>
+                                <%}%>
+                                <%if(d.status!=0){%>
+                                <img src="/static/resources/images/score_bg2.png"/>
+                                <%}%>
+                            </div>
+                            <div class="c_user_scorelist_listleft_txt">
+                                <%if(d.benefit_type==1){%>
+                                <label class="c_user_scorelist_listleft_txt1">折扣</label>
+                                <label class="c_user_scorelist_listleft_txt2"><%=d.discount%>
+                                    <b class="c_user_scorelist_listleft_txt3">%</b></label>
+                                <%}%>
+                                <%if(d.benefit_type==2){%>
+                                <label class="c_user_scorelist_listleft_txt1">减</label>
+                                <label class="c_user_scorelist_listleft_txt2">
+                                    <b class="c_user_scorelist_listleft_txt3">&yen;</b><%=d.reduction%></label>
+                                <%}%>
+                            </div>
+                        </div>
+                        <div class="c_user_scorelist_list_innerbox_right">
+                            <%if(d.status==0){%>
+                            <div class="c_user_scorelist_list_innerbox_right_status c_ticket_status1">可使用</div>
+                            <%}%>
+                            <%if(d.status==1){%>
+                            <div class="c_user_scorelist_list_innerbox_right_status c_ticket_status2">已使用</div>
+                            <%}%>
+                            <%if(d.status==2){%>
+                            <div class="c_user_scorelist_list_innerbox_right_status c_ticket_status2">已过期</div>
+                            <%}%>
+                            <div class="c_user_scorelist_list_innerbox_right1"><%=d.name%></div>
+                            <div class="c_user_scorelist_list_innerbox_right2">
+                                <div class="c_user_scorelist_list_innerbox_right2_box1">
+                                    <div class="c_user_scorelist_list_innerbox_right2_inner">满<%=d.min_charge%>元可用</div>
+                                    <div class="c_user_scorelist_list_innerbox_right2_inner"><%=d.store_name%></div>
+                                    <div class="c_user_scorelist_list_innerbox_right2_inner">
+                                        <%=d.start_date.replace(/-/g, ".")%>至<%=d.end_date.replace(/-/g, ".")%>
+                                    </div>
+                                </div>
+                                <!--    <div class="c_user_scorelist_list_innerbox_right2_box2">
+                                    <a class="c_score_inneruse"
+                                       href="/index.php/index/member/pageCouponUseConfirm?coupon_id=<%=d.id%>">使用<img
+                                            src="/static/resources/images/score_right_arrow.png"/></a>
+                                </div>-->
+                                <div class="c_user_scorelist_list_innerbox_right2_box2">
+                                    <a class="c_score_inneruse"
+                                       href="#">使用<img src="/static/resources/images/score_right_arrow.png" style="cursor:pointer;" /></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  二维码部分-->
+                <div class="c_activity_codepopup j-code none"  style="cursor:pointer;" >
+                    <div class="c_activity_codepopup_inner">
+                        <div class="c_activity_codepopup_inner_title">
+                            <span class="c_activity_codepopup_inner_title_txt">优惠券</span>
+                            <a href="#"   class="c_activity_codepopup_close" style="cursor:pointer;" ><img src="/static/resources/images/close.png"/></a>
+                        </div>
+                        <div class="c_activity_codepopup_inner_img">
+                            <span class="c_activity_codepopup_inner_img_txt">扫描二维码<br/>使用优惠券抵扣</span>
+                            <b class="c_activity_codepopup_inner_img_img"><img src="<%=d.qrcode_url||'/static/resources/images/code.jpg'%>"/></b>
+                        </div>
+                    </div>
+                </div>
+                <%}%>
+</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<%}else{%>
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('mine_coupon.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

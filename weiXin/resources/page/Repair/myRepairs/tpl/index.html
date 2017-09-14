@@ -1,0 +1,39 @@
+<%if(records && records.length){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_repaire_minelist">
+            <%for(var i=0;i< records.length;i++){
+            var info = records[i];
+            %>
+            <a style="cursor:pointer;"  href="/index.php/index/convenient/pageMemberRepairDetail?repair_id=<%=info.id%>"
+               class="c_repaire_minelist_inner">
+                <div class="c_repaire_minelist_inner_left">
+                    <div class="c_repaire_minelist_inner_left_box1"><%=info.repair_detail%></div>
+                    <div class="c_repaire_minelist_inner_left_box2">
+                        <label class="c_repaire_minelist_inner_left_box2_time">时间：<%=info.create_time.replace(/-/g,'/')%></label>
+                        <label class="c_repaire_minelist_inner_left_box2_address">地址：<%=info.address%></label>
+                    </div>
+                </div>
+                <div class="c_repaire_minelist_inner_right">
+                    <%if(info.status==0){%>
+                    <label class="c_repaire_minelist_inner_rightstatus check_status1">申请中</label>
+                    <%}%>
+                    <%if(info.status==1){%>
+                    <label class="c_repaire_minelist_inner_rightstatus check_status2">维修中</label>
+                    <%}%>
+                    <%if(info.status==2){%>
+                    <label class="c_repaire_minelist_inner_rightstatus check_status3">已解决</label>
+                    <%}%>
+                </div>
+            </a>
+            <%}%>
+        </div>
+    </div>
+</div>
+<%}else{%>
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

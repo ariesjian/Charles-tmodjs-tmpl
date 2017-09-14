@@ -1,0 +1,25 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "is_manager":"1",
+    "coupon":
+      {
+        "true_name":"凌达",
+        "mobile":"18317777633",
+        "headimgurl":"/static/resources/images/activity_mine1.png",
+        "id":"1",
+        "name":"优惠券1",
+        "start_date": "2017-10-10",
+        "end_date":"2017-12-31",
+        "min_charge":"200",
+        "benefit_type": "1",
+        "discount":"87",
+        "reduction":"0",
+        "status":"0",
+        "store_name":"门店限制"
+      }
+
+
+  }
+}

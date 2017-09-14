@@ -1,0 +1,116 @@
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_user_signtop">
+            <div class="c_user_sign_successbox1"><%=current_date%></div>
+            <%if(1===is_today_signed){%>
+            <div class="c_user_sign_successbox2 singnp" style="cursor:pointer;" ><img src="/static/resources/images/sign1.png" /></div>
+            <div class="c_user_sign_successbox3" style="cursor:pointer;" >签到成功</div>
+            <%}%>
+            <%if(0===is_today_signed){%>
+            <div class="c_user_sign_successbox2 singnp" style="cursor:pointer;position: relative;" >
+                <img src="/static/resources/images/sin1.png" />
+                <div class="texts" style="color: white;font-size: 19px; position: absolute;width: 80px;text-align: center;left: calc(50% - 40px); top: 55px;height: 20px;line-height: 20px;">签到</div></div>
+            <div class="c_user_sign_successbox3" style="cursor:pointer;" >未签到</div>
+            <%}%>
+
+        </div>
+
+        <div class="c_user_signcon">
+            <div class="c_user_signcon_inner">
+                <div class="c_user_signcon_inner_title">
+                    <div class="c_user_signcon_inner_title_left"><img src="/static/resources/images/icon15.png" />签到统计</div>
+                    <div class="c_user_signcon_inner_title_right">已坚持<%=continuation_sign_days%>天</div>
+                </div>
+                <div class="c_user_signcon_inner_exp">
+                    <%if(1==is_today_signed){%>
+                    <div class="c_user_signcon_inner_exp1">
+                        <label class="c_user_signcon_inner_exp1_bg"></label>
+                        <span class="c_user_signcon_inner_exp1_txt">已签到</span>
+                    </div>
+                    <div class="c_user_signcon_inner_exp2">
+                        <label class="c_user_signcon_inner_exp2_bg"></label>
+                        <span class="c_user_signcon_inner_exp2_txt">未签到</span>
+                    </div>
+                    <%}%>
+                    <%if(0==is_today_signed){%>
+                    <div class="c_user_signcon_inner_exp1">
+                        <label class="c_user_signcon_inner_exp1_bg"></label>
+                        <span class="c_user_signcon_inner_exp1_txt">未签到</span>
+                    </div>
+                    <div class="c_user_signcon_inner_exp2">
+                        <label class="c_user_signcon_inner_exp2_bg"></label>
+                        <span class="c_user_signcon_inner_exp2_txt">已签到</span>
+                    </div>
+
+                    <%}%>
+                </div>
+                <div class="c_user_signcon_inner_date">
+                    <div class="c_user_signcon_inner_date_title">
+                        <span class="c_user_signcon_inner_date_title_inner">一</span>
+                        <span class="c_user_signcon_inner_date_title_inner">二</span>
+                        <span class="c_user_signcon_inner_date_title_inner">三</span>
+                        <span class="c_user_signcon_inner_date_title_inner">四</span>
+                        <span class="c_user_signcon_inner_date_title_inner">五</span>
+                        <span class="c_user_signcon_inner_date_title_inner">六</span>
+                        <span class="c_user_signcon_inner_date_title_inner">日</span>
+                    </div>
+                    <div class="c_user_signcon_inner_date_con">
+                        <%if(0==start_day_of_week){%>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <%}%>
+                        <%if(1==start_day_of_week){%>
+                        <%}%>
+                        <%if(2==start_day_of_week){%>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <%}%>
+                        <%if(3==start_day_of_week){%>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <%}%>
+                        <%if(4==start_day_of_week){%>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <%}%>
+                        <%if(5==start_day_of_week){%>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <%}%>
+                        <%if(6==start_day_of_week){%>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <div class="c_user_signcon_inner_date_con_inner"></div>
+                        <%}%>
+                        <%
+                        for(var i=0;i< this_month_days.length ;i++){
+                        var d = this_month_days[i];
+                        %>
+                        <%if(0===d.is_signed && (current_date.substr(8,2))-0>(d.day_of_month)-0){%>
+                        <div class="c_user_signcon_inner_date_con_inner"><span class="c_sign_nosigned"><%=d.day_of_month%></span></div>
+                        <%}%>
+                        <%if(1===d.is_signed && (current_date.substr(8,2))-0>(d.day_of_month)-0){%>
+                        <div class="c_user_signcon_inner_date_con_inner"><span class="c_sign_signed"><%=d.day_of_month%></span></div>
+                        <%}%>
+                        <%if(0===d.is_signed && (current_date.substr(8,2))-0<(d.day_of_month)-0){%>
+                        <div class="c_user_signcon_inner_date_con_inner"><span class="c_sign_waitsign"><%=d.day_of_month%></span></div>
+                        <%}%>
+                        <%if( current_date.substr(8,2)-0===d.day_of_month-0){%>
+                       <div class="c_user_signcon_inner_date_con_inner"><span class="c_sign_signed_today"><img src="/static/resources/images/sign3.png" /></span></div><%}%>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

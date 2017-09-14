@@ -1,0 +1,61 @@
+<%if(data && data.notify){%>
+<%
+var messages = data.notify.messages;
+var numNotify=0;
+for(var i=0;i< messages.length ;i++){
+var d = messages[i];
+if(0==d.status){
+numNotify++;
+break;
+   }
+}
+
+%>
+
+<%}%>
+
+<%if(data && data.info){%>
+<%
+var messages = data.info.messages;
+var numberInfo=0;
+for(var i=0;i< messages.length ;i++){
+var d = messages[i];
+if(0==d.status){
+numberInfo++;
+break;
+}
+}
+
+%>
+
+<%}%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_user_messagetab" id="Title">
+            <a href="javascript:;" class="j-title c_user_messagetab_inner c_user_messagetab_selected" style="cursor:pointer;" >
+                <span class= " c_user_messagetab_inner_txt">通知
+                    <%if(numNotify>0){%>
+                    <img src="/static/resources/images/message_remind.png" />
+                    <%}%>
+                </span></a>
+            <a href="javascript:;" class="j-title c_user_messagetab_inner " style="cursor:pointer;" >
+                <span class="c_user_messagetab_inner_txt">系统消息
+                 <%if(numberInfo>0){%>
+                    <img src="/static/resources/images/message_remind.png" />
+                    <%}%>
+                </span>
+            </a>
+        </div>
+
+        <div class="c_user_messagelist" id="tongzhi"  >
+
+        </div>
+        <div class="c_user_messagelist" id="system" style="display: none;">
+
+        </div>
+
+
+    </div>
+
+</div>

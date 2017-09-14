@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, code, del, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, input{margin:0;padding:0;border:0;outline:0; }
+table{border-collapse:collapse;border-spacing:0;}
+fieldset, img{border:0;}
+em, strong{font-style:normal;}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;}
+
+a{text-decoration: none; color: #666;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+html, body,input,select,textarea{font-family: "微软雅黑" !important;}
+img{ vertical-align:middle;background:none;border:none;}
+ul,li{list-style-type:none;}
+.clear{clear:both;height:0;overflow:hidden;}
+input,form{border:none;background:none;}
+input,a,em,span,b{font-family: "微软雅黑";}
+:focus{outline:none;}
+
+/*公共样式*/
+.mobile_outcontainer{min-width:320px;max-width:640px;overflow:hidden;margin:auto;}
+.mobile_nopadding_container1{float: left;width: 100%;padding-bottom: 60px;}
+.mobile_nopadding_container2{float: left;width: 100%;}
+.background{background: #F0F3F7;}
+.background3{background: #f4f4f4;}
+.background2{background: url(../images/opacity_background.png);}
+.login_banner_group{float: left;width: 100%;margin-top: 30px;margin-bottom: 12px;}
+.image_group{float: left;width: 100%;}
+.image_lg{float: left;width: 100%;text-align: center;margin-top: 15px;}
+.image_lg img{width: 100%;}
+.box_group{float: left;width: 100%;}
+.box_group_title{float: left;width: 100%;height: 30px;line-height: 30px;font-size: 16px;color: #000;border-bottom: 1px solid #F2F2F2;}
+.input_group{float: left;width: 100%;}
+/*.input_group input{float: left;height: 36px;line-height: 28px;font-size: 14px;color: #c6c6c8;padding: 4px 2%;width: 100%;box-sizing: border-box;border-bottom: 1px solid #ececec;}*/
+.btn_group{float: left;width: 100%;}
+.mobile_footermenu{position:fixed;left: 0;right: 0;height:49px;background: #fff;bottom: 0;min-width:320px;max-width:640px;overflow:hidden;margin-left:auto;margin-right:auto;border-top: 1px solid #ececec; z-index:10;}
+.mobile_footermenu ul{float: left;width: 100%;}
+.mobile_footermenu ul li{float: left;width: 33.3%;height: 49px;box-sizing: border-box;}
+.mobile_footermenu ul li a{float: left;width: 100%;margin-top:8px;}
+.mobile_footermenu_img{float: left;width: 100%;height: 20px;text-align: center;}
+.mobile_footermenu_img img{height:20px;}
+.mobile_footermenu_txt{float: left;width: 100%;height: 20px;line-height: 20px;font-size: 10px;color: #b2b2b2;text-align: center;}
+.footer_txtcolor{color: #ea5921 !important;}

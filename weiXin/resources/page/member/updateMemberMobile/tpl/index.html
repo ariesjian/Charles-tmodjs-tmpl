@@ -1,0 +1,50 @@
+<%if(user){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1" id="modify">
+        <div class="c_user_bindpho">
+          <!--  <div class="c_user_bindpho_inner1">
+                <label class="c_user_bindpho_inner1_left">姓名</label>
+                <input class="c_user_bindpho_inner1_right" value="<%=user.true_name%>" disabled/>
+            </div>-->
+
+      <!--      <div class="c_user_bindpho_inner2">
+                <div class="c_user_bindpho_inner2_left">性别</div>
+                <div class="c_user_bindpho_inner2_right">
+                    <div class="c_user_bindpho_inner2_option j-sex"
+                         data-sex="1"
+                         data-checked="<%=2!=user.sex?1:0%>"
+                         style="margin-left: 0;"><b class="c_user_bindpho_inner2_option_btn">
+                        <img class="j-img"
+                     src="<%=getImgPath(2!=user.sex?'select2.png':'select1.png')%>"/>
+
+                    </b><label
+                            class=" c_user_bindpho_inner2_option_txt">男 </label></div>
+                    <div class="c_user_bindpho_inner2_option j-sex" data-sex="2" data-checked="<%=2==user.sex?1:0%>">
+                        <b class="c_user_bindpho_inner2_option_btn"><img class="j-img"
+                           src="<%=getImgPath(2==user.sex?'select2.png':'select1.png')%>"/></b><label
+                            class="c_user_bindpho_inner2_option_txt">女 </label></div>
+                </div>
+            </div>-->
+
+            <div class="c_user_bindpho_inner1">
+                <label class="c_user_bindpho_inner1_left">手机号</label>
+                <input class="j-mobile c_user_bindpho_inner1_right" placeholder="请输入手机号" value="<%=user.mobile%>"
+                       onkeyup="value=value.replace(/[^\d]/g,'')" type="tel"/>
+            </div>
+
+            <div class="c_user_bindpho_inner3">
+                <input class="j-code c_user_bindpho_inner3_left" placeholder="请输入验证码"/>
+                <span class="c_user_bindpho_inner3_right j-send_code" style="cursor:pointer;">发送验证码</span>
+            </div>
+
+        </div>
+
+        <div class="c_user_bindpho_btn"><label class="c_user_bindpho_btn_inner" style="cursor:pointer;">确认</label></div>
+
+    </div>
+
+</div>
+
+<%}else{%>
+<div style="font-size: 30px;text-align: center;">这里什么都没有</div>
+<%}%>

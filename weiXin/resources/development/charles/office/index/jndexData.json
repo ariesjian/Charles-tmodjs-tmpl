@@ -1,0 +1,30 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "space_lis":[
+      {
+        "id":1,
+        "name":"办公室1",
+        "banner_url":"/static/resources/images/ezone_img1.png"
+      },
+      {
+        "id":2,
+        "name":"办公室2",
+        "banner_url":"/static/resources/images/ezone_img2.png"
+      },
+      {
+        "id":3,
+        "name":"办公室3",
+        "banner_url":"/static/resources/images/ezone_img3.png"
+      },
+      {
+        "id":4,
+        "name":"办公室4",
+        "banner_url":"/static/resources/images/ezone_img1.png"
+      }
+
+    ]
+
+  }
+}

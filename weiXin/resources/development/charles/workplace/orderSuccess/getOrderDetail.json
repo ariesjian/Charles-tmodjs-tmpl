@@ -1,0 +1,21 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "order": {
+      "id": "1",
+      "order_number": "123",
+      "workplace_id": "1",
+      "status": "1",
+      "workplace_count": "19",
+      "start_date": "2016-01-30",
+      "end_date": "2016-07-17",
+      "contact_name": "张毅辉",
+      "contact_mobile": "15618555431",
+      "workplace_name": "工位1",
+      "workplace_price": "1000",
+      "workplace_list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+      "expire_minutes": 0
+    }
+  }
+}

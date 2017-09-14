@@ -1,0 +1,49 @@
+<%if(roadshow_list && roadshow_list.length){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_incubator_minelist">
+
+            <%for(var i=0;i< roadshow_list.length;i++){
+            var info = roadshow_list[i];
+            %>
+
+            <a href="/index.php/index/roadshow/pageRoadshowDetail?roadshow_id=<%=info.id%>" class="c_incubator_minelist_inner" style="cursor:pointer;" >
+                <div class="c_incubator_minelist_inner_left">
+                    <div class="c_incubator_minelist_inner_left_box1"><%=info.project_name%></div>
+                    <div class="c_incubator_minelist_inner_left_box2">
+                        <label>负责人：<%=info.project_manager%></label>
+                        <label>融资额度：<%=info.financing_amount%></label>
+                    </div>
+                </div>
+                <div class="c_incubator_minelist_inner_right">
+                    <%if(1==info.status){%>
+                    <span class="c_incubator_minelist_inner_rightscore"><%=info.score%>分</span><%}else{%>
+                    <span class="c_incubator_minelist_inner_rightscore"></span>
+                    <%}%>
+                    <%if(0==info.status){%>
+                    <label class="c_incubator_minelist_inner_rightstatus check_status1">
+                    审核中
+                    </label>  <%}%>
+                    <%if(1==info.status){%>
+                    <label class="c_incubator_minelist_inner_rightstatus check_status2">
+                        已通过
+                    </label>  <%}%>
+                    <%if(2==info.status){%>
+                    <label class="c_incubator_minelist_inner_rightstatus check_status3">
+                        未通过
+                    </label>  <%}%>
+                </div>
+            </a>
+            <%}%>
+        </div>
+    </div>
+</div>
+<%}else{%>
+
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('mine_apply.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>
+

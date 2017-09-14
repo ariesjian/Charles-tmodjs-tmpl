@@ -1,0 +1,17 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "merchant":
+      {
+        "id":"1",
+        "name":"国创园区优惠券",
+        "banner_url": "/static/resources/images/zone_introduce_img1.png",
+        "summary":"提供员工入职到离职一系列HR相关模板",
+        "detail":"http:\/\/wx.qlogo.cn\/mmopen\/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q\/0中兴通讯是全球领先的综合解决方案提供商。公司通过为全球160个国家和地区的电信运营商和企业网络客户提供创新技术与产品解决方案，让全世界用户享有语音、数据、多媒体、无线快递等全方位沟通。公司成立于1985年，在香港和深圳两地上市，是中国最大的通信设备上市公司。",
+        "link":"www.baidu.cn"
+      }
+
+
+  }
+}

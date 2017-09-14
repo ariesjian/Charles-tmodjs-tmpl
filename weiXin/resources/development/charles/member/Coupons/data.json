@@ -1,0 +1,62 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "coupons":[
+      {
+        "id":"1",
+        "name":"优惠券1",
+        "store_name":"古茶㐐可以使用",
+        "start_date": "2017-10-10",
+        "end_date":"2017-12-31",
+        "min_charge":"200",
+        "benefit_type": "1",
+        "discount":"87",
+        "reduction":"0",
+        "status":"0",
+        "qrcode_url":"/static/resources/images/code.jpg"
+      },
+      {
+        "id":"3",
+        "name":"优惠券3",
+        "store_name":"古茶㐐可以使用",
+        "start_date": "2017-10-10",
+        "end_date":"2017-12-31",
+        "min_charge":"200",
+        "benefit_type": "2",
+        "discount":"87",
+        "reduction":"10",
+        "status":"0",
+        "qrcode_url":"/static/resources/images/code.jpg"
+      },
+      {
+        "id":"2",
+        "name":"优惠券2",
+        "store_name":"古茶㐐可以使用",
+        "start_date": "2017-10-10",
+        "end_date":"2017-12-31",
+        "min_charge":"200",
+        "benefit_type": "2",
+        "discount":"",
+        "reduction":"30",
+        "status":"1",
+        "qrcode_url":"/static/resources/images/code.jpg"
+      },
+      {
+        "id":"3",
+        "name":"优惠券3",
+        "store_name":"古茶㐐可以使用",
+        "start_date": "2017-10-10",
+        "end_date":"2017-12-31",
+        "min_charge":"200",
+        "benefit_type": "1",
+        "discount":"87",
+        "reduction":"",
+        "status":"1",
+        "qrcode_url":"/static/resources/images/code.jpg"
+      }
+
+    ]
+
+  }
+}

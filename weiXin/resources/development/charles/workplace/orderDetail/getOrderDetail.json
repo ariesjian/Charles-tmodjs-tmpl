@@ -1,0 +1,22 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "order": {
+      "id": "2",
+      "order_number": "WS201707181003543097",
+      "workplace_id": "1",
+      "status": "2",
+      "workplace_count": "5",
+      "start_date": "2017-07-18",
+      "end_date": "2017-08-18",
+      "contact_name": "张毅辉",
+      "contact_mobile": "15618555431",
+      "workplace_name": "工位1",
+      "workplace_price": "1000",
+      "workplace_list_img_url": "\/static\/cms_upload\/zj_activity\/149855639380760.png",
+      "workplace_address": "真光路1258号",
+      "expire_minutes": 1
+    }
+  }
+}

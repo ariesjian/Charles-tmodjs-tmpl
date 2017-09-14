@@ -1,0 +1,119 @@
+<%if(repair){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_repaire_detailytop">
+            <%if(repair.imgs){%>
+            <%for(var i=0;i< repair.imgs.length;i++){
+            var r=repair.imgs;
+            %>
+            <b class="c_repaire_detailytop_img"><img style="cursor: pointer;" src="<%=r[i]||getImgPath('repaire_detail_img1.png')%>" /></b>
+            <%}%>
+            <%}else{%>
+            <div style="font-size: 30px;text-align: center;">
+                <b class="c_repaire_detailytop_img" style="text-align: center;font-size: 14px;color: #eaeaea;font-family: 微软雅黑;">没有图片</b>
+             </div>
+            <%}%>
+        </div>
+        <div class="c_repaire_detaillist">
+            <div class="c_repaire_detaillist_title1">
+                <label class="c_repaire_detaillist_title1_left">报修状态</label>
+                <%if(repair.status==2){%>
+                <span class="c_repaire_detaillist_title1_right repare_status1">已解决</span>
+                <%}%>
+                <%if(repair.status==1){%>
+                <span class="c_repaire_detaillist_title1_right repare_status2">维修中</span>
+                <%}%>
+                <%if(repair.status==0){%>
+                <span class="c_repaire_detaillist_title1_right repare_status3">申请中</span>
+                <%}%>
+            </div>
+            <div class="c_repaire_detaillist_listcon1">
+                <div class="c_repaire_detaillist_listcon1_inner">
+                    <span class="c_repaire_detaillist_listcon1_inner_left">申请时间</span>
+                    <label class="c_repaire_detaillist_listcon1_inner_right"><%=repair.create_time.replace(/-/g,'/')%></label>
+                </div>
+                <%if(repair.status!=0 && repair.apply_time){%>
+                <div class="c_repaire_detaillist_listcon1_inner">
+                    <span class="c_repaire_detaillist_listcon1_inner_left">开始时间</span>
+                    <label class="c_repaire_detaillist_listcon1_inner_right"><%=repair.apply_time.replace(/-/g,'/')%></label>
+                </div>
+                <%}%>
+                <%if(repair.status==2 &&　repair.finish_time){%>
+                <div class="c_repaire_detaillist_listcon1_inner">
+                    <span class="c_repaire_detaillist_listcon1_inner_left">解决时间</span>
+                    <label class="c_repaire_detaillist_listcon1_inner_right"><%=repair.finish_time.replace(/-/g,'/')%></label>
+                </div>
+                <%}%>
+            </div>
+        </div>
+
+        <div class="c_repaire_detaillist">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>所属物业</p>
+                </div>
+                <div class="weui-cell__ft"><%=repair.property_company_name%></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>报修地址</p>
+                </div>
+                <div class="weui-cell__ft"><%=repair.address%></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>联系人</p>
+                </div>
+                <div class="weui-cell__ft"><%=repair.contact_name%></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>联系方式</p>
+                </div>
+                <div class="weui-cell__ft"><%=repair.contact_mobile%></div>
+            </div>
+        </div>
+
+        <div class="c_repaire_detaillist">
+            <div class="c_repaire_detaillist_destitle">报修详情</div>
+            <div class="c_repaire_detaillist_descon"><%=repair.repair_detail%></div>
+        </div>
+        <%if(repair.status==2){%>
+        <div class="c_repaire_commentscore">
+            <div class="c_repaire_commentscore_left1">评分</div>
+            <%if(repair.score!=0){%>
+            <div class="c_repaire_commentscore_left2">
+                <b  data-score="1"   data-checked="<%=1!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(1<=repair.score?'star1.png':'star2.png')%>" /></b>
+                <b  data-score="2"    data-checked="<%=2!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(2<=repair.score?'star1.png':'star2.png')%>" /></b>
+                <b  data-score="3"     data-checked="<%=3!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(3<=repair.score?'star1.png':'star2.png')%>"/></b>
+                <b  data-score="4"    data-checked="<%=4!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(4<=repair.score?'star1.png':'star2.png')%>"  /></b>
+                <b  data-score="5"   data-checked="<%=5!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(5<=repair.score?'star1.png':'star2.png')%>"  /></b>
+
+            </div>
+            <%}%>
+            <%if(repair.score==0){%>
+            <div class="c_repaire_commentscore_left2">
+                <b   style="cursor: pointer;" data-score="1"  class="j-score" data-checked="<%=1!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(1<=repair.score?'star2.png':'star1.png')%>" /></b>
+                <b   style="cursor: pointer;" data-score="2"   class="j-score"  data-checked="<%=2!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(2<=repair.score?'star2.png':'star1.png')%>" /></b>
+                <b   style="cursor: pointer;" data-score="3"  class="j-score"   data-checked="<%=3!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(3<=repair.score?'star2.png':'star1.png')%>"/></b>
+                <b  style="cursor: pointer;"  data-score="4"   class="j-score"  data-checked="<%=4!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(4<=repair.score?'star2.png':'star1.png')%>"  /></b>
+                <b  style="cursor: pointer;"  data-score="5"  class="j-score"   data-checked="<%=5!=repair.score?1:0%>"><img class="j-img" src="<%=getImgPath(5<=repair.score?'star2.png':'star1.png')%>"  /></b>
+
+            </div>
+            <%}%>
+            <%if(repair.score==0){%>
+            <div class="c_repaire_commentscore_right"><label class="c_repaire_commentscore_right_inner" style="cursor: pointer;" id="submitBtn">提交</label></div>
+            <%}%>
+        </div>
+        <%}%>
+    </div>
+</div>
+
+<%}else{%>
+
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

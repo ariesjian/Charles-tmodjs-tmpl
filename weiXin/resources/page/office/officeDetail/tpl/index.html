@@ -1,0 +1,220 @@
+
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_station_listtop"><img src="" class="j-space_banner_url" /></div>
+        <div class="c_station_listdetail">
+            <div class="c_station_listdetail_box1">
+                <div class="c_station_listdetail_box1_inner">
+                    <span class="j-space_name"></span><label class="j-space_address"></label>
+                </div>
+            </div>
+            <div class="c_station_listdetail_box2">
+                <div class="c_station_listdetail_box2_inner1">
+                    <div class="c_station_listdetail_box2_inner1_select">
+                        <label class="c_station_listdetail_box2_inner1_select_txt">开始日期</label>
+                        <select class="j-start_date">
+                            <%for(var i=0;i<7;i++){
+                            var date = new Date((new Date(current_date).getTime()+i*24*60*60*1000));
+                            var year = date.getFullYear()+'';
+                            var month = date.getMonth()+1+'';
+                            var day = date.getDate()+'';
+                            var month2 = 1===month.length?'0'+month:month;
+                            var day2 = 1===day.length?'0'+day:day;
+                            %>
+                            <option value="<%=year%>-<%=month2%>-<%=day2%>"><%=year%>年<%=month%>月<%=day%>日</option>
+                            <%}%>
+                        </select>
+                        <b><img src="/static/resources/images/down_list.png" /></b>
+                    </div>
+                    <div class="c_station_listdetail_box2_inner1_select selectItems"  style="cursor: pointer;">
+                        <label class="c_station_listdetail_box2_inner1_select_txt">选择时间</label>
+                        <select class="j-month_length">
+                            <option value="1">1个月</option>
+                            <option value="2">2个月</option>
+                            <option value="3">3个月</option>
+                            <option value="4">4个月</option>
+                            <option value="5">5个月</option>
+                            <option value="6">6个月</option>
+                        </select>
+                        <b><img src="/static/resources/images/down_list.png" /></b>
+                    </div>
+                </div>
+                <%if(data.office_list && data.office_list.length){
+                %>
+                <div class="c_nodata_box3 none " style="background-color: #eaeaea;">
+                    <b class="c_nodata_box3_img"><img src="/static/resources/images/booking_office.png" /></b>
+                    <span class="c_nodata_box3_txt" style="margin-bottom: 54px;">没有和办公室相关的数据</span>
+                </div>
+                <div class="c_station_listdetail_box2_inner2 dd">
+                    <%
+                    for(var v=0;v< data.office_list.length;v++){
+                    var info = data.office_list[v];
+                    %>
+                    <div class="j-show c_station_listdetail_box2_inner2_box" data-ids="<%=info.id || ''%>" style="cursor: pointer;">
+                        <div class="c_station_listdetail_box2_inner2_box_left"><a href="#"><img src="<%=info.list_img_url || ''%>" /></a></div>
+                        <div class="c_station_listdetail_box2_inner2_box_right">
+                            <span class="c_station_listdetail_box2_inner2_box_right1"><%=info.name || ''%></span>
+                            <span class="c_station_listdetail_box2_inner2_box_right2">
+									<div class="c_station_listdetail_box2_inner2_box_right2_left c_office_listdetail_box2_inner2_box_right2_left">
+                                    <%=info.decoration || ''%>
+                                    </div>
+									<div class="c_station_listdetail_box2_inner2_box_right2_right"> 单价:&yen; <%=info.price || ''%>/月</div>
+								</span>
+                            <span class="c_station_listdetail_box2_inner2_box_right3"><%=info.area || ''%>㎡&nbsp;&nbsp;&nbsp;&nbsp;<%=info.person_limit || ''%>人</span>
+
+                        </div>
+                    </div>
+                    <%}%>
+                </div>
+
+                <%}else{%>
+                <div class="c_nodata_box3">
+                    <b class="c_nodata_box3_img"><img src="<%=getImgPath('booking_office.png')%>" /></b>
+                    <span class="c_nodata_box3_txt" style="margin-bottom: 54px;">暂无数据</span>
+                </div>
+                <%}%>
+
+            </div>
+        </div>
+    </div>
+    <%if(data.office_list && data.office_list.length){
+    %>
+    <%
+    for(var p=0;p< data.office_list.length;p++){
+    var infos = data.office_list[p];
+    var obj = infos.banner_obj;
+    %>
+    <div class="j-content c_station_detailpopup none" data-detail="<%=infos.id%>"  >
+        <div class="c_station_detailpopup_inner">
+            <div class="c_station_detailpopup_inner_banner">
+                <a href="javascript:;" class="c_station_detailpopup_close" style="cursor:pointer;z-index: 99;" ><img class="j-close" src="/static/resources/images/close2.png" style="cursor:pointer;"  /></a>
+
+
+                <div id="sliders" class="c_station_detailpopup_inner_bannerimg mui-slider">
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="<%=obj.last_banner%>" />
+                            </a>
+                        </div>
+                        <%
+                        var list=obj.list;
+                        for(var ix=0;ix< list.length;ix++){%>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="<%=list[ix]%>" />
+                            </a>
+                        </div>
+                        <%}%>
+                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="<%=obj.first_banner%>" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mui-slider-indicator">
+                        <div class="mui-indicator mui-active"></div>
+                        <%
+                        var list=obj.list;
+                        for(var ix=0;ix< list.length-1;ix++){%>
+                        <div class="mui-indicator"></div>
+                        <%}%>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="c_station_detailpopup_inner_detail">
+                <div class="c_station_detailpopup_inner_detail1">
+                    <div class="c_station_detailpopup_inner_detail1_left"><%=infos.name || ''%></div>
+                    <div class="c_station_detailpopup_inner_detail1_right">
+                        <span class="c_station_detail_money1">&yen;<%=infos.price || ''%>/月</span><label class="c_station_detail_money2">（含水电物业）</label>
+                    </div>
+                </div>
+                <div class="c_station_detailpopup_inner_detail2">
+                    <%if(!infos.facilities.length==0){
+                    %>
+                    <div class="c_station_detailpopup_inner_detail2_inner">
+                        <div class="c_station_detailpopup_inner_detail2_inner_title">
+                            <b class="c_station_detailpopup_inner_detail2_inner_title_left"></b>
+                            <span class="c_station_detailpopup_inner_detail2_inner_title_right">配置详情</span>
+                        </div>
+                        <div class="c_station_detailpopup_inner_detail2_inner_show">
+                            <div class="c_station_detailpopup_inner_detail2_inner_showbox">
+
+                                <%
+                                var facilities=infos.facilities
+                                for(var x=0;x< facilities.length;x++){
+                                var f = facilities[x];
+                                %>
+
+                                <div class="c_station_detailpopup_inner_detail2_inner_showbox_inner">
+                                    <b class="c_station_detailpopup_inner_detail2_inner_showbox_inner1"><img src="<%=f.icon || ''%>" /></b>
+                                    <span class="c_station_detailpopup_inner_detail2_inner_showbox_inner2"><%=f.name || ''%></span>
+                                </div>
+                                <%}%>
+
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>
+                    <div class="c_station_detailpopup_inner_detail2_inner">
+                        <div class="c_station_detailpopup_inner_detail2_inner_title">
+                            <b class="c_station_detailpopup_inner_detail2_inner_title_left"></b>
+                            <span class="c_station_detailpopup_inner_detail2_inner_title_right">户型详情</span>
+                        </div>
+                        <div class="c_station_detailpopup_inner_detail2_inner_show">
+                            <div class="c_station_detailpopup_inner_detail2_inner_showbox2">
+                                <div class="c_station_detailpopup_showbox2_list1">
+                                    <span class="c_station_detailpopup_showbox2_list1_left">户型面积</span>
+                                    <span class="c_station_detailpopup_showbox2_list1_right"><%=infos.area || ''%>㎡</span>
+                                </div>
+                                <div class="c_station_detailpopup_showbox2_list2">
+                                    <span class="c_station_detailpopup_showbox2_list2_left">容纳</span>
+                                    <span class="c_station_detailpopup_showbox2_list2_right"><%=infos.person_limit || ''%>人</span>
+                                </div>
+                                <div class="c_station_detailpopup_showbox2_list1">
+                                    <span class="c_station_detailpopup_showbox2_list1_left">层高</span>
+                                    <span class="c_station_detailpopup_showbox2_list1_right"><%=infos.room_height || ''%>米</span>
+                                </div>
+                                <div class="c_station_detailpopup_showbox2_list2">
+                                    <span class="c_station_detailpopup_showbox2_list2_left">装修</span>
+                                    <span class="c_station_detailpopup_showbox2_list2_right">
+                                    <%=infos.decoration || ''%>
+                                    </span>
+                                </div>
+                                <div class="c_station_detailpopup_showbox2_list1">
+                                    <span class="c_station_detailpopup_showbox2_list1_left">朝向</span>
+                                    <span class="c_station_detailpopup_showbox2_list1_right">
+                                         <%=infos.orientation || ''%>
+                                    </span>
+                                </div>
+                                <div class="c_station_detailpopup_showbox2_list2">
+                                    <span class="c_station_detailpopup_showbox2_list2_left">层数</span>
+                                    <span class="c_station_detailpopup_showbox2_list2_right"> <%=infos.floor || ''%>楼</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="c_station_detailpopup_inner_btn">
+                    <a href="/index.php/index/office/pageOfficeAppoint?office_id=<%=infos.id%>" class="c_station_detailpopup_inner_btn_left j-yuYue" style="cursor:pointer;"  >预约看房</a>
+                    <a href="#"  class="c_station_detailpopup_inner_btn_right j-order" style="cursor:pointer;" >立即预定</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <%}%>
+    <%}%>
+</div>
+
+
+

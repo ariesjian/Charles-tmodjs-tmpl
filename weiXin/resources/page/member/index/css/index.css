@@ -1,0 +1,39 @@
+
+/*个人中心*/
+
+/*1.1个人中心*/
+.c_user_homepagetop{float: left;width: 100%;background: #fff;}
+.c_user_homepagetop_box1{float: left;width: 100%;box-sizing: border-box;padding: 0 10px;position: relative;margin-top: 10px;}
+.c_user_homepagetop_box1_inner{float: left;width: 100%;display: flex;padding: 0 20px;box-sizing: border-box;z-index: 10;position: absolute;left: 0;top: calc(50% - 23px);}
+.c_user_homepagetop_box1_inner_left{font-size: 15px;color: #333;flex: 1;-webkit-flex: 1;-moz-box-flex: 1;display: inline-flex;}
+.c_user_homepagetop_box1_inner_left b{float:left;width: 46px;margin-right: 20px;}
+.c_user_homepagetop_box1_inner_left b img{width: 100%;border-radius: 100%;border: 2px solid #fff;box-sizing: border-box;}
+.c_user_homepagetop_box1_inner_left label{flex: 1;-webkit-flex: 1;-moz-box-flex: 1;display: inline-flex;flex-direction: column;justify-content: space-between;}
+.c_user_homepagetop_box1_inner_left label em{flex: 1;-webkit-flex: 1;-moz-box-flex: 1;color: #fff;}
+.c_user_homepagetop_box1_inner_right{display: inline-flex;flex-direction: column;justify-content: center;}
+.c_user_homepagetop_box1_inner_right img{height: 10px;}
+.c_user_homepagetop_box1_inner_bg{float: left;width: 100%;left: 0;box-sizing: border-box;}
+.c_user_homepagetop_box1_inner_bg img{width: 100%;}
+
+.c_user_homepagetop_box2{float: left;width: 100%;margin-top: 20px;}
+.c_user_homepagetop_box2_inner{float: left;width:25%;}
+.c_user_homepagetop_box2_inner_img{float: left;width: 100%;height: 25px;text-align: center;}
+.c_user_homepagetop_box2_inner_img img{height: 25px;}
+.c_user_homepagetop_box2_inner_txt{float: left;width: 100%;height: 30px;line-height: 30px;font-size: 12px;color: #999;text-align: center;}
+
+.c_user_homepagelist{float: left;width: 100%;background: #fff;margin-top: 10px;}
+.c_user_homepagelist_inner{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;}
+.c_user_homepagelist_inner_left{float: left;width: 13%;padding: 13px 0 13px 5px;box-sizing: border-box;}
+.c_user_homepagelist_inner_left img{height: 18px;}
+.c_user_homepagelist_inner_right{float: left;width: 87%;padding: 12px 0;height: 20px;border-bottom: 1px solid #eee;display: flex;}
+.c_user_homepagelist_inner_right_txt{height: 20px;line-height: 20px;font-size: 13px;color: #333;flex: 1;-webkit-flex: 1;-moz-box-flex: 1;}
+.c_user_homepagelist_inner_right_img{display: inline-flex;flex-direction: column;justify-content: center;}
+.c_user_homepagelist_inner_right_img img{height: 10px;}
+.c_user_homepagelist_inner_noborder{border-color: #fff;}
+/*空页面*/
+.c_nodata_box4{float: left;width: 100%;}
+.c_nodata_box4_img{float: left;width: 100%;text-align: center;margin-top: 54px;}
+.c_nodata_box4_img img{height: 124px;}
+.c_nodata_box4_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;margin-top: 2px;letter-spacing: 1px;}
+
+

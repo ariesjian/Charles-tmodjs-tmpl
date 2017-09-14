@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*报名列表*/
+
+body{line-height: 1.6;}
+
+.c_activity_signlisttop{float: left;width: 100%;box-sizing: border-box;padding: 0 12px;height: 46px;line-height: 46px;font-size: 16px;font-weight: bold;background: #fff;font-family: "微软雅黑 light";}
+.c_activity_signlistdetail{float: left;width: 100%;background: #fff;margin-top: 10px;}
+.c_activity_signlistdetail_inner{float: left;width: 100%;display: flex;border-bottom: 1px solid #f0f0f0;box-sizing: border-box;padding: 10px 15px;}
+.c_activity_signlistdetail_inner_left{-webkit-box-flex: 1.1;-webkit-flex: 1.1;flex: 1.1;box-sizing: border-box;padding: 13px 0;}
+.c_activity_signlistdetail_inner_left img{width: 100%;border-radius: 100%;}
+.c_activity_signlistdetail_inner_right{-webkit-box-flex: 5.5;-webkit-flex: 5.5;flex: 5.5;padding-left: 25px;display: inline-flex;}
+.c_activity_signlistdetail_inner_right1{-webkit-box-flex: 3;-webkit-flex: 3;flex: 3;display: inline-flex;flex-direction:column;justify-content: center;}
+.c_activity_signlistdetail_inner_right1_name{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 14px;color: #000;display: inline-flex;flex-direction:column;justify-content: center;}
+.c_activity_signlistdetail_inner_right1_pho{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 12px;color: #999;display: inline-flex;flex-direction:column;justify-content: center;}
+.c_activity_signlistdetail_inner_right1_time{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 12px;color: #999;display: inline-flex;flex-direction:column;justify-content: center;}
+.c_activity_signlistdetail_inner_right2{-webkit-box-flex: 1.08;-webkit-flex: 1.08;flex: 1.08;display: inline-flex;flex-direction:column;justify-content: center;}
+.c_activity_signlistdetail_signstatus{width: 100%;height: 28px;line-height: 28px;font-size: 13px;color: #fff;text-align: center;border-radius: 3px;}
+.c_signstatus_not{background: #c5c5c5;}
+.c_signstatus_already{background: #e84848;}
+
+/*无数据*/
+.c_nodata_box3{float: left;width: 100%;}
+.c_nodata_box3_img{float: left;width: 100%;text-align: center;margin-top: 54px;}
+.c_nodata_box3_img img{height: 124px;}
+.c_nodata_box3_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;margin-top: 2px;letter-spacing: 1px;}

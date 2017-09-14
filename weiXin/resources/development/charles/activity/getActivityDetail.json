@@ -1,0 +1,139 @@
+{
+    "errcode": 0,
+    "errmsg": "",
+    "data": {
+        "activity": {
+            "id": "1",
+            "name": "111",
+            "banner_url": "http://zhangjiang.sidlu.com/static/cms_upload/zj_activity/149855639380760.png",
+            "address": "123",
+            "enroll_end_time": "2017-06-04 00:00:00",
+            "activity_start_time": "2017-06-07 10:50",
+            "activity_end_time": "2017-06-16 15:55",
+            "price": "45",
+            "collection_count": "0",
+            "is_collected": 1,
+            "is_manager": 0,
+            "order_id": 1,
+            "order_count": 1,
+            "activity_type": 1,
+            "enroll_left_desc": "1天",
+            "orders": [
+                {
+                    "user_id": "1",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0"
+                },
+                {
+                    "user_id": "1",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0"
+                },
+                {
+                    "user_id": "1",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0"
+                },
+                {
+                    "user_id": "1",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0"
+                },
+                {
+                    "user_id": "1",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0"
+                },
+                {
+                    "user_id": "1",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0"
+                },
+                {
+                    "user_id": "1",
+                    "headimgurl": ""
+                },
+                {
+                    "user_id": "1",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0"
+                }
+            ],
+            "comments": [
+                {
+                    "user_id": "1",
+                    "true_name": "张毅辉",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0",
+                    "id": "1",
+                    "content": "评论测试评论测试评论测试评论测试评论测试评论测试评论测试评论测试评论测试评论测试评论测试评论测试评论测试",
+                    "score": "0",
+                    "create_time": "2017-06-27 15:12:00",
+                    "reply_manager_id": null,
+                    "reply_manager_name": null,
+                    "reply_content": null,
+                    "reply_time": "2017-06-27 17:28:42"
+                },
+                {
+                    "user_id": "1",
+                    "true_name": "张毅辉",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0",
+                    "id": "2",
+                    "content": "评论测试",
+                    "score": "5",
+                    "create_time": "2017-06-27 15:12:00",
+                    "reply_manager_id": null,
+                    "reply_manager_name": null,
+                    "reply_content": null,
+                    "reply_time": "2017-06-27 17:28:42"
+                },
+                {
+                    "user_id": "1",
+                    "true_name": "张毅辉",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0",
+                    "id": "3",
+                    "content": "评论测试",
+                    "score": "1",
+                    "create_time": "2017-06-27 15:12:00",
+                    "reply_manager_id": null,
+                    "reply_manager_name": null,
+                    "reply_content": null,
+                    "reply_time": "2017-06-27 17:28:42"
+                },
+                {
+                    "user_id": "1",
+                    "true_name": "张毅辉",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0",
+                    "id": "4",
+                    "content": "评论测试",
+                    "score": "4",
+                    "create_time": "2017-06-27 15:12:00",
+                    "reply_manager_id": null,
+                    "reply_manager_name": null,
+                    "reply_content": null,
+                    "reply_time": "2017-06-27 17:28:42"
+                },
+                {
+                    "user_id": "1",
+                    "true_name": "张毅辉",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0",
+                    "id": "5",
+                    "content": "评论测试",
+                    "score": "4",
+                    "create_time": "2017-06-27 15:12:00",
+                    "reply_manager_id": null,
+                    "reply_manager_name": null,
+                    "reply_content": null,
+                    "reply_time": "2017-06-27 17:28:42"
+                },
+                {
+                    "user_id": "1",
+                    "true_name": "张毅辉",
+                    "headimgurl": "http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0",
+                    "id": "6",
+                    "content": "评论测试",
+                    "score": "4",
+                    "create_time": "2017-06-27 15:12:00",
+                    "reply_manager_id": null,
+                    "reply_manager_name": null,
+                    "reply_content": null,
+                    "reply_time": "2017-06-27 17:28:42"
+                }
+            ],
+            "declaration": "这是活动声明",
+            "description": "<h1 style=\"font-size:18px;color:#FFFFFF;text-align:center;\">\r\n\t<div class=\"logo\" style=\"margin:-3px 0px 0px;padding:0px;font-weight:normal;font-size:0px;font-family:a;border:0px;background-color:transparent;vertical-align:middle;color:transparent;\">\r\n\t\t<br class=\"Apple-interchange-newline\" />\r\n活动行\r\n\t</div>\r\n</h1>\r\n<div class=\"hdx_section\" style=\"margin:0px 0px 15px;padding:10px 15px;background:#FFFFFF;\">\r\n\t<h2 style=\"font-size:14px;\">\r\n\t\t本周创投圈精选（6.26-7.02）\r\n\t</h2>\r\n&gt;2017-06-26\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t北京\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<strong>1</strong> \r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>2017商业新生态峰会</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月28日 9:00 ～ 17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（北京朝阳）将台路甲2号北京诺金酒店</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/go/628\" target=\"_blank\"><img class=\"\" src=\"http://wx.qlogo.cn/mmopen/KHCnIORPZJydXfZQo7PqicEhYOHGiaNdsOkEarcZWhzMBD4A3BtPRBz5LibnKyprlQSmGeqRicjO0cgZdgcoia0RYtM4uNCAhkh5Q/0\" /></a><a class=\"\" href=\"http://www.huodongxing.com/go/628\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t2\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>互联网教育“下半场”的机遇与挑战</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月28日 13:00 ～ 17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（北京朝阳）洪泰创新空间Azure</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/9392174517600\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/fb5debca4ca1b4bca25e16ad5d3ed6aa-sz_138027.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/9392174517600\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t3\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>AWS创业者之日 · 新技术时代</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月28日 14:00 ～ 17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（北京朝阳）北京诺金酒店</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/go/aws\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/77f78a325e2952bb4eb6a423f6399404-sz_51990.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/go/aws\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t4\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>美通社新传播茶会（北京站）</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月29日 13:30 ～ 17:30\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（北京东城）新闻大厦23层</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/9391780458600\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/a66dfef0e95d4990b00eaf59bb5f811c-sz_98863.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/9391780458600\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t5\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>ACG产业高峰论坛</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t7月1日 9:30 ～ 18:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（北京朝阳）东亿国际传媒产业园区</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/1391749241800\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/c9c3b8614dddd92ca3c99ac1aaec624e-sz_221194.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/1391749241800\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t上海\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t1\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>金融科技--商业价值探索高峰论坛</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月29日 9:00 ～ 18:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（上海长宁）长宁路1018号</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/8386168853900\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/002d337bcb1de1389caddf4778898e83-sz_210207.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/8386168853900\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t2\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>大数据如何驱动营销</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月29日 13:30 ～ &nbsp;16:30\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（上海杨浦）政学路77号INNOSPACE+</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/8390775018900\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/6de9e59e3860246c7479d12d2ada2d0b-sz_82357.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/8390775018900\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t3\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>第十届上海（校园）创业沙拉</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月30日 17:00 ～ 21:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（上海杨浦）军工路580号&nbsp;</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/4388150238300\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/35d0134527cf3357bc664bb23408e1bb-sz_120262.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/4388150238300\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t4\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>企业如何用数据驱动GMV增长</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t7月1日 13:30 ～ &nbsp;17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（上海静安）沪太路335号2楼</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/1391897646700\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/0d094a8fbad155ea070c1924ef7e349b-sz_62178.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/1391897646700\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t广州\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t1\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>致趣百川第四场营销私董会</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月28日 14:00 ～ &nbsp;17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（广东广州）越秀金融大厦附近</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/1391795659200\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/384c3f7ba5c76b8d62b560766110e87a-sz_132391.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/1391795659200\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t2\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>腾讯众创空间（广州）OpenDay</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t7月1日 14:00 ～ 17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（广东广州）腾讯众创空间一楼</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/9392217758900\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/8875fb5d16e73af1e3b22aba59ec6643-sz_116092.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/9392217758900\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t深圳\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t1\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>新京报.寻找中国创客夏季峰会</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月27日 9:00 ～ &nbsp;17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（广东深圳）中海信创新产业城</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/6390493385200\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/1a29a1e9ac202064f56d4d368f919ae7-sz_86409.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/6390493385200\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t2\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>互联网+泛地产”创投新趋势探讨</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月30日 13:30 ～ 17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（广东深圳）大冲商务中心A座6F</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/1392036804100\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/65ef5b2367f5a676b8f5ad2decf88e90-sz_166924.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/1392036804100\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t杭州\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t1\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>众量极运营干货分享会</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月28日 14:00 ～ &nbsp;17:00\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（浙江杭州）阡陌路459号聚光中心</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/5390015282700\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/d227b960cda1482b46a76f2658f4d154-sz_101020.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/5390015282700\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t2\r\n\t</p>\r\n\t<p class=\"media-heading\" style=\"color:#7D7D7D;\">\r\n\t\t<strong>互联网+时代的高效人力管理秘籍</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t6月30日 13:30 ～ &nbsp;15:30\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t@<span style=\"line-height:1.6;\">（浙江杭州）梦想小镇互联网村</span> \r\n\t</p>\r\n<a class=\"\" href=\"http://www.huodongxing.com/event/3392802609200\" target=\"_blank\"><img class=\"\" src=\"http://img.xiumi.us/xmi/ua/KlbK/i/b54627bb17d02c23e9fc24312971526f-sz_122912.jpg?x-oss-process=style/xm\" /></a><a class=\"\" href=\"http://www.huodongxing.com/event/3392802609200\" target=\"_blank\"> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t立即报名\r\n\t</p>\r\n</a> \r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<strong>专题合作</strong><strong>请邮件至yunying@huodongxing.com</strong> \r\n\t</p>\r\n\t<p style=\"color:#7D7D7D;\">\r\n\t\t<br />\r\n\t</p>\r\n</div>\r\n<div class=\"hdx_section\" style=\"margin:0px;padding:10px 15px;background:#FFFFFF;\">\r\n\t<div class=\"title\" style=\"margin:0px 0px 10px;padding:0px;\">\r\n\t\t<h2 style=\"font-size:16px;\">\r\n\t\t\t<span class=\"icon-rank\" style=\"vertical-align:-2px;\"></span>最新活动\r\n\t\t</h2>\r\n\t</div>\r\n\t<ul class=\"event-like-list\">\r\n\t\t<li>\r\n\t\t\t<a href=\"http://www.huodongxing.com/event/5393775802000\"><img src=\"http://cdn.huodongxing.com/logo/201706/5393775802000/532734556241328_v2small.jpg\" alt=\"\" class=\"pull-left\" style=\"width:74px;height:44px;\" /> \r\n\t\t\t<div style=\"margin:2px 0px 0px;padding:0px;\">\r\n\t\t\t\t夏天里丨民谣与酒第十三季音乐派对\r\n\t\t\t</div>\r\n</a> \r\n\t\t</li>\r\n\t\t<li>\r\n\t\t\t<a href=\"http://www.huodongxing.com/event/9393767166600\"><img src=\"http://cdn.huodongxing.com/logo/201706/9393767166600/552734525310420_v2small.jpg\" alt=\"\" class=\"pull-left\" style=\"width:74px;height:44px;\" /> \r\n\t\t\t<div style=\"margin:2px 0px 0px;padding:0px;\">\r\n\t\t\t\t【一日】十渡仙西水洞—风情苗寨，真人CS，竹筏，烧烤一票全含\r\n\t\t\t</div>\r\n</a> \r\n\t\t</li>\r\n\t\t<li>\r\n\t\t\t<a href=\"http://www.huodongxing.com/event/1393766554700\"><img src=\"http://cdn.huodongxing.com/logo/201706/1393766554700/572734490809845_v2small.jpg\" alt=\"\" class=\"pull-left\" style=\"width:74px;height:44px;\" /> \r\n\t\t\t<div style=\"margin:2px 0px 0px;padding:0px;\">\r\n\t\t\t\t一生一次现金流\r\n\t\t\t</div>\r\n</a> \r\n\t\t</li>\r\n\t\t<li>\r\n\t\t\t<a href=\"http://www.huodongxing.com/event/9393764899000\"><img src=\"http://cdn.huodongxing.com/logo/201706/9393764899000/712734478709636_v2small.jpg\" alt=\"\" class=\"pull-left\" style=\"width:74px;height:44px;\" /> \r\n\t\t\t<div style=\"margin:2px 0px 0px;padding:0px;\">\r\n\t\t\t\t心理沙龙—生活的一万种可能性\r\n\t\t\t</div>\r\n</a> \r\n\t\t</li>\r\n\t\t<li>\r\n\t\t\t<a href=\"http://www.huodongxing.com/event/8393763239000\"><img src=\"http://cdn.huodongxing.com/Content/v2.0/img/event_logo_small.png\" alt=\"\" class=\"pull-left\" style=\"width:74px;height:44px;\" /> \r\n\t\t\t<div style=\"margin:2px 0px 0px;padding:0px;\">\r\n\t\t\t\t【ART23国际工作坊】毕业季做好作品集\r\n\t\t\t</div>\r\n</a> \r\n\t\t</li>\r\n\t</ul>\r\n</div>\r\n<div class=\"col-4\" style=\"margin:0px;padding:0px;background:#62B651;\">\r\n\t<a href=\"http://www.huodongxing.com/logout\">退出登录</a> \r\n</div>\r\n<div class=\"col-4\" style=\"margin:0px;padding:0px;background:#62B651;\">\r\n\t<a href=\"http://www.huodongxing.com/\">回到首页</a> \r\n</div>\r\n<div class=\"col-4\" style=\"margin:0px;padding:0px;background:#62B651;\">\r\n\t<a href=\"http://www.huodongxing.com/feedback\">意见反馈</a> \r\n</div>\r\n活动行 &copy; 2017 huodongxing.com\r\n<h1 style=\"font-size:18px;color:#FFFFFF;text-align:center;\">\r\n\t<div class=\"logo\" style=\"margin:-3px 0px 0px;padding:0px;font-weight:normal;font-size:0px;font-family:a;border:0px;background-color:transparent;vertical-align:middle;color:transparent;\">\r\n\t</div>\r\n</h1>"
+        }
+    }
+}

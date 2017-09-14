@@ -1,0 +1,64 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "first_category_list":[
+      {
+        "id":"1",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img1.png",
+        "second_category_list":[
+          {
+            "id": "11",
+            "name": "1"
+          } ]
+      },
+      {
+        "id":"5",
+        "name":"国创园券gfsgfd",
+        "img_url": "/static/resources/images/service_select_img2.png",
+        "second_category_list":[
+          {
+            "id": "15",
+            "name": "2"
+          } ]
+      },
+      {
+        "id":"4",
+        "name":"国创券",
+        "img_url": "/static/resources/images/service_select_img3.png",
+        "second_category_list":[
+          {
+            "id": "14",
+            "name": "3"
+          } ]
+      },
+      {
+        "id":"3",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img4.png",
+        "second_category_list":[
+          {
+            "id": "13",
+            "name": "系统4"
+          } ,
+          {
+            "id": "131",
+            "name": "系统15"
+          }
+        ]
+      },
+      {
+        "id":"2",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img5.png",
+        "second_category_list":[
+          {
+            "id": "12",
+            "name": "系统6"
+          } ]
+      }
+    ]
+
+  }
+}

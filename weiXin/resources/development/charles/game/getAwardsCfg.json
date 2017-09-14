@@ -1,0 +1,53 @@
+{
+  "errcode":0,
+  "data":{
+    "awards":[
+      {
+        "id":1,
+        "name":"碧根果一袋",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/5.png"
+      },
+      {
+        "id":2,
+        "name":"年货红包",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/4.png"
+      },
+      {
+        "id":3,
+        "name":"水果拼盘300元月卡",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/7.png"
+
+      },
+      {
+        "id":4,
+        "name":"2元现金红包",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/4.png"
+
+      },
+      {
+        "id":5,
+        "name":"夏威夷果一袋",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/6.png"
+
+      },
+      {
+        "id":6,
+        "name":"3元现金红包",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/4.png"
+
+      },
+      {
+        "id":7,
+        "name":"松子一袋",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/3.png"
+
+      },
+      {
+        "id":8,
+        "name":"5元现金红包",
+        "img_url":"http://mc.zhuyaping.com/upload/file/get/?file=yaoyin/4.png"
+
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+<%if(description){
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_zone_introdetail">
+            <div class="c_zone_introdetail_box2">
+                <div class="c_zone_introdetail_box2_title"><b></b><span>描述</span></div>
+                <div class="c_zone_introdetail_box2_des"><%=description %></div>
+            </div>
+        </div>
+        <div class="c_repaire_proprety_btn" style="margin-top: 5px;">
+            <a class="c_repaire_proprety_btn_inner" style="cursor:pointer;" href="/index.php/index/incubation/pageIncubationIndex">去申请</a></div>
+    </div>
+</div>
+<%}else{%>
+<div class="c_nodata_box6">
+    <b class="c_nodata_box6_img"><img src="<%=getImgPath('list_teacher.png')%>" /></b>
+    <span class="c_nodata_box6_txt">暂时没有孵化信息</span>
+</div>
+<%}%>

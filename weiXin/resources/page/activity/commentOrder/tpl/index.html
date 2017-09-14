@@ -1,0 +1,39 @@
+<div class="mobile_outcontainer" id="Comment">
+    <div class="mobile_nopadding_container2">
+        <div class="c_activity_commenttop">
+            <div class="c_activity_commenttop_left"><img src="<%=banner_url%>" /></div>
+            <div class="c_activity_commenttop_right">
+                <div class="c_activity_commenttop_right_title"><%=activity_name||''%></div>
+                <div class="c_activity_commenttop_right_time"><%=activity_start_time.replace(/-/g,'/')%>-<%=activity_end_time.replace(/-/g,'/')%></div>
+            </div>
+        </div>
+
+        <div class="c_activity_commentscore">
+            <div class="c_activity_commentscore_left">评分</div>
+            <div class="c_activity_commentscore_right">
+                <img data-star="1"  class="j-star c-star c-show" src="<%=getImgPath('star1.png')%>" />
+                <img data-star="2"  class="j-star c-star" src="<%=getImgPath('star2.png')%>" />
+
+                <img data-star="1"  class="j-star c-star c-show" src="<%=getImgPath('star1.png')%>" />
+                <img data-star="2"  class="j-star c-star" src="<%=getImgPath('star2.png')%>" />
+
+                <img data-star="1"  class="j-star c-star c-show" src="<%=getImgPath('star1.png')%>" />
+                <img data-star="2"  class="j-star c-star" src="<%=getImgPath('star2.png')%>" />
+
+                <img data-star="1"  class="j-star c-star c-show" src="<%=getImgPath('star1.png')%>" />
+                <img data-star="2"  class="j-star c-star" src="<%=getImgPath('star2.png')%>" />
+
+                <img data-star="1"  class="j-star c-star c-show" src="<%=getImgPath('star1.png')%>" />
+                <img data-star="2"  class="j-star c-star" src="<%=getImgPath('star2.png')%>" />
+            </div>
+        </div>
+
+        <div class="c_activity_commentinput">
+            <span class="c_activity_commentinput_title">填写评论</span>
+            <textarea class="j-content c_activity_commentinput_content"></textarea>
+        </div>
+
+        <div class="c_activity_commentsubmit"><a href="javascript:;" class="j-submit c_activity_commentsubmit_inner">提交评论</a></div>
+
+    </div>
+</div>

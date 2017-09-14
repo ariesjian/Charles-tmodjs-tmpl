@@ -1,0 +1,33 @@
+<%if(summary){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_zone_introtop"><img src="<%=summary.banner_url || ''%>" /></div>
+        <div class="c_zone_introdetail">
+            <div class="c_zone_ezonedetail_box1">
+                <div class="c_zone_ezonedetail_box1_inner">
+                    <span><%=summary.title || ''%></span><label><%=summary.address || ''%></label>
+                </div>
+            </div>
+            <div class="c_zone_introdetail_box2">
+                <div class="c_zone_introdetail_box2_export2">
+                    <%
+                    var space_list=summary.space_list
+                    for(var i=0;i< space_list.length;i++){
+                    var info = space_list[i];
+                    %>
+                    <a href="/index.php/index/zone/pageSpaceDetail?space_id=<%=info.id%>" class="c_zone_introdetail_box2_export2_inner" <%=2==i?'style=padding-right:0;':''%> ><b><img src="<%=info.banner_url || ''%>" /></b><span <%=2==i?'style=padding-right:0;':''%> ><%=info.name || ''%><img src="/static/resources/images/zone_right.png" /></span></a>
+                    <%}%>
+                </div>
+                <div class="c_zone_introdetail_box2_title"><b></b><span>空间介绍</span></div>
+                <div class="c_zone_introdetail_box2_des"><%=summary.description || ''%></div>
+            </div>
+        </div>
+    </div>
+</div>
+<%}else{%>
+<div style="font-size: 30px;text-align: center;">
+    <div class="c_nodata_box4">
+        <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+        <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+    </div></div>
+<%}%>

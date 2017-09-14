@@ -1,0 +1,14 @@
+<%if(order){
+var d = order;
+var status = +d.status;
+%>
+
+    <div id="Shell">
+    </div>
+
+<%}else{%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt">无法加载页面，请稍后再试</span>
+</div>
+<%}%>

@@ -1,0 +1,16 @@
+/*2.2积分明细*/
+.c_user_scoredetailtop{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;height: 52px;line-height: 52px;font-size: 15px;color:#000;background: #fff;font-weight: bold;font-family: "微软雅黑 light";}
+.c_user_scoredetaillist{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;background: #fff;margin-top: 15px;}
+.c_user_scoredetaillist_inner{float: left;width: 100%;padding: 9px 0;border-bottom: 1px solid #eee;position: relative;}
+.c_user_scoredetaillist_inner_left{float: left;width: 80%;}
+.c_user_scoredetaillist_inner_left_box1{float: left;width: 100%;min-height: 24px;line-height: 20px;font-size: 15px;color: #000;font-weight: bold;font-family: "微软雅黑 light";box-sizing: border-box;padding: 2px 0;}
+.c_user_scoredetaillist_inner_left_box2{float: left;width: 100%;height: 24px;line-height: 24px;font-size: 13px;color: #999;}
+.c_user_scoredetaillist_inner_right{position:absolute;width: 20%;height: 24px;line-height: 24px;margin-top: -12px;font-size: 18px;text-align: right;font-weight: bold;font-family: "微软雅黑 light";right: 0;top: 50%;}
+.score_color2{color: #ff0033;}
+.score_color1{color: #339366;}
+/*空页面*/
+.c_nodata_box4{float: left;width: 100%;}
+.c_nodata_box4_img{float: left;width: 100%;text-align: center;margin-top: 54px;}
+.c_nodata_box4_img img{height: 124px;}
+.c_nodata_box4_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;margin-top: 2px;letter-spacing: 1px;}
+

@@ -1,0 +1,35 @@
+<%if(current_score){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_user_scoredetailtop">总积分：<%=current_score%></div>
+        <div class="c_user_scoredetaillist">
+            <%
+            for(var i=0;i< score_detail.length ;i++){
+            var d = score_detail[i];
+            %>
+
+            <div class="c_user_scoredetaillist_inner">
+                <div class="c_user_scoredetaillist_inner_left">
+                    <span class="c_user_scoredetaillist_inner_left_box1"><%=d.change_desc%></span>
+                    <span class="c_user_scoredetaillist_inner_left_box2"><%=d.create_time.replace(/-/g, "/")%></span>
+                </div>
+                <%if(1==d.change_type){%>
+                <div class="c_user_scoredetaillist_inner_right score_color1">+<%=d.change_score%></div>
+                <%}%>
+                <%if(2==d.change_type){%>
+                <div class="c_user_scoredetaillist_inner_right score_color2">-<%=d.change_score%></div>
+                <%}%>
+            </div>
+            <%}%>
+        </div>
+    </div>
+
+</div>
+<%}else{%>
+
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

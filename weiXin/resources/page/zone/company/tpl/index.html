@@ -1,0 +1,31 @@
+<%if(companyDetails && companyDetails.length){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+
+        <%for(var i=0;i< companyDetails.length;i++){
+        var info = companyDetails[i];
+        %>
+        <div class="c_zone_introtop"><img src=" <%=info.backgroundur||getImgPath('zone_teacherdetail_img1.png')%>       " /></div>
+        <div class="c_zone_introdetail">
+            <div class="c_zone_company_box1">
+                <div class="c_zone_company_box1_inner">
+                    <span><%=info.name %></span><label><%=info.address %></label>
+                </div>
+            </div>
+            <div class="c_zone_introdetail_box2">
+                <div class="c_zone_introdetail_box2_title"><b></b><span><%=info.title %></span></div>
+                <div class="c_zone_introdetail_box2_des"><%=info.content %></div>
+            </div>
+        </div>
+        <%}%>
+    </div>
+</div>
+
+<%}else{%>
+<div style="font-size: 30px;text-align: center;">
+
+    <div class="c_nodata_box4">
+        <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+        <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+    </div></div>
+<%}%>

@@ -1,0 +1,235 @@
+<%if(order){%>
+
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <%if(order.status==0){%>
+        <div class="c_activity_confirmtop c_station_confirmtop">
+            <div class="c_activity_confirmtop_inner1">
+                <b><img src="/static/resources/images/icon_time.png"/></b>
+                <span>待支付</span>
+            </div>
+            <div class="c_activity_confirmtop_inner2">
+                <span>请于<%=order.expire_minutes || ''%>分钟内完成缴费，否则订单将自动取消</span>
+            </div>
+        </div>
+        <%}%>
+        <%if(order.status==3){%>
+        <div class="c_activity_confirmtop c_station_confirmtop">
+            <div class="c_activity_confirmtop_inner1">
+                <span>审核拒绝</span>
+            </div>
+            <div class="c_activity_confirmtop_inner2">
+                <span>您的订单审核失败，请及时与相关人员联系</span>
+            </div>
+        </div>
+        <%}%>
+        <%if(order.status==2){%>
+        <div class="c_activity_confirmtop c_station_confirmtop">
+            <div class="c_activity_confirmtop_inner1">
+                <span>已交付</span>
+            </div>
+            <div class="c_activity_confirmtop_inner2">
+                <span>您的订单已交付，请核对相关信息并确认</span>
+            </div>
+        </div>
+        <%}%>
+        <%if(order.status==1){%>
+        <div class="c_activity_confirmtop c_station_confirmtop">
+            <div class="c_activity_confirmtop_inner1">
+                <span>已支付</span>
+            </div>
+            <div class="c_activity_confirmtop_inner2">
+                <span>您的订单已支付成功，正在审核请耐心等待</span>
+            </div>
+        </div>
+        <%}%>
+        <%if(order.status==9){%>
+        <div class="c_activity_confirmtop c_station_confirmtop">
+            <div class="c_activity_confirmtop_inner1">
+                <span>已超时取消</span>
+            </div>
+            <div class="c_activity_confirmtop_inner2">
+                <span>您的订单因超时已自动取消，如有需要请重新支付</span>
+            </div>
+        </div>
+        <%}%>
+        <input type="hidden" value="<%=order.office_price || ''%>" class="j-office_price">
+        <input type="hidden" id="order_id" value="<%=order.id || ''%>">
+        <input type="hidden" id="office_id" value="<%=order.office_id || ''%>">
+        <div class="c_station_paytop">
+            <div class="c_station_paytop_inner cc">
+                <div class="c_station_paytop_inner_left"><a href="#"><img class="j-office_list_img_url"
+                                                                          src="<%=order.office_list_img_url || ''%>"/></a>
+                </div>
+                <div class="c_station_paytop_inner_right">
+                    <span class="c_station_paytop_inner_right1 j-office_name"><%=order.office_name || ''%></span>
+                    <span class="c_station_paytop_inner_right3">单价: &yen;<%=order.office_price || ''%> </span>
+                </div>
+            </div>
+            <%if(order.status==3){%>
+            <div class="c_refuse_box">
+            	<div class="c_refuse_box_inner">
+	                <div class="c_refuse_box_left">拒绝理由:</div>
+	                <div class="c_refuse_box_right"><%=order.refuse_reason || ''%></div>
+                </div>
+            </div>
+            <%}%>
+            </div>
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>起始时间</p>
+                    </div>
+                    <div class="weui-cell__ft j-start_date"><%=order.start_date.replace(/-/g,'/') || ''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>结束时间</p>
+                    </div>
+                    <div class="weui-cell__ft j-end_date"><%=order.end_date.replace(/-/g,'/') || ''%></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c_activity_confirmlist">
+            <div class="c_activity_confirmlist_inner">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系人</p>
+                    </div>
+                    <div class="weui-cell__ft j-contact_name"><%=order.contact_name || ''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>联系方式</p>
+                    </div>
+                    <div class="weui-cell__ft j-contact_mobile"><%=order.contact_mobile || ''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>支付方式</p>
+                    </div>
+                    <div class="weui-cell__ft">微信支付</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>合计支付</p>
+                    </div>
+                    <div class="weui-cell__ft"> &yen; <%=order.total_price || ''%></div>
+                </div>
+            </div>
+            <%if(order.is_need_invoice==1){%>
+            <div class="c_activity_confirmlist_inner c_room_detail_listcolor" style="margin-top: 10px;">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">发票信息</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>发票类型</p>
+                    </div>
+                    <%if(order.invoice_type==1){%>
+                    <div class="weui-cell__ft">个人</div>
+                   <%}%>
+                    <%if(order.invoice_type==2){%>
+                    <div class="weui-cell__ft">企业</div>
+                 <%}%>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>开票抬头</p>
+                    </div>
+                    <div class="weui-cell__ft"> <%=order.invoice_title || ''%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>邮寄地址</p>
+                    </div>
+                    <div class="weui-cell__ft"> <%=order.invoice_mail_address || ''%></div>
+                </div>
+            <%if(order.invoice_type==2){%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>企业税号</p>
+                    </div>
+                    <div class="weui-cell__ft"> <%=order.invoice_tax_no || ''%></div>
+                </div>
+            <%}%>
+            </div>
+            <%}%>
+            <%if(order.is_need_invoice==0){%>
+            <div class="c_activity_confirmlist_inner c_room_detail_listcolor" style="margin-top: 10px;">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2">发票信息</div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>发票类型</p>
+                    </div>
+                    <div class="weui-cell__ft">无</div>
+
+                </div>
+            </div>
+            <%}%>
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+<!--<div class="c_order_popup none">
+    <div class="c_order_popup_inner">
+        <div class="c_order_popup_inner_remind">确认删除此订单</div>
+        <div class="c_order_popup_inner_btns">
+            <a href="javascript:;" class="c_order_popup_inner_btns_cancel j-undelete">取消</a>
+            <a href="javascript:;" class="c_order_popup_btns_delete j-deleBtn">删除</a>
+        </div>
+    </div>
+</div>-->
+<%if(order.status==0){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_left c_activity_confirm_footer_left c_station_confirm_footer_left">
+        支付: &yen;<%=order.total_price || ''%>
+    </div>
+    <div class="footer_fixed_box_right confirmBtns" style="cursor:pointer;"><span
+            class="footer_fixed_box_right_inner station_pay ">确认订单</span></div>
+
+</div>
+<%}%>
+<%if(order.status==2){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_left c_activity_confirm_footer_left c_station_confirm_footer_left">
+    </div>
+    <div class="footer_fixed_box_right xuzu " style="cursor:pointer;"><span
+            class="footer_fixed_box_right_inner station_pay ">续租</span></div>
+
+    <!--  <span href="" class="c_continue_order xuzu" style="cursor:pointer;" >续租</span>-->
+</div>
+<%}%>
+<%if(order.status==9){%>
+<div class="footer_fixed_box">
+    <div class="footer_fixed_box_left c_activity_confirm_footer_left c_station_confirm_footer_left">
+    </div>
+    <div class="footer_fixed_box_right j-delete " style="cursor:pointer;"><span
+            class="footer_fixed_box_right_inner station_pay ">删除订单</span></div>
+
+    <!--   <a href="#" class="c_delete_order j-delete" style="cursor:pointer;" >删除订单</a>-->
+</div>
+<%}%>
+<%}else{%>
+
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>"/></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

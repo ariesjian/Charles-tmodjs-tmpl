@@ -1,0 +1,78 @@
+<%if(errMsg){%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt"><%=errMsg%></span>
+</div>
+<%}else{%>
+<%
+var d = order;
+
+var reserve_date,start_time,end_time;
+try{
+reserve_date = d.reserve_start_time.trim().split(' ')[0].replace(/-/g,'/');
+start_time = d.reserve_start_time.trim().split(' ')[1];
+end_time = d.reserve_end_time.trim().split(' ')[1];
+}catch(e){
+reserve_date='';
+start_time='';
+end_time='';
+}
+
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_station_reserve">
+            <div class="c_station_reserve_inner">
+                <b class="c_station_reserve_inner_img"><img src="<%=getImgPath('reserve_success.png')%>" /></b>
+                <label class="c_station_reserve_inner_txt1">预定成功</label>
+                <label class="c_station_reserve_inner_txt2">欢迎使用 <%=d.meeting_room_name||''%></label>
+            </div>
+        </div>
+
+        <div class="c_station_reservelist">
+            <div class="c_activity_confirmlist_inner" style="border-radius: 0;">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>订单编号</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.order_number%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>会议时间</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=reserve_date%>&nbsp;<%=start_time%>-<%=end_time%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>地址</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.meeting_room_address||''%></div>
+                </div>
+                <%if(d.increment_services&&d.increment_services.length){%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>增值服务</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <%=d.increment_services.map(function(v){
+                            return v.name
+                        }).join(',')%>
+                    </div>
+                </div>
+                <%}%>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>总金额</p>
+                    </div>
+                    <div class="weui-cell__ft">&yen;<%=d.total_price||0%></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_station_reserve_btn"><a href="/index.php/index/meeting/pageMeetingRoomOrderDetail?order_id=<%=d.id%>" class="c_station_reserve_btn_inner c_room_reserve_btn_inner">查看订单详情</a></div>
+
+    </div>
+</div>
+<%}%>

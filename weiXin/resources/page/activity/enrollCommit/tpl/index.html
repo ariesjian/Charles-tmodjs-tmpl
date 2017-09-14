@@ -1,0 +1,58 @@
+<%if(order){
+var d = order;
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_activity_bindtop">
+            <div class="c_activity_bindtop_inner">
+                <div class="c_activity_bindtop_inner_left"><a href="#"><img src="<%=d.banner_url%>" /></a></div>
+                <div class="c_activity_bindtop_inner_right">
+                    <span class="c_activity_bindtop_inner_right1"><%=d.activity_name%></span>
+                    <span class="c_activity_bindtop_inner_right2"><%=d.activity_address%></span>
+                    <span class="c_activity_bindtop_inner_right2"><%=d.activity_start_time.replace(/-/g,'/')%>-<%=d.activity_end_time.replace(/-/g,'/')%></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_signconfirmlist">
+            <div class="c_activity_signconfirmlist_author">
+                <div class="c_activity_signconfirmlist_author_inner1">
+                    <div class="c_activity_signconfirmlist_author_inner1_border"></div>
+                </div>
+                <div class="c_activity_signconfirmlist_author_inner2"><img src="<%=d.headimgurl%>" /></div>
+                <div class="c_activity_signconfirmlist_author_inner1">
+                    <div class="c_activity_signconfirmlist_author_inner1_border"></div>
+                </div>
+            </div>
+            <div class="c_activity_signconfirmlist_inner">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>签到成员</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.contact_name%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>电话</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.contact_mobile%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>邮箱</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=d.contact_email%></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_activity_bindbtn"><a href="javascript:;" style="cursor:pointer;" class="c_activity_bindbtn_inner" id="Submit">确认签到</a></div>
+
+    </div>
+</div>
+<%}else{%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt"><%=errMsg%></span>
+</div>
+<%}%>

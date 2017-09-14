@@ -1,0 +1,24 @@
+<%if(zone_desc){
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_zone_introtop"><img src="<%=zone_desc.banner_url||getImgPath('zone_introduce_img1.png')%>" /></div>
+        <div class="c_zone_introdetail">
+            <div class="c_zone_introdetail_box1">
+                <div class="c_zone_introdetail_box1_inner">
+                    <span><%=zone_desc.title %></span><label><%=zone_desc.address %></label>
+                </div>
+            </div>
+            <div class="c_zone_introdetail_box2">
+                <div class="c_zone_introdetail_box2_title"><b></b><span>园区介绍</span></div>
+                <div class="c_zone_introdetail_box2_des"><%=zone_desc.description %></div>
+            </div>
+        </div>
+    </div>
+</div>
+<%}else{%>
+<div class="c_nodata_box6">
+    <b class="c_nodata_box6_img"><img src="<%=getImgPath('list_teacher.png')%>" /></b>
+    <span class="c_nodata_box6_txt">暂时没有园区信息</span>
+</div>
+<%}%>

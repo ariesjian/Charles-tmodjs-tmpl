@@ -1,0 +1,58 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "category_list":[
+      {
+        "id":"1",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img1.png"
+      },
+      {
+        "id":"2",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img2.png"
+      },
+      {
+        "id":"3",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img3.png"
+      },
+      {
+        "id":"4",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img4.png"
+      },
+      {
+        "id":"5",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img5.png"
+      },
+      {
+        "id":"6",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img6.png"
+      },
+      {
+        "id":"7",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img7.png"
+      },   {
+        "id":"8",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img8.png"
+      },
+      {
+        "id":"9",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img9.png"
+      },   {
+        "id":"10",
+        "name":"国创园区优惠券",
+        "img_url": "/static/resources/images/service_select_img10.png"
+      }
+
+    ]
+
+  }
+}

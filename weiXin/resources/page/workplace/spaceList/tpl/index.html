@@ -1,0 +1,23 @@
+<%if(space_list&&space_list.length){
+
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_zone_ezonelist">
+            <%for(var i=0;i<space_list.length;i++){
+            var d = space_list[i];
+            %>
+            <a style="cursor:pointer;" href="/index.php/index/workplace/pageWorkplaceList?space_id=<%=d.id%>" class="c_zone_ezonelist_inner">
+                <b class="c_zone_ezonelist_inner_img"><img src="<%=d.banner_url%>" /></b>
+                <span class="c_zone_ezonelist_inner_txt"><%=d.name%></span>
+            </a>
+            <%}%>
+        </div>
+    </div>
+</div>
+<%}else{%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt">无法加载页面，请稍后再试</span>
+</div>
+<%}%>

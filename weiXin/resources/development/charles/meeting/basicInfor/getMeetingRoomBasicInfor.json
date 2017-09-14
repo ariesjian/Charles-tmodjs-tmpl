@@ -1,0 +1,17 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "meeting_room": {
+      "id":1,
+      "name":"代理数据",
+      "banner_url":"\/static\/cms_upload\/zj_activity\/149855639380760.png",
+      "person_limit":21,
+      "area":11,
+      "address":"真光路1258号15楼502",
+      "price":11,
+      "vip_price":1,
+      "basic_services":"投影设备一套、话筒2只、音响设备"
+    }
+  }
+}

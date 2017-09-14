@@ -1,0 +1,24 @@
+/*园区资讯*/
+.c_zone_infocon{float: left;width: 100%;background: #fff;}
+.c_zone_infocon_inner{float: left;width: 100%;box-sizing: border-box;padding: 14px 16px;display: flex;border-bottom: 1px solid #f1f1f1;}
+.c_zone_infocon_inner_left{-webkit-box-flex: 2;-webkit-flex: 2;flex: 2;padding-right: 16px;display: inline-flex;flex-direction:column;justify-content: space-between;}
+.c_zone_infocon_inner_left_title{-webkit-line-clamp: 2;-webkit-box-orient: vertical;display: -webkit-box;font-size: 16px;color: #4c4c4c;overflow: hidden;word-break: break-all;}
+.c_zone_infocon_inner_left_des{font-size: 10px;color: #999;display: inline-flex;justify-content: space-between;}
+.c_zone_infocon_inner_left_des span{display: inline-flex;flex-direction:column;justify-content: flex-end;}
+.c_zone_infocon_inner_right{-webkit-box-flex: 1.05;-webkit-flex: 1.05;flex: 1.05;/*display: inline-flex;*/}
+/*.c_zone_infocon_inner_right a{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;}*/
+.c_zone_infocon_inner_right img{width: 100%;}
+
+/*空页面*/
+.c_nodata_box4{float: left;width: 100%;}
+.c_nodata_box4_img{float: left;width: 100%;text-align: center;margin-top: 54px;}
+.c_nodata_box4_img img{height: 124px;}
+.c_nodata_box4_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;margin-top: 2px;letter-spacing: 1px;}
+
+
+
+/*园区资讯空页面*/
+.c_nodata_box{float: left;width: 100%;}
+.c_nodata_box_img{float: left;width: 100%;text-align: center;margin-top: 56px;}
+.c_nodata_box_img img{height: 126px;}
+.c_nodata_box_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;letter-spacing: 1px;}

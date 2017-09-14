@@ -1,0 +1,57 @@
+
+/*3保修详情*/
+.c_repaire_detailytop{float: left;width: 100%;box-sizing: border-box;padding: 16px 15px 0 15px;background: #fff;}
+.c_repaire_detailytop_img{float: left;width: 75px;height: 75px;margin-left: 10px;margin-bottom: 16px;border-radius:3px;overflow: hidden;}
+.c_repaire_detailytop_img img{width: 100%;border-radius: 3px;}
+.c_repaire_detaillist{float: left;width: 100%;margin-top: 15px;background: #fff;}
+.c_repaire_detaillist_title1{float: left;width: 100%;box-sizing: border-box;padding: 8px 15px;background: #fff;border-bottom: 1px solid #eee;}
+.c_repaire_detaillist_title1_left{float: left;height:28px;line-height: 28px;font-size: 16px;color: #333;}
+.c_repaire_detaillist_title1_right{float: right;height: 28px;width:70px;line-height: 28px;text-align: center;color: #fff;font-size: 13px;}
+.repare_status1{background: #c6c6c6;border-radius: 3px;}
+.repare_status2{background: #59cb86;border-radius: 3px;}
+.repare_status3{background: #ec4848;border-radius: 3px;}
+.c_repaire_detaillist_listcon1{float: left;width: 100%;background: #fff;box-sizing: border-box;padding: 4px 0 8px 0;}
+.c_repaire_detaillist_listcon1_inner{float: left;width: 100%;box-sizing:border-box;padding:0 15px;height: 36px;line-height: 36px;font-size: 13px;color: #333;}
+.c_repaire_detaillist_listcon1_inner_left{float: left;width: 27%;}
+.c_repaire_detaillist_listcon1_inner_right{float: left;width: 73%;text-align: right;}
+.c_repaire_detaillist_destitle{float: left;width: 100%;box-sizing: border-box;padding: 10px 15px;font-size: 15px;color: #000;height: 44px;line-height: 24px;}
+.c_repaire_detaillist_descon{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;color: #999;line-height: 24px;font-size: 13px;max-height:120px;overflow: hidden;margin-bottom: 10px;text-align: justify;}
+.c_repaire_commentscore{float: left;width: 100%;box-sizing: border-box;padding: 8px 12px;background: #fff;margin-top: 15px;margin-bottom: 15px;}
+.c_repaire_commentscore_left1{float: left;height: 20px;line-height: 20px;font-size: 15px;color: #000;margin-top: 4px;}
+.c_repaire_commentscore_left2{float: left;margin-left: 24px;margin-top: 2px;}
+.c_repaire_commentscore_left2 b{float: left;margin-left: 6px;}
+.c_repaire_commentscore_left2 b img{height: 20px;}
+.c_repaire_commentscore_right{float: right;}
+.c_repaire_commentscore_right_inner{float: left;width: 50px;height: 28px;box-sizing: border-box;border: 1px solid #ff803e;color: #ff803e;text-align: center;line-height: 26px;font-size: 12px;border-radius: 2px;}
+a{cursor: pointer!important;}
+/*空页面*/
+.c_nodata_box4{float: left;width: 100%;}
+.c_nodata_box4_img{float: left;width: 100%;text-align: center;margin-top: 54px;}
+.c_nodata_box4_img img{height: 124px;}
+.c_nodata_box4_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;margin-top: 2px;letter-spacing: 1px;}
+
+/*tracy add*/
+.weui-gallery__opr{display: none;}
+.c_repaire_detaillist .weui-cell .weui-cell__bd{min-width: 45%;}
+.c_repaire_detaillist .weui-cell .weui-cell__ft{text-align: left;word-break: break-all;}
+
+.c_activity_commentscore_right .c-star {
+    display: none;
+}
+
+.c_activity_commentscore_right .c-star.c-show {
+    display: block;
+    margin-left: 6px;
+}
+
+.c_activity_commentscore_right b {
+    margin-left: 0;
+}
+
+.c_activity_commentscore_right .c-star {
+    float: left;
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+}
+

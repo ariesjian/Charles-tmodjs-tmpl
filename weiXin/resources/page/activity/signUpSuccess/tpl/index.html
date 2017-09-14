@@ -1,0 +1,70 @@
+<%if(order){
+var d = order;
+%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+
+        <div class="c_station_reserve">
+            <div class="c_station_reserve_inner">
+                <b class="c_station_reserve_inner_img"><img src="<%=getImgPath('enroll_success.png')%>" /></b>
+                <label class="c_station_reserve_inner_txt1">报名成功</label>
+                <label class="c_station_reserve_inner_txt2">欢迎参加 <%=d.activity_name%></label>
+            </div>
+        </div>
+
+        <div class="c_station_reservelist">
+            <div class="c_activity_confirmlist_inner" style="border-radius: 0;">
+                <div class="c_ordersuccess_title">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>订单编号</p>
+                        </div>
+                        <div class="weui-cell__ft"><%=d.order_number%></div>
+                    </div>
+                </div>
+                <div class="c_ordersuccess_box">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>地址</p>
+                        </div>
+                        <div class="weui-cell__ft"><%=d.activity_address%></div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>活动时间</p>
+                        </div>
+                        <div class="weui-cell__ft"><%=d.activity_start_time.replace(/-/g,'/')%>-<%=d.activity_end_time.replace(/-/g,'/')%></div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>总金额</p>
+                        </div>
+                        <div class="weui-cell__ft">&yen;<%=d.price%></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_station_reservelist">
+            <div class="c_activity_confirmlist_inner" style="border-radius: 0;">
+                <div class="c_ordersuccess_box">
+                    <a class="weui-cell weui-cell_access" href="javascript:;" id="ShowQRCode" data-order_id="<%=d.id%>" data-activity_name="<%=d.activity_name%>" data-enroll_qrcode_url="<%=d.enroll_qrcode_url%>">
+                        <div class="weui-cell__bd" style="font-size: 15px;">
+                            <p>我的二维码</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="c_activity_enroll_btn"><a href="/index.php/index/activity/pageMemberActivityOrderDetail?order_id=<%=d.id%>" class="c_activity_enroll_btn_inner">查看订单详情</a></div>
+
+    </div>
+</div>
+<%}else{%>
+<div class="c_nodata_box3">
+    <b class="c_nodata_box3_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box3_txt">无法加载页面，请稍后再试</span>
+</div>
+<%}%>

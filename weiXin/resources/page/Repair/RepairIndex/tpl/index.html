@@ -1,0 +1,61 @@
+
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_repaire_propretytop">
+            <span style=" margin-bottom: 10px;line-height: 20px; padding-right: 1px;  font-size: 13px;color: #999;margin-bottom: 5px;">最多上传10张，每张最大10M,支持：jpg/jpeg/png/gif 。</span>
+            <div class="weui-uploader__bd" id="uploader"  >
+                <ul class=" weui-uploader__files" id="uploaderFiles" style="cursor: pointer;">
+                </ul>
+                <div class="weui-uploader__input-box" >
+                    <input id="uploaderInput" class="j-imgs weui-uploader__input" type="file" accept="image/*" multiple/>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="c_repaire_propretylist">
+            <div class="c_incubator_applylist_inner">
+                <div class="weui-cell weui-cell_select weui-cell_select-after">
+                    <div class="weui-cell__hd">
+                        <label for="" class="weui-label">所属物业</label>
+                    </div>
+                    <div class="weui-cell__bd right_color2">
+                        <select class="weui-select" name="select2" id="j-property_company_id">
+                            <%if(selections && selections.length){%>
+                            <%for(var i=0;i< selections.length;i++){
+                            var info = selections[i];
+                            %>
+                            <option value="<%=info.id%>"><%=info.name%></option>
+                            <%}%>
+                            <%}%>
+                        </select>
+                    </div>
+                </div>
+                <div class="c_incubator_applylist_inner_box right_color2">
+                    <label class="c_applylist_inner_left">报修地址</label>
+                    <input class="j-address c_applylist_inner_right" placeholder="请输入报修地址" type="text" />
+                </div>
+            </div>
+            <div class="c_incubator_applylist_inner">
+                <div class="c_incubator_applylist_inner_box c_incubator_applylist_inner_box_noborder">
+                    <label class="c_applylist_inner_left">联系人</label>
+                    <input class="j-contact_name c_applylist_inner_right" placeholder="请输入联系人" type="text"/>
+                </div>
+                <div class="c_incubator_applylist_inner_box">
+                    <label class="c_applylist_inner_left">联系方式</label>
+                    <input class="j-contact_mobile c_applylist_inner_right"  type="tel" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="请输入联系方式" maxlength="11"/>
+                </div>
+            </div>
+            <div class="c_incubator_applylist_inner">
+                <div class="c_incubator_roadshowlist_inner_box">
+                    <label class="c_roadshowlist_inner_title">报修详情</label>
+                    <textarea placeholder="请输入报修详情" style="padding-left: 0;" class="j-repair_detail" maxlength="120"></textarea>
+                    <span class="limit_num">0/120</span>
+                </div>
+            </div>
+            <div class="c_repaire_proprety_btn"><label style="cursor: pointer;" class="c_repaire_proprety_btn_inner" id="submitBtn">提交申请</label></div>
+        </div>
+
+    </div>
+</div>
+

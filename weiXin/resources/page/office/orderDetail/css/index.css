@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*5.1确认订单*/
+.footer_fixed_box{position:fixed;left: 0;right: 0;height:49px;bottom: 0;min-width:320px;max-width:640px;overflow:hidden;margin-left:auto;margin-right:auto; z-index:10;background: #fff;border-top: 1px solid #e2e2e2;box-sizing: border-box;}
+.footer_fixed_box_left{float:left;width: 50%;height: 48px;line-height: 48px;font-size: 11px;box-sizing: border-box;padding-left: 16px;color: #000;}
+.footer_fixed_box_left b{font-size: 16px;color: #ed5050;}
+.footer_fixed_box_right{float: left;width: 50%;height: 48px;}
+.footer_fixed_box_right_inner{
+    float: left;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size:17px;
+    color: #fff;
+    letter-spacing: 1px;
+    background:-webkit-gradient(linear, 0% 100%, 100% 100%,from(#f2ad14), to(#e75a21));
+}
+.c_activity_confirm_footer_left{font-size: 17px;color: #333;}
+
+.c_delete_order{float: right;height: 30px;width: 90px;box-sizing: border-box;border: 1px solid #999;line-height: 28px;text-align: center;font-size: 14px;color: #999;border-radius: 2px;margin-top: 9px;margin-right: 9px;}
+.c_continue_order{float: right;height: 30px;width: 60px;box-sizing: border-box;border: 1px solid #6ea2e4;line-height: 28px;text-align: center;font-size: 14px;color: #6ea2e4;border-radius: 2px;margin-top: 9px;margin-right: 9px;}
+
+
+.c_activity_confirmtop{float: left;width: 100%;height: 82px;background:-webkit-gradient(linear, 0% 100%, 100% 100%,from(#f2ad14), to(#e75a21));}
+.c_activity_confirmtop_inner1{height: 20px;line-height: 20px;display: table;margin: 0 auto;font-size: 15px;margin-top: 16px;}
+.c_activity_confirmtop_inner1 b{margin-right: 10px;float: left;}
+.c_activity_confirmtop_inner1 b img{height: 20px;}
+.c_activity_confirmtop_inner1 span{float:left;font-weight: bold;font-family: "微软雅黑 light";color: #fff;}
+.c_activity_confirmtop_inner2{height: 20px;line-height: 20px;display: table;margin: 0 auto;font-size: 10px;margin-top: 10px;}
+.c_activity_confirmtop_inner2 span{float:left;font-weight: bold;font-family: "微软雅黑 light";color: #fff;}
+.c_station_confirmtop{background:-webkit-gradient(linear, 0% 100%, 100% 100%,from(#b8d9ff), to(#6d9de0));}
+
+.c_activity_confirmlist{float: left;width: 100%;margin-top: 10px;box-sizing: border-box;padding: 0 9px;}
+.c_activity_confirmlist_inner{float: left;width: 100%;background: #fff;border-radius: 4px;box-sizing: border-box;padding: 0 20px;}
+.c_activity_confirmlist_inner .weui-cell{padding: 10px 0;}
+.c_activity_confirmlist_inner .weui-cell .weui-cell__bd{font-size: 13px;}
+.c_activity_confirmlist_inner .weui-cell .weui-cell__ft{letter-spacing: 1px;}
+
+
+.c_station_paytop{float: left;width: 100%;background: #fff;}
+.c_station_paytop_inner{float: left;width: 100%;display: flex;display: -webkit-flex; padding: 15px 16px;box-sizing: border-box;}
+.c_station_paytop_inner_left{-webkit-box-flex: 5.55;-webkit-flex: 5.55;flex: 5.55;}
+.c_station_paytop_inner_left a{float: left;width: 100%;}
+.c_station_paytop_inner_left a img{width: 100%;}
+.c_station_paytop_inner_right{-webkit-box-flex: 10;-webkit-flex: 10;flex: 10;display: inline-flex;flex-direction:column;justify-content: center;padding-left: 12px;}
+.c_station_paytop_inner_right1{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 16px;color: #333;}
+.c_station_paytop_inner_right2{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 12px;color: #999;display: inline-flex;flex-direction:column;justify-content: center;}
+.c_station_paytop_inner_right3{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 14px;color: #74a2e2;display: inline-flex;flex-direction:column;justify-content: flex-end;}
+
+
+.c_station_confirmtop{background:-webkit-gradient(linear, 0% 100%, 100% 100%,from(#b8d9ff), to(#6d9de0));}
+.station_pay{
+    float: left;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size:17px;
+    color: #fff;
+    letter-spacing: 1px;
+    background:-webkit-gradient(linear, 0% 100%, 100% 100%,from(#b8d9ff), to(#6d9de0));
+}
+.station_pay_footer_left_img img{height: 20px;margin-top: -4px;}
+.station_pay_footer_left_txt{font-size: 14px;}
+.station_pay_footer_left_txt a{color: #74a2e2;}
+.c_station_confirm_footer_left{padding-left: 10px;}
+
+/*删除订单*/
+.c_order_popup{position:fixed;left: 0;right: 0;height:100%;top: 0;min-width:320px;max-width:640px;overflow:hidden;margin-left:auto;margin-right:auto; z-index:11;background: url(/static/resources/images/opacity_background.png);}
+.c_order_popup_inner{position:relative;width: 80%;background: #fff;margin-left: 10%;top: 50%;margin-top:-89px;border-radius: 3px;overflow: hidden;padding: 10px 0;}
+.c_order_popup_inner_title{float: left;width: 100%;box-sizing: border-box;padding: 0 18px;margin-top: 12px;font-size: 18px;font-weight: bold;color: #ff803e;text-align: center;}
+.c_order_popup_inner_remind{float: left;width: 100%;box-sizing: border-box;padding: 0 18px;margin-top: 27px;font-size: 18px;color: #333;text-align: center;}
+.c_order_popup_inner_btns{float: left;width: 100%;box-sizing: border-box;padding: 0 18px;margin-top: 38px;margin-bottom: 5px;}
+.c_order_popup_inner_btns_cancel{float: left;width: 45%;height: 30px;box-sizing: border-box;border: 1px solid #6ea2e4;border-radius: 3px;line-height: 28px;text-align: center;color: #6ea2e4;font-size: 15px;}
+.c_order_popup_btns_delete{float: left;width: 45%;height: 30px;box-sizing: border-box;border-radius: 3px;line-height: 30px;text-align: center;color: #fff;background: #6ea2e4;font-size: 15px;margin-left: 10%;}
+.none{display: none}
+
+.c-delete_order_confirm_wrap .weui-dialog__btn_primary
+{
+    color:#6d9de0;
+}
+/*空页面*/
+.c_nodata_box4{float: left;width: 100%;}
+.c_nodata_box4_img{float: left;width: 100%;text-align: center;margin-top: 54px;}
+.c_nodata_box4_img img{height: 124px;}
+.c_nodata_box4_txt{float: left;width: 100%;font-size: 15px;color: #999;text-align: center;margin-top: 2px;letter-spacing: 1px;}
+
+/*2017-08-01 add*/
+.c_room_confirm_costtitle{display:flex;;height: 20px;line-height: 20px;margin-top: 12px;}
+.c_room_confirm_costtitle_inner1{
+    -webkit-box-flex: 2;-webkit-flex: 2;flex: 2;height: 0px;margin-top: 10px;border-bottom: 1px solid #E5E5E5;
+    -webkit-transform-origin: 0 0;transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);transform: scaleY(0.5);
+}
+
+.c_room_confirm_nobefore:before{border: none !important;height: 0 !important;}
+.c_room_confirm_costtitle_inner2{-webkit-box-flex: 3;-webkit-flex: 3;flex: 3;height: 20px;line-height: 20px;font-size: 15px;color: #000;text-align: center;}
+
+.c_activity_confirmlist_inner .weui-cell .weui-cell__bd{min-width: 45%;}
+
+
+.c_activity_bindtop{float: left;width: 100%;box-sizing: border-box;padding: 0 15px;background: #fff;margin-bottom: 20px;}
+.c_activity_bindtop_inner{float: left;width: 100%;display: flex;display: -webkit-flex; padding: 10px 0 ;}
+.c_activity_bindtop_inner_left{-webkit-box-flex: 5;-webkit-flex: 5;flex: 5;}
+.c_activity_bindtop_inner_left a{float: left;width: 100%;}
+.c_activity_bindtop_inner_left a img{width: 100%;}
+.c_activity_bindtop_inner_right{-webkit-box-flex: 11;-webkit-flex: 11;flex: 11;display: inline-flex;flex-direction:column;justify-content: center;padding-left: 15px;}
+.c_activity_bindtop_inner_right1{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 15px;color: #333;display: inline-flex;flex-direction:row;overflow: hidden;-webkit-line-clamp:1;display: -webkit-box;-webkit-box-orient:vertical;}
+.c_activity_bindtop_inner_right2{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 11px;color: #999;display: inline-flex;flex-direction:row;overflow: hidden;-webkit-line-clamp:1;display: -webkit-box;-webkit-box-orient:vertical;line-height: 1.8;}
+.c_activity_bindtop_inner_right3{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;font-size: 11px;color: #999;display: inline-flex;flex-direction:row;overflow: hidden;-webkit-line-clamp:1;display: -webkit-box;-webkit-box-orient:vertical;line-height: 1.8;}
+
+
+/*0913 add*/
+.c_refuse_box{float: left;width: 100%;padding: 0 16px;box-sizing: border-box;}
+.c_refuse_box_inner{float: left;width: 100%;display: flex;padding: 5px 0;box-sizing: border-box;border-top: 1px solid #f4f4f4;}
+.c_refuse_box_left{width: 70px;font-size: 14px;color: #333;line-height: 24px;}
+.c_refuse_box_right{flex: 1;font-size: 13px;color: #999;line-height: 24px;word-break: break-all;}

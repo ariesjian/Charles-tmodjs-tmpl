@@ -1,0 +1,69 @@
+<%if(order_list && order_list.length){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_station_minecon">
+            <ul>
+                <%
+                for(var i=0;i< order_list.length;i++){
+                var info = order_list[i];
+                %>
+
+                <li>
+
+                   <a href="/index.php/index/office/pageOrderDetail?order_id=<%=info.id%>" class="c_station_minelist_inner1">
+                    <div class="c_station_minelist_inner1_left"><img src="<%=info.office_list_img_url || ''%>" /></div>
+                        <div class="c_station_minelist_inner1_right">
+                            <span class="c_station_minelist_inner1_right1"><%=info.office_name || ''%> </span>
+                            <span class="c_station_minelist_inner1_right3">单价: &yen;<%=info.office_price || ''%>/月</span>
+                        </div>
+                    </a>
+                    <div class="c_station_minelist_inner2">
+                        <%if(info.status==9){%>
+                        <div class="c_station_minelist_inner2_left c_station_minelist_status3">超时已取消</div>
+                        <div class="c_station_minelist_inner2_right">
+                            <a href="/index.php/index/office/pageOrderDetail?order_id=<%=info.id%>" style="cursor:pointer;" >删除订单</a></div>
+                        <%}%>
+                        <%if(info.status==3){%>
+                        <div class="c_station_minelist_inner2_left c_station_minelist_status2">审核失败</div>
+                        <%}%>
+                        <%if(info.status==2){%>
+                        <div class="c_station_minelist_inner2_left c_station_minelist_status1">已交付<label class="c_minelist_leftcolor">（审核通过）</label></div>
+                        <%}%>
+                        <%if(info.status==1){%>
+                        <div class="c_station_minelist_inner2_left c_station_minelist_status1">已支付<label class="c_minelist_leftcolor">（审核中）</label></div>
+                        <%}%>
+                        <%if(info.status==0){%>
+                        <div class="c_station_minelist_inner2_left c_station_minelist_status4">未支付</div>
+                        <%}%>
+                        <div class="c_station_minelist_inner2_right">
+                            <%if(info.status==1 || info.status==2){%>
+                            <a href="#" style="cursor:pointer;" >查看合同</a>
+                            <%}%>
+                            <%if(info.status==2){%>
+                            <a href="/index.php/index/office/pageOrderDetail?order_id=<%=info.id%>" class="xuzu1" style="cursor:pointer;" >续租</a>
+                            <input type="hidden" class="orderId" value="<%=info.id || ''%>">
+                            <input type="hidden" class="office_id" value="<%=info.office_id || ''%>">
+                            <input type="hidden" class="start_date" value="<%=info.start_date || ''%>">
+                            <input type="hidden" class="end_date" value="<%=info.end_date || '1'%>">
+                            <input type="hidden" class="contact_name" value="<%=info.contact_name || ''%>">
+                            <input type="hidden" class="contact_mobile" value="<%=info.contact_mobile || '1'%>">
+                            <%}%>
+                            <%if(info.status==0){%>
+                            <a href="/index.php/index/office/pageOrderDetail?order_id=<%=info.id%>" class="zhifu" style="cursor:pointer;" >去支付</a>
+                            <%}%>
+                        </div>
+                    </div>
+                </li>
+                <%}%>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%}else{%>
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('booking_office.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

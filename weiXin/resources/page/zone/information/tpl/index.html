@@ -1,0 +1,32 @@
+<%if(information_list && information_list.length){%>
+	<div class="mobile_outcontainer">
+		<div class="mobile_nopadding_container2">
+			<div class="c_zone_infocon">
+				<%for(var i=0;i< information_list.length;i++){
+				var info = information_list[i];
+				%>
+
+				<a href="<%=info.link%>" style="cursor: pointer;" class="c_zone_infocon_inner j-num" data-infomation_id="<%=info.id%>">
+					<input type="hidden" class="zixunId" value="<%=info.id%>">
+					<div class="c_zone_infocon_inner_left">
+						<div class="c_zone_infocon_inner_left_title"><span><%=info.title||''%></span></div>
+						<div class="c_zone_infocon_inner_left_des">
+							<span><%=info.author||''%></span><span><%=info.read_count||''%>阅读</span>
+						</div>
+					</div>
+					<div class=" c_zone_infocon_inner_right"><img src="<%=info.img_url%>" /></div>
+				</a>
+				<%}%>
+			</div>
+		</div>
+	</div>
+<%}else{%>
+
+<div class="c_nodata_box">
+	<b class="c_nodata_box_img"><img src="<%=getImgPath('list_info.png')%>" /></b>
+	<span class="c_nodata_box_txt">暂时没有资讯内容</span>
+</div>
+
+
+
+<%}%>

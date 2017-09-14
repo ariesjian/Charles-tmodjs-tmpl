@@ -1,0 +1,192 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "current_date": "2017-07-12",
+    "is_today_signed": 1,
+    "continuation_sign_days": "1",
+    "start_day_of_week": "9",
+    "this_month_days": [
+      {
+        "day_of_month": "11",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "12",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "13",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "14",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "15",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "16",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "17",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "18",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "19",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "20",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "21",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "22",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "23",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "24",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "25",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "26",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "27",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "28",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "29",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "30",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "31",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "20",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "21",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "22",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "23",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "24",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "25",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "26",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "27",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "28",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "29",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "30",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "31",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "20",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "21",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "22",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "23",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "24",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "25",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "26",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "27",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "28",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "29",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "30",
+        "is_signed": 0
+      },
+      {
+        "day_of_month": "31",
+        "is_signed": 0
+      }
+    ]
+  }
+}

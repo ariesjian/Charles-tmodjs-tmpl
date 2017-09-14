@@ -1,0 +1,21 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "orderConfirm":{
+      "id": 1,
+      "names": "办公室1",
+      "urls": "/static/resources/images/station_list_img2.png",
+      "count": 310,
+      "price": "45000",
+      "area":"150",
+      "type":"1",
+      "contact":"张珊",
+      "mobile":"222222222",
+      "startTime":"2017-07-18",
+      "endTime":"2017-09-18",
+      "payType":1,
+      "status":1
+    }
+  }
+}

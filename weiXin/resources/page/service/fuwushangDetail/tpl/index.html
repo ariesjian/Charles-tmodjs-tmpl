@@ -1,0 +1,29 @@
+<%if(merchant){%>
+
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_zone_introtop"><img src="<%=merchant.banner_url||getImgPath('zone_introduce_img1.png')%>" /></div>
+        <div class="c_zone_introdetail">
+            <div class="c_zone_company_box1">
+                <div class="c_zone_company_box1_inner">
+                    <span><%=merchant.name%></span><label><%=merchant.summary%></label>
+                </div>
+            </div>
+            <div class="c_zone_introdetail_box2">
+                <div class="c_zone_introdetail_box2_title"><b></b><span>服务商介绍</span></div>
+                <div class="c_zone_introdetail_box2_des"><%=merchant.detail%></div>
+            </div>
+        </div>
+    </div>
+    <%if(merchant.link){%>
+    <div class="c_service_footer_btn">
+        <a href="<%=merchant.link%>" class="c_service_footer_btn_inner" style="cursor:pointer;" >前往</a>
+    </div>
+</div>
+<%}%>
+<%}else{%>
+<div class="c_nodata_box4">
+    <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+    <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+</div>
+<%}%>

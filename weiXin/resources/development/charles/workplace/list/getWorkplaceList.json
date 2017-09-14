@@ -1,0 +1,23 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "data": {
+    "workplace_list": [{
+      "id":1,
+      "space_id":1,
+      "list_img_url":"\/static\/cms_upload\/zj_activity\/149855639380760.png",
+      "price":100,
+      "available_count":10,
+      "name":"代理数据1",
+      "banner_url":"\/static\/cms_upload\/zj_activity\/149855639380760.png"
+    },{
+      "id":2,
+      "space_id":1,
+      "list_img_url":"\/static\/cms_upload\/zj_activity\/149855639380760.png",
+      "price":200,
+      "available_count":20,
+      "name":"代理数据2",
+      "banner_url":"\/static\/cms_upload\/zj_activity\/149855639380760.png"
+    }]
+  }
+}

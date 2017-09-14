@@ -1,0 +1,23 @@
+<%if(space_list && space_list.length){%>
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container2">
+        <div class="c_zone_ezonelist">
+
+            <%for(var i=0;i< space_list.length;i++){
+            var info = space_list[i];
+            %>
+            <a href="/index.php/index/zone/pageSpaceDetail?space_id=<%=info.id%>" class="c_zone_ezonelist_inner" style="cursor:pointer;" >
+                <b class="c_zone_ezonelist_inner_img"><img src="<%=info.banner_url||getImgPath('ezone_img3.png')%>"/></b>
+                <span class="c_zone_ezonelist_inner_txt"><%=info.name%></span>
+            </a>
+            <%}%>
+        </div>
+    </div>
+</div>
+<%}else{%>
+<div style="font-size: 30px;text-align: center;">
+    <div class="c_nodata_box4">
+        <b class="c_nodata_box4_img"><img src="<%=getImgPath('list_activity.png')%>" /></b>
+        <span class="c_nodata_box4_txt">暂时没有相关的内容</span>
+    </div></div>
+<%}%>

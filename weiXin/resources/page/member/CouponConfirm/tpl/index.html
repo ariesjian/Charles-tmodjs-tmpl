@@ -1,0 +1,74 @@
+
+<div class="mobile_outcontainer">
+    <div class="mobile_nopadding_container1">
+        <div class="c_user_verificationtop">
+            <div class="c_zone_teacherlist_inner">
+                <div class="c_zone_teacherlist_inner_left"><img src="<%=coupon.headimgurl || ''%>"/></div>
+                <div class="c_zone_teacherlist_inner_right">
+                    <span class="c_zone_teacherlist_inner_right1_name"><%=coupon.true_name || ''%></span>
+                    <span class="c_zone_teacherlist_inner_right1_position"><%=coupon.mobile || ''%></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c_user_verificationlist">
+            <div class="c_activity_confirmlist_inner c_room_detail_listcolor">
+
+                <div class="c_room_confirm_costtitle">
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                    <div class="c_room_confirm_costtitle_inner2"><%=coupon.name%></div>
+                    <div class="c_room_confirm_costtitle_inner1"></div>
+                </div>
+
+                <div class="weui-cell c_room_confirm_nobefore">
+                    <div class="weui-cell__bd">
+                        <p>园区条件</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=coupon.store_name%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>金额条件</p>
+                    </div>
+                    <div class="weui-cell__ft">满<%=coupon.min_charge%>元可用</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>有效时间</p>
+                    </div>
+                    <div class="weui-cell__ft"><%=coupon.start_date.replace(/-/g, ".")%>至<%=coupon.end_date.replace(/-/g, ".")%></div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p></p>
+                    </div>
+                    <%if(coupon.benefit_type==1){%>
+                    <div class="weui-cell__ft">折扣：<label
+                            style="font-size: 16px;color: #000;"><%=coupon.discount%>%</label></div>
+                    <%}%>
+                    <%if(coupon.benefit_type==2){%>
+                    <div class="weui-cell__ft">减免：<label
+                            style="font-size: 16px;color: #000;">&yen;<%=coupon.reduction%></label></div>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+        <%if(coupon.status==0){%>
+        <div class="c_user_verificationbtnss">
+            <a href="#" class="c_user_verificationbtn_innerss" id="submitBtn" style="cursor:pointer;" >确认</a>
+        </div>
+        <%}%>
+        <%if(coupon.status==1){%>
+        <div class="c_user_verificationbtn2">
+            <a href="#" class="c_user_verificationbtn_inner">已使用</a>
+        </div>
+        <%}%>
+        <%if(coupon.status==2){%>
+        <div class="c_user_verificationbtn2">
+            <a href="#" class="c_user_verificationbtn_inner">已过期</a>
+        </div>
+        <%}%>
+    </div>
+
+</div>
+
