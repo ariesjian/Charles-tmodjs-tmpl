@@ -1,5 +1,0 @@
-http://zhangjiang.sidlu.com/index.php/index/activity/pageActivityDetail?activity_id=1
-
-
-
-5个html文件，template中只包含了3个。  replayModal和replyView都不在template.js中。
