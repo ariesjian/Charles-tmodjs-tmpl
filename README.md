@@ -29,7 +29,7 @@
 ## 文件说明
           在view文件夹下只存放页面，里面只是一个空的页面，只是会存放页面的隐藏值和js，css链接
 		  resources里面的Charles文件夹里面是代理的文件，通常是代理的页面和数据。这个需要在本地安装Charles代理工具
-		  pages下面是所有页面文件，每个页面都是一个文件，index.html页面最后通过tmodjs编译成js文件，所以到最后加载的模版           是js.
+		  pages下面是所有页面文件，每个页面都是一个文件，index.html页面最后通过tmodjs编译成js文件，所以到最后加载的模版是js.
 		  utils是自定义的共方法。
 		  
 		  这个案例使用的工具是webstrom,使用的是weui和zepto
