@@ -1,6 +1,3 @@
-/**
- * Created by jack on 2017/6/26.
- */
 
 window.request_g = function (params) {
 
